@@ -1,0 +1,501 @@
+title,n_reviews,label,review_note,source
+software engineer,3883,not_frontline,,draft_by_claude_needs_team_check
+sales associate,1657,frontline,,draft_by_claude_needs_team_check
+senior software engineer,1375,not_frontline,,draft_by_claude_needs_team_check
+manager,1028,not_frontline,management; counted not frontline,draft_by_claude_needs_team_check
+cashier,1011,frontline,,draft_by_claude_needs_team_check
+account executive,851,not_frontline,,draft_by_claude_needs_team_check
+director,765,not_frontline,,draft_by_claude_needs_team_check
+barista,755,frontline,,draft_by_claude_needs_team_check
+intern,744,intern_student,,draft_by_claude_needs_team_check
+engineer,705,not_frontline,,draft_by_claude_needs_team_check
+associate,669,vague,,draft_by_claude_needs_team_check
+product manager,639,not_frontline,,draft_by_claude_needs_team_check
+project manager,620,not_frontline,,draft_by_claude_needs_team_check
+sales,526,vague,,draft_by_claude_needs_team_check
+analyst,515,not_frontline,,draft_by_claude_needs_team_check
+crew member,480,frontline,,draft_by_claude_needs_team_check
+customer service representative,476,frontline,call-center or store service; counted frontline,draft_by_claude_needs_team_check
+account manager,438,not_frontline,,draft_by_claude_needs_team_check
+sales representative,425,vague,,draft_by_claude_needs_team_check
+server,396,frontline,,draft_by_claude_needs_team_check
+data scientist,388,not_frontline,,draft_by_claude_needs_team_check
+program manager,364,not_frontline,,draft_by_claude_needs_team_check
+team member,334,frontline,almost always retail or food,draft_by_claude_needs_team_check
+sales associate/cashier,330,frontline,,draft_by_claude_needs_team_check
+retail sales associate,329,frontline,,draft_by_claude_needs_team_check
+marketing,318,not_frontline,,draft_by_claude_needs_team_check
+senior manager,307,not_frontline,,draft_by_claude_needs_team_check
+assistant manager,303,not_frontline,management; counted not frontline,draft_by_claude_needs_team_check
+staff software engineer,299,not_frontline,,draft_by_claude_needs_team_check
+recruiter,292,not_frontline,,draft_by_claude_needs_team_check
+consultant,288,not_frontline,,draft_by_claude_needs_team_check
+data engineer,282,not_frontline,,draft_by_claude_needs_team_check
+data analyst,274,not_frontline,,draft_by_claude_needs_team_check
+business analyst,274,not_frontline,,draft_by_claude_needs_team_check
+administrative assistant,269,not_frontline,office support; counted not frontline,draft_by_claude_needs_team_check
+software engineer(internship),247,intern_student,,draft_by_claude_needs_team_check
+registered nurse,246,not_frontline,"licensed, higher pay; counted not frontline",draft_by_claude_needs_team_check
+delivery driver,245,frontline,,draft_by_claude_needs_team_check
+sales development representative (sdr),244,not_frontline,,draft_by_claude_needs_team_check
+anonymous employee,240,exclude,,draft_by_claude_needs_team_check
+internship,237,intern_student,,draft_by_claude_needs_team_check
+software engineer intern,229,intern_student,,draft_by_claude_needs_team_check
+executive assistant,224,not_frontline,,draft_by_claude_needs_team_check
+operations manager,223,not_frontline,,draft_by_claude_needs_team_check
+swe intern,221,intern_student,,draft_by_claude_needs_team_check
+marketing manager,216,not_frontline,,draft_by_claude_needs_team_check
+vice president,203,not_frontline,,draft_by_claude_needs_team_check
+senior product manager,202,not_frontline,,draft_by_claude_needs_team_check
+software developer,201,not_frontline,,draft_by_claude_needs_team_check
+systems engineer,198,not_frontline,,draft_by_claude_needs_team_check
+anonymous,198,exclude,,draft_by_claude_needs_team_check
+store manager,193,not_frontline,management; counted not frontline,draft_by_claude_needs_team_check
+supervisor,188,vague,,draft_by_claude_needs_team_check
+mechanical engineer,187,not_frontline,,draft_by_claude_needs_team_check
+designer,187,not_frontline,,draft_by_claude_needs_team_check
+server/waiter,186,frontline,,draft_by_claude_needs_team_check
+senior associate,186,not_frontline,,draft_by_claude_needs_team_check
+driver,184,frontline,,draft_by_claude_needs_team_check
+sales manager,181,not_frontline,,draft_by_claude_needs_team_check
+financial analyst,175,not_frontline,,draft_by_claude_needs_team_check
+senior consultant,171,not_frontline,,draft_by_claude_needs_team_check
+technician,170,vague,,draft_by_claude_needs_team_check
+warehouse associate,169,frontline,,draft_by_claude_needs_team_check
+software engineer ii,157,not_frontline,,draft_by_claude_needs_team_check
+shift supervisor,153,frontline,hourly lead in food/retail,draft_by_claude_needs_team_check
+line cook,152,frontline,,draft_by_claude_needs_team_check
+product designer,151,not_frontline,,draft_by_claude_needs_team_check
+engineering manager,150,not_frontline,,draft_by_claude_needs_team_check
+general manager,148,not_frontline,,draft_by_claude_needs_team_check
+customer service representative (csr),146,frontline,call-center or store service; counted frontline,draft_by_claude_needs_team_check
+operations,143,vague,,draft_by_claude_needs_team_check
+software development engineer (sde),141,not_frontline,,draft_by_claude_needs_team_check
+cashier/barista,140,frontline,,draft_by_claude_needs_team_check
+machine learning engineer,137,not_frontline,,draft_by_claude_needs_team_check
+senior engineer,133,not_frontline,,draft_by_claude_needs_team_check
+customer success manager,133,not_frontline,,draft_by_claude_needs_team_check
+anonymous employee- former employee,132,exclude,,draft_by_claude_needs_team_check
+teacher,130,not_frontline,,draft_by_claude_needs_team_check
+scientist,129,not_frontline,,draft_by_claude_needs_team_check
+research scientist,129,not_frontline,,draft_by_claude_needs_team_check
+sr. software engineer,124,not_frontline,,draft_by_claude_needs_team_check
+manufacturing engineer,123,not_frontline,,draft_by_claude_needs_team_check
+team lead,123,vague,,draft_by_claude_needs_team_check
+human resources,121,not_frontline,,draft_by_claude_needs_team_check
+business development representative (bdr),120,not_frontline,,draft_by_claude_needs_team_check
+cook,119,frontline,,draft_by_claude_needs_team_check
+principal software engineer,119,not_frontline,,draft_by_claude_needs_team_check
+project engineer,113,not_frontline,,draft_by_claude_needs_team_check
+staff engineer,113,not_frontline,,draft_by_claude_needs_team_check
+customer service,110,frontline,call-center or store assumed,draft_by_claude_needs_team_check
+software engineer (swe ii),109,not_frontline,,draft_by_claude_needs_team_check
+senior data scientist,109,not_frontline,,draft_by_claude_needs_team_check
+coordinator,108,vague,,draft_by_claude_needs_team_check
+shift lead,107,frontline,,draft_by_claude_needs_team_check
+front desk receptionist,106,frontline,,draft_by_claude_needs_team_check
+senior analyst,104,not_frontline,,draft_by_claude_needs_team_check
+accountant,104,not_frontline,,draft_by_claude_needs_team_check
+specialist,103,vague,,draft_by_claude_needs_team_check
+associate director,103,not_frontline,,draft_by_claude_needs_team_check
+marketing coordinator,101,not_frontline,,draft_by_claude_needs_team_check
+hardware engineer,101,not_frontline,,draft_by_claude_needs_team_check
+"registered nurse, bsn",99,not_frontline,same as registered nurse,draft_by_claude_needs_team_check
+research associate,99,not_frontline,,draft_by_claude_needs_team_check
+store associate,98,frontline,,draft_by_claude_needs_team_check
+technical program manager,97,not_frontline,,draft_by_claude_needs_team_check
+process engineer,95,not_frontline,,draft_by_claude_needs_team_check
+hostess,95,frontline,,draft_by_claude_needs_team_check
+marketing specialist,95,not_frontline,,draft_by_claude_needs_team_check
+technical support engineer,94,not_frontline,,draft_by_claude_needs_team_check
+warehouse worker,94,frontline,,draft_by_claude_needs_team_check
+bartender,94,frontline,,draft_by_claude_needs_team_check
+electrical engineer,92,not_frontline,,draft_by_claude_needs_team_check
+senior account executive,92,not_frontline,,draft_by_claude_needs_team_check
+enterprise account executive,91,not_frontline,,draft_by_claude_needs_team_check
+security officer,90,frontline,,draft_by_claude_needs_team_check
+medical assistant,89,frontline,,draft_by_claude_needs_team_check
+staff accountant,88,not_frontline,,draft_by_claude_needs_team_check
+business development manager,88,not_frontline,,draft_by_claude_needs_team_check
+principal engineer,87,not_frontline,,draft_by_claude_needs_team_check
+senior financial analyst,85,not_frontline,,draft_by_claude_needs_team_check
+finance,84,not_frontline,,draft_by_claude_needs_team_check
+finance manager,84,not_frontline,,draft_by_claude_needs_team_check
+customer success manager (csm),84,not_frontline,,draft_by_claude_needs_team_check
+area manager,83,not_frontline,salaried warehouse manager at Amazon,draft_by_claude_needs_team_check
+educator,83,vague,,draft_by_claude_needs_team_check
+stocker,83,frontline,,draft_by_claude_needs_team_check
+senior director,82,not_frontline,,draft_by_claude_needs_team_check
+quality engineer,81,not_frontline,,draft_by_claude_needs_team_check
+software engineering intern,80,intern_student,,draft_by_claude_needs_team_check
+relationship banker,80,not_frontline,branch staff; counted not frontline,draft_by_claude_needs_team_check
+senior project manager,80,not_frontline,,draft_by_claude_needs_team_check
+front end cashier,79,frontline,,draft_by_claude_needs_team_check
+project coordinator,79,not_frontline,,draft_by_claude_needs_team_check
+case manager,79,not_frontline,,draft_by_claude_needs_team_check
+research assistant,78,not_frontline,,draft_by_claude_needs_team_check
+test engineer,78,not_frontline,,draft_by_claude_needs_team_check
+pharmacy technician,77,frontline,,draft_by_claude_needs_team_check
+member of technical staff,77,not_frontline,,draft_by_claude_needs_team_check
+security guard,74,frontline,,draft_by_claude_needs_team_check
+beauty advisor,73,frontline,,draft_by_claude_needs_team_check
+tax associate,73,not_frontline,,draft_by_claude_needs_team_check
+graphic designer,72,not_frontline,,draft_by_claude_needs_team_check
+package handler,72,frontline,,draft_by_claude_needs_team_check
+lab technician,72,frontline,could be clinical (frontline) or research,draft_by_claude_needs_team_check
+senior scientist,70,not_frontline,,draft_by_claude_needs_team_check
+administrative,70,not_frontline,,draft_by_claude_needs_team_check
+senior accountant,68,not_frontline,,draft_by_claude_needs_team_check
+product marketing manager,68,not_frontline,,draft_by_claude_needs_team_check
+ux designer,67,not_frontline,,draft_by_claude_needs_team_check
+software development engineer,67,not_frontline,,draft_by_claude_needs_team_check
+producer,66,not_frontline,,draft_by_claude_needs_team_check
+technical recruiter,66,not_frontline,,draft_by_claude_needs_team_check
+sr. director,66,not_frontline,,draft_by_claude_needs_team_check
+postdoctoral fellow,65,not_frontline,,draft_by_claude_needs_team_check
+courtesy clerk,65,frontline,,draft_by_claude_needs_team_check
+audit associate,65,not_frontline,,draft_by_claude_needs_team_check
+flight attendant,64,frontline,in-person service,draft_by_claude_needs_team_check
+senior program manager,63,not_frontline,,draft_by_claude_needs_team_check
+merchandiser,63,frontline,,draft_by_claude_needs_team_check
+field service technician,62,not_frontline,skilled trade; counted not frontline,draft_by_claude_needs_team_check
+district manager,62,not_frontline,,draft_by_claude_needs_team_check
+solutions engineer,62,not_frontline,,draft_by_claude_needs_team_check
+inside sales representative,62,not_frontline,,draft_by_claude_needs_team_check
+solutions architect,61,not_frontline,,draft_by_claude_needs_team_check
+contractor,61,vague,,draft_by_claude_needs_team_check
+quality assurance,60,vague,,draft_by_claude_needs_team_check
+rbt - registered behavior technician,60,frontline,,draft_by_claude_needs_team_check
+bank teller,59,frontline,,draft_by_claude_needs_team_check
+territory manager,59,not_frontline,,draft_by_claude_needs_team_check
+therapist,59,not_frontline,,draft_by_claude_needs_team_check
+sales executive,59,not_frontline,,draft_by_claude_needs_team_check
+student assistant,58,intern_student,,draft_by_claude_needs_team_check
+host,58,frontline,,draft_by_claude_needs_team_check
+team leader,58,vague,,draft_by_claude_needs_team_check
+instructor,58,not_frontline,,draft_by_claude_needs_team_check
+data science intern,57,intern_student,,draft_by_claude_needs_team_check
+software engineering manager,57,not_frontline,,draft_by_claude_needs_team_check
+shift leader,57,frontline,,draft_by_claude_needs_team_check
+janitor,57,frontline,,draft_by_claude_needs_team_check
+tutor,57,not_frontline,hourly but education; counted not frontline,draft_by_claude_needs_team_check
+sales consultant,56,vague,,draft_by_claude_needs_team_check
+buyer,55,not_frontline,,draft_by_claude_needs_team_check
+outside sales representative,55,not_frontline,,draft_by_claude_needs_team_check
+swe new grad,55,not_frontline,,draft_by_claude_needs_team_check
+real estate agent,54,not_frontline,commission sales; counted not frontline,draft_by_claude_needs_team_check
+marketing director,54,not_frontline,,draft_by_claude_needs_team_check
+substitute teacher,54,not_frontline,counted not frontline,draft_by_claude_needs_team_check
+business development,53,not_frontline,,draft_by_claude_needs_team_check
+senior account manager,53,not_frontline,,draft_by_claude_needs_team_check
+research intern,53,intern_student,,draft_by_claude_needs_team_check
+engineering intern,53,intern_student,,draft_by_claude_needs_team_check
+summer intern,53,intern_student,,draft_by_claude_needs_team_check
+behavior technician,53,frontline,,draft_by_claude_needs_team_check
+property manager,52,not_frontline,,draft_by_claude_needs_team_check
+employee,52,exclude,,draft_by_claude_needs_team_check
+regional sales manager,52,not_frontline,,draft_by_claude_needs_team_check
+attorney,52,not_frontline,,draft_by_claude_needs_team_check
+senior data engineer,52,not_frontline,,draft_by_claude_needs_team_check
+fulfillment associate,51,frontline,,draft_by_claude_needs_team_check
+pharmacist,51,not_frontline,,draft_by_claude_needs_team_check
+financial advisor,51,not_frontline,,draft_by_claude_needs_team_check
+design engineer,51,not_frontline,,draft_by_claude_needs_team_check
+legal assistant,50,not_frontline,,draft_by_claude_needs_team_check
+receptionist,50,frontline,,draft_by_claude_needs_team_check
+sales engineer,50,not_frontline,,draft_by_claude_needs_team_check
+paralegal,49,not_frontline,,draft_by_claude_needs_team_check
+operations supervisor,49,not_frontline,,draft_by_claude_needs_team_check
+stylist,49,frontline,,draft_by_claude_needs_team_check
+teller,48,frontline,,draft_by_claude_needs_team_check
+associate software engineer,48,not_frontline,,draft_by_claude_needs_team_check
+senior business analyst,48,not_frontline,,draft_by_claude_needs_team_check
+technical writer,48,not_frontline,,draft_by_claude_needs_team_check
+teaching assistant,47,intern_student,,draft_by_claude_needs_team_check
+sales advisor,47,frontline,,draft_by_claude_needs_team_check
+manufacturing technician,47,frontline,,draft_by_claude_needs_team_check
+certified nursing assistant cna,47,frontline,,draft_by_claude_needs_team_check
+marketing intern,46,intern_student,,draft_by_claude_needs_team_check
+senior product designer,46,not_frontline,,draft_by_claude_needs_team_check
+network engineer,46,not_frontline,,draft_by_claude_needs_team_check
+front desk agent,45,frontline,,draft_by_claude_needs_team_check
+associate attorney,45,not_frontline,,draft_by_claude_needs_team_check
+sr. product manager,45,not_frontline,,draft_by_claude_needs_team_check
+senior recruiter,45,not_frontline,,draft_by_claude_needs_team_check
+mechanical engineering intern,45,intern_student,,draft_by_claude_needs_team_check
+ai engineer,44,not_frontline,,draft_by_claude_needs_team_check
+licensed vocational nurse (lvn),44,frontline,,draft_by_claude_needs_team_check
+food service worker,44,frontline,,draft_by_claude_needs_team_check
+truck driver,44,frontline,,draft_by_claude_needs_team_check
+personal banker,44,not_frontline,branch staff; counted not frontline,draft_by_claude_needs_team_check
+applications engineer,44,not_frontline,,draft_by_claude_needs_team_check
+mechanical design engineer,43,not_frontline,,draft_by_claude_needs_team_check
+deli clerk,43,frontline,,draft_by_claude_needs_team_check
+seasonal sales associate,43,frontline,,draft_by_claude_needs_team_check
+senior data analyst,43,not_frontline,,draft_by_claude_needs_team_check
+ceo-founder,42,not_frontline,,draft_by_claude_needs_team_check
+relationship manager,42,not_frontline,,draft_by_claude_needs_team_check
+customer service associate,42,frontline,call-center or store service; counted frontline,draft_by_claude_needs_team_check
+ride operator,42,frontline,,draft_by_claude_needs_team_check
+engineering,42,not_frontline,,draft_by_claude_needs_team_check
+sandwich artist,42,frontline,,draft_by_claude_needs_team_check
+graduate student,41,intern_student,,draft_by_claude_needs_team_check
+customer support,41,frontline,call-center style assumed,draft_by_claude_needs_team_check
+recruiting coordinator,41,not_frontline,,draft_by_claude_needs_team_check
+associate consultant,41,not_frontline,,draft_by_claude_needs_team_check
+postdoctoral researcher,41,not_frontline,,draft_by_claude_needs_team_check
+retail associate,41,frontline,,draft_by_claude_needs_team_check
+qa engineer,41,not_frontline,,draft_by_claude_needs_team_check
+leasing consultant,40,not_frontline,,draft_by_claude_needs_team_check
+guest advocate,40,frontline,,draft_by_claude_needs_team_check
+material handler,40,frontline,,draft_by_claude_needs_team_check
+branch manager,40,not_frontline,,draft_by_claude_needs_team_check
+supply chain manager,39,not_frontline,,draft_by_claude_needs_team_check
+senior staff software engineer,39,not_frontline,,draft_by_claude_needs_team_check
+researcher,39,not_frontline,,draft_by_claude_needs_team_check
+former employee,39,exclude,,draft_by_claude_needs_team_check
+product engineer,38,not_frontline,,draft_by_claude_needs_team_check
+technical lead,38,not_frontline,,draft_by_claude_needs_team_check
+accounting manager,38,not_frontline,,draft_by_claude_needs_team_check
+mobile expert,38,frontline,,draft_by_claude_needs_team_check
+brand representative,37,frontline,,draft_by_claude_needs_team_check
+senior marketing manager,37,not_frontline,,draft_by_claude_needs_team_check
+software qa engineer,37,not_frontline,,draft_by_claude_needs_team_check
+assistant store manager,37,not_frontline,,draft_by_claude_needs_team_check
+product owner,37,not_frontline,,draft_by_claude_needs_team_check
+operations associate,37,vague,,draft_by_claude_needs_team_check
+sales specialist,37,vague,,draft_by_claude_needs_team_check
+overnight stocker,37,frontline,,draft_by_claude_needs_team_check
+architect,37,not_frontline,,draft_by_claude_needs_team_check
+insurance agent,37,not_frontline,,draft_by_claude_needs_team_check
+sales director,37,not_frontline,,draft_by_claude_needs_team_check
+web developer,36,not_frontline,,draft_by_claude_needs_team_check
+principal product manager,36,not_frontline,,draft_by_claude_needs_team_check
+brand ambassador,36,frontline,,draft_by_claude_needs_team_check
+office manager,36,not_frontline,,draft_by_claude_needs_team_check
+lifeguard,35,frontline,,draft_by_claude_needs_team_check
+underwriter,35,not_frontline,,draft_by_claude_needs_team_check
+managing director,35,not_frontline,,draft_by_claude_needs_team_check
+community manager,35,not_frontline,,draft_by_claude_needs_team_check
+devops engineer,35,not_frontline,,draft_by_claude_needs_team_check
+loan officer,35,not_frontline,,draft_by_claude_needs_team_check
+sr. engineer,35,not_frontline,,draft_by_claude_needs_team_check
+anyonymous employee,35,exclude,,draft_by_claude_needs_team_check
+office assistant,35,not_frontline,,draft_by_claude_needs_team_check
+lead software engineer,35,not_frontline,,draft_by_claude_needs_team_check
+shift manager,35,frontline,hourly lead in food/retail,draft_by_claude_needs_team_check
+server/bartender,34,frontline,,draft_by_claude_needs_team_check
+claims adjuster,34,not_frontline,,draft_by_claude_needs_team_check
+maintenance technician,34,not_frontline,skilled trade; counted not frontline,draft_by_claude_needs_team_check
+patient service representative,34,frontline,,draft_by_claude_needs_team_check
+intern - hourly,34,intern_student,,draft_by_claude_needs_team_check
+personal shopper,34,frontline,,draft_by_claude_needs_team_check
+client service associate,34,not_frontline,,draft_by_claude_needs_team_check
+security engineer,34,not_frontline,,draft_by_claude_needs_team_check
+associate manager,34,not_frontline,,draft_by_claude_needs_team_check
+accounting,34,not_frontline,,draft_by_claude_needs_team_check
+caregiver,34,frontline,,draft_by_claude_needs_team_check
+executive director,34,not_frontline,,draft_by_claude_needs_team_check
+student worker,34,intern_student,,draft_by_claude_needs_team_check
+principal,33,not_frontline,,draft_by_claude_needs_team_check
+mechanic,33,not_frontline,skilled trade; counted not frontline,draft_by_claude_needs_team_check
+fry cook,33,frontline,,draft_by_claude_needs_team_check
+senior research associate,33,not_frontline,,draft_by_claude_needs_team_check
+administrator,32,not_frontline,,draft_by_claude_needs_team_check
+production assistant,32,vague,,draft_by_claude_needs_team_check
+emt-b,32,frontline,,draft_by_claude_needs_team_check
+"sr. manager, operations",32,not_frontline,,draft_by_claude_needs_team_check
+technical project manager,32,not_frontline,,draft_by_claude_needs_team_check
+ux researcher,32,not_frontline,,draft_by_claude_needs_team_check
+technical sourcer,32,not_frontline,,draft_by_claude_needs_team_check
+senior mechanical engineer,32,not_frontline,,draft_by_claude_needs_team_check
+auditor,32,not_frontline,,draft_by_claude_needs_team_check
+talent acquisition specialist,32,not_frontline,,draft_by_claude_needs_team_check
+it support specialist,32,not_frontline,,draft_by_claude_needs_team_check
+design verification engineer,32,not_frontline,,draft_by_claude_needs_team_check
+principal scientist,32,not_frontline,,draft_by_claude_needs_team_check
+production associate,32,frontline,,draft_by_claude_needs_team_check
+investment banking analyst,31,not_frontline,,draft_by_claude_needs_team_check
+floor staff,31,frontline,,draft_by_claude_needs_team_check
+finance analyst,31,not_frontline,,draft_by_claude_needs_team_check
+product design engineer,31,not_frontline,,draft_by_claude_needs_team_check
+software development engineer in test (sdet),31,not_frontline,,draft_by_claude_needs_team_check
+ml engineer,31,not_frontline,,draft_by_claude_needs_team_check
+senior product marketing manager,31,not_frontline,,draft_by_claude_needs_team_check
+executive,31,not_frontline,,draft_by_claude_needs_team_check
+social media manager,31,not_frontline,,draft_by_claude_needs_team_check
+physical therapist,30,not_frontline,,draft_by_claude_needs_team_check
+machine operator,30,frontline,,draft_by_claude_needs_team_check
+human resources business partner hrbp,30,not_frontline,,draft_by_claude_needs_team_check
+valet attendant,30,frontline,,draft_by_claude_needs_team_check
+mortgage loan officer,30,not_frontline,,draft_by_claude_needs_team_check
+data entry clerk,30,not_frontline,hourly office work; counted not frontline,draft_by_claude_needs_team_check
+chef,30,frontline,,draft_by_claude_needs_team_check
+production engineer,30,not_frontline,,draft_by_claude_needs_team_check
+senior swe,30,not_frontline,,draft_by_claude_needs_team_check
+senior staff engineer,30,not_frontline,,draft_by_claude_needs_team_check
+technical support,30,not_frontline,,draft_by_claude_needs_team_check
+realtor,30,not_frontline,,draft_by_claude_needs_team_check
+senior machine learning engineer,29,not_frontline,,draft_by_claude_needs_team_check
+planner,29,not_frontline,,draft_by_claude_needs_team_check
+portfolio manager,29,not_frontline,,draft_by_claude_needs_team_check
+rn,29,not_frontline,same as registered nurse,draft_by_claude_needs_team_check
+production supervisor,29,not_frontline,,draft_by_claude_needs_team_check
+talent acquisition,29,not_frontline,,draft_by_claude_needs_team_check
+area manager ii,29,not_frontline,,draft_by_claude_needs_team_check
+manufacturing associate,29,frontline,,draft_by_claude_needs_team_check
+sr. project manager,29,not_frontline,,draft_by_claude_needs_team_check
+management,29,not_frontline,,draft_by_claude_needs_team_check
+scientist ii,29,not_frontline,,draft_by_claude_needs_team_check
+senior engineering manager,29,not_frontline,,draft_by_claude_needs_team_check
+senior auditor,29,not_frontline,,draft_by_claude_needs_team_check
+emergency medical technician (emt),29,frontline,,draft_by_claude_needs_team_check
+client advisor,28,vague,,draft_by_claude_needs_team_check
+food server,28,frontline,,draft_by_claude_needs_team_check
+field service engineer,28,not_frontline,,draft_by_claude_needs_team_check
+bdr,28,not_frontline,,draft_by_claude_needs_team_check
+grocery clerk,28,frontline,,draft_by_claude_needs_team_check
+operations specialist,28,vague,,draft_by_claude_needs_team_check
+it manager,28,not_frontline,,draft_by_claude_needs_team_check
+independent contractor,28,vague,,draft_by_claude_needs_team_check
+associate scientist,28,not_frontline,,draft_by_claude_needs_team_check
+director of engineering,28,not_frontline,,draft_by_claude_needs_team_check
+senior systems engineer,28,not_frontline,,draft_by_claude_needs_team_check
+lvn,28,frontline,,draft_by_claude_needs_team_check
+field engineer,28,not_frontline,,draft_by_claude_needs_team_check
+mid market account executive,27,not_frontline,,draft_by_claude_needs_team_check
+account director,27,not_frontline,,draft_by_claude_needs_team_check
+senior tpm,27,not_frontline,,draft_by_claude_needs_team_check
+software development engineer (sde) ii,27,not_frontline,,draft_by_claude_needs_team_check
+customer success,27,not_frontline,,draft_by_claude_needs_team_check
+food runner,27,frontline,,draft_by_claude_needs_team_check
+developer,27,not_frontline,,draft_by_claude_needs_team_check
+audit senior,27,not_frontline,,draft_by_claude_needs_team_check
+business operations manager,27,not_frontline,,draft_by_claude_needs_team_check
+member service representative,27,frontline,,draft_by_claude_needs_team_check
+ramp agent,27,frontline,,draft_by_claude_needs_team_check
+graduate research assistant,26,intern_student,,draft_by_claude_needs_team_check
+advisor,26,vague,,draft_by_claude_needs_team_check
+service manager,26,not_frontline,,draft_by_claude_needs_team_check
+member of technical staff(mts),26,not_frontline,,draft_by_claude_needs_team_check
+human resources manager,26,not_frontline,,draft_by_claude_needs_team_check
+production manager,26,not_frontline,,draft_by_claude_needs_team_check
+gtm,26,not_frontline,,draft_by_claude_needs_team_check
+hr coordinator,26,not_frontline,,draft_by_claude_needs_team_check
+busser/runner,26,frontline,,draft_by_claude_needs_team_check
+coach,26,vague,,draft_by_claude_needs_team_check
+software test engineer,26,not_frontline,,draft_by_claude_needs_team_check
+senior software developer,26,not_frontline,,draft_by_claude_needs_team_check
+technical account manager (tam),26,not_frontline,,draft_by_claude_needs_team_check
+autonomous vehicle operator,26,frontline,,draft_by_claude_needs_team_check
+front desk,26,frontline,,draft_by_claude_needs_team_check
+credit analyst,26,not_frontline,,draft_by_claude_needs_team_check
+graduate teaching assistant,26,intern_student,,draft_by_claude_needs_team_check
+part time cashier,26,frontline,,draft_by_claude_needs_team_check
+associate banker,26,not_frontline,,draft_by_claude_needs_team_check
+sr staff engineer,26,not_frontline,,draft_by_claude_needs_team_check
+graduate student researcher,25,intern_student,,draft_by_claude_needs_team_check
+production,25,vague,,draft_by_claude_needs_team_check
+engineering technician,25,not_frontline,,draft_by_claude_needs_team_check
+customer service agent,25,frontline,call-center or store service; counted frontline,draft_by_claude_needs_team_check
+senior technical program manager,25,not_frontline,,draft_by_claude_needs_team_check
+sales lead,25,frontline,,draft_by_claude_needs_team_check
+operations analyst,25,not_frontline,,draft_by_claude_needs_team_check
+in store shopper,25,frontline,,draft_by_claude_needs_team_check
+dispatcher,25,frontline,,draft_by_claude_needs_team_check
+janitor/cleaner,25,frontline,,draft_by_claude_needs_team_check
+hr generalist,25,not_frontline,,draft_by_claude_needs_team_check
+business systems analyst,25,not_frontline,,draft_by_claude_needs_team_check
+embedded software engineer,25,not_frontline,,draft_by_claude_needs_team_check
+director of operations,25,not_frontline,,draft_by_claude_needs_team_check
+nurse practitioner,25,not_frontline,,draft_by_claude_needs_team_check
+full stack developer,25,not_frontline,,draft_by_claude_needs_team_check
+senior designer,25,not_frontline,,draft_by_claude_needs_team_check
+audit intern,25,intern_student,,draft_by_claude_needs_team_check
+hr,25,not_frontline,,draft_by_claude_needs_team_check
+software engineer iii,25,not_frontline,,draft_by_claude_needs_team_check
+management trainee,25,not_frontline,,draft_by_claude_needs_team_check
+staff product manager,25,not_frontline,,draft_by_claude_needs_team_check
+office administrator,25,not_frontline,,draft_by_claude_needs_team_check
+personal trainer,25,frontline,hourly in-person service,draft_by_claude_needs_team_check
+key holder,25,frontline,,draft_by_claude_needs_team_check
+acount executive,25,not_frontline,,draft_by_claude_needs_team_check
+client success manager,25,not_frontline,,draft_by_claude_needs_team_check
+systems administrator,25,not_frontline,,draft_by_claude_needs_team_check
+industrial engineer,24,not_frontline,,draft_by_claude_needs_team_check
+produce clerk,24,frontline,,draft_by_claude_needs_team_check
+information technology,24,not_frontline,,draft_by_claude_needs_team_check
+forklift operator,24,frontline,,draft_by_claude_needs_team_check
+kitchen staff,24,frontline,,draft_by_claude_needs_team_check
+in home caregiver,24,frontline,,draft_by_claude_needs_team_check
+digital marketing manager,24,not_frontline,,draft_by_claude_needs_team_check
+production coordinator,24,not_frontline,,draft_by_claude_needs_team_check
+finance intern,24,intern_student,,draft_by_claude_needs_team_check
+dishwasher,24,frontline,,draft_by_claude_needs_team_check
+licensed realtor,24,not_frontline,,draft_by_claude_needs_team_check
+solutions consultant,24,not_frontline,,draft_by_claude_needs_team_check
+associate product manager,24,not_frontline,,draft_by_claude_needs_team_check
+research engineer,24,not_frontline,,draft_by_claude_needs_team_check
+tax senior,24,not_frontline,,draft_by_claude_needs_team_check
+hr manager,24,not_frontline,,draft_by_claude_needs_team_check
+phd student,24,intern_student,,draft_by_claude_needs_team_check
+part time package handler,24,frontline,,draft_by_claude_needs_team_check
+inventory specialist,24,frontline,,draft_by_claude_needs_team_check
+software intern,24,intern_student,,draft_by_claude_needs_team_check
+sr program manager,23,not_frontline,,draft_by_claude_needs_team_check
+math tutor,23,not_frontline,hourly but education; counted not frontline,draft_by_claude_needs_team_check
+starbucks-barista,23,frontline,,draft_by_claude_needs_team_check
+video editor,23,not_frontline,,draft_by_claude_needs_team_check
+art director,23,not_frontline,,draft_by_claude_needs_team_check
+staff pharmacist,23,not_frontline,,draft_by_claude_needs_team_check
+supply chain analyst,23,not_frontline,,draft_by_claude_needs_team_check
+tax manager,23,not_frontline,,draft_by_claude_needs_team_check
+social worker,23,not_frontline,,draft_by_claude_needs_team_check
+supply chain,22,not_frontline,,draft_by_claude_needs_team_check
+server/waitress,22,frontline,,draft_by_claude_needs_team_check
+director of sales,22,not_frontline,,draft_by_claude_needs_team_check
+operator,22,vague,,draft_by_claude_needs_team_check
+guest service representative,22,frontline,,draft_by_claude_needs_team_check
+clinical specialist,22,not_frontline,,draft_by_claude_needs_team_check
+global supply manager,22,not_frontline,,draft_by_claude_needs_team_check
+sales assistant,22,frontline,,draft_by_claude_needs_team_check
+field sales representative,22,not_frontline,,draft_by_claude_needs_team_check
+general merchandise expert,22,frontline,,draft_by_claude_needs_team_check
+tech lead,22,not_frontline,,draft_by_claude_needs_team_check
+technical support specialist,22,not_frontline,,draft_by_claude_needs_team_check
+data analyst intern,22,intern_student,,draft_by_claude_needs_team_check
+stock associate,22,frontline,,draft_by_claude_needs_team_check
+communications manager,21,not_frontline,,draft_by_claude_needs_team_check
+data engineer intern,21,intern_student,,draft_by_claude_needs_team_check
+senior vice president,21,not_frontline,,draft_by_claude_needs_team_check
+class a truck driver,21,frontline,,draft_by_claude_needs_team_check
+facilities manager,21,not_frontline,,draft_by_claude_needs_team_check
+sales floor team member,21,frontline,,draft_by_claude_needs_team_check
+anonymous- salaried staff,21,exclude,,draft_by_claude_needs_team_check
+senior devops engineer,21,not_frontline,,draft_by_claude_needs_team_check
+quality assurance engineer,21,not_frontline,,draft_by_claude_needs_team_check
+trainer,21,vague,,draft_by_claude_needs_team_check
+payroll specialist,21,not_frontline,,draft_by_claude_needs_team_check
+regional manager,21,not_frontline,,draft_by_claude_needs_team_check
+it engineer,21,not_frontline,,draft_by_claude_needs_team_check
+territory sales manager,21,not_frontline,,draft_by_claude_needs_team_check
+senior research scientist,21,not_frontline,,draft_by_claude_needs_team_check
+tax intern,21,intern_student,,draft_by_claude_needs_team_check
+chief executive officer (ceo),21,not_frontline,,draft_by_claude_needs_team_check
+physician assistant,21,not_frontline,,draft_by_claude_needs_team_check
+firmware engineer,21,not_frontline,,draft_by_claude_needs_team_check
+it technician,21,not_frontline,,draft_by_claude_needs_team_check
+service technician,20,not_frontline,skilled trade; counted not frontline,draft_by_claude_needs_team_check
+sr. manager it,20,not_frontline,,draft_by_claude_needs_team_check
+courtesy clerk/bagger,20,frontline,,draft_by_claude_needs_team_check
+retail merchandiser,20,frontline,,draft_by_claude_needs_team_check
+counselor,20,not_frontline,,draft_by_claude_needs_team_check
+electrical engineering intern,20,intern_student,,draft_by_claude_needs_team_check
+licensed marriage and family therapist (lmft),20,not_frontline,,draft_by_claude_needs_team_check
+applied scientist ii,20,not_frontline,,draft_by_claude_needs_team_check
+assistant buyer,20,not_frontline,,draft_by_claude_needs_team_check
+implementation manager,20,not_frontline,,draft_by_claude_needs_team_check
+dasher (driver),20,frontline,,draft_by_claude_needs_team_check
+head cashier,20,frontline,,draft_by_claude_needs_team_check
+site reliability engineer,20,not_frontline,,draft_by_claude_needs_team_check
+sr financial analyst,20,not_frontline,,draft_by_claude_needs_team_check

@@ -1,0 +1,4 @@
+test_set,n,share_frontline,baseline_accuracy,accuracy,precision,recall,f1
+onet_titles_from_unseen_occupations,9644,0.565,0.565,0.843,0.861,0.86,0.861
+hand_labeled_titles_not_in_onet,183,0.208,0.792,0.918,0.829,0.763,0.795
+keyword_patterns_on_hand_labeled_titles,371,0.264,0.736,0.992,1.0,0.969,0.984
