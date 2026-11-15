@@ -94,8 +94,26 @@ These commands may overwrite existing output files. Run them in a fresh clone if
 
 ## Google Colab notebook
 
-- [Open the committed notebook](https://colab.research.google.com/drive/1VEsaUQgcvO3q5Jjt1qqRjaH2DgirDx9k#scrollTo=KFl74H0e_c8h)
-- [Open the working Google Colab notebook](https://colab.research.google.com/drive/1ZVuHb4icMdGNdPAk1N1Efz_LDrrUBkSn)
+
+## Google Colab Notebook
+
+[![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Sriram-Karthik17/lookout/blob/main/Lookout.ipynb)
+
+### How to Run
+
+1. Click the Open in Colab badge above.
+2. Select Runtime → Run all.
+3. Explore the model results, visualizations,
+   fairness analysis, and predictions.
+
+### Reproducing Results
+
+To regenerate the training data and model results:
+
+1. Set REBUILD = True in the notebook.
+2. Set RETRAIN = True in the notebook.
+3. Select Runtime → Run all.
+
 
 
 The committed notebook defaults to reading generated results. Set `REBUILD = True` or `RETRAIN = True` in the appropriate cells only when you intend to regenerate those files.
