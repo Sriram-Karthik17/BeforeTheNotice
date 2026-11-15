@@ -94,7 +94,7 @@ These commands may overwrite existing output files. Run them in a fresh clone if
 
 ## Google Colab notebook
 
-- [Open the committed notebook](https://colab.research.google.com/github/Sriram-Karthik17/lookout/blob/main/BeforeTheNotice.ipynb)
+- [Open the committed notebook](https://colab.research.google.com/drive/1VEsaUQgcvO3q5Jjt1qqRjaH2DgirDx9k#scrollTo=KFl74H0e_c8h)
 - [Open the working Google Colab notebook](https://colab.research.google.com/drive/1ZVuHb4icMdGNdPAk1N1Efz_LDrrUBkSn)
 
 
