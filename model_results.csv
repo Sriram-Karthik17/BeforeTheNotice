@@ -1,0 +1,9 @@
+model,rows,layoff_cases,top10_right,top10_precision,top10_recall,top20_right,top20_precision,top20_recall,top50_right,top50_precision,top50_recall,auc,pr_auc
+baseline: random guess,7037,304,5 of 70,0.071,0.016,6 of 140,0.043,0.02,11 of 350,0.031,0.036,0.514,0.048
+baseline: most recent WARN filer first,7037,304,28 of 70,0.4,0.092,52 of 140,0.371,0.171,107 of 350,0.306,0.352,0.811,0.266
+baseline: biggest company first,7037,304,23 of 70,0.329,0.076,51 of 140,0.364,0.168,103 of 350,0.294,0.339,0.812,0.259
+model: WARN history + review volume,7037,304,47 of 70,0.671,0.155,75 of 140,0.536,0.247,134 of 350,0.383,0.441,0.856,0.359
+model: + review content,7037,304,43 of 70,0.614,0.141,72 of 140,0.514,0.237,128 of 350,0.366,0.421,0.851,0.345
+model: + review content + stock,7037,304,40 of 70,0.571,0.132,71 of 140,0.507,0.234,130 of 350,0.371,0.428,0.839,0.328
+boosted trees: everything,7037,304,45 of 70,0.643,0.148,76 of 140,0.543,0.25,135 of 350,0.386,0.444,0.85,0.385
+boosted trees: reviews only,7037,304,38 of 70,0.543,0.125,66 of 140,0.471,0.217,108 of 350,0.309,0.355,0.8,0.279

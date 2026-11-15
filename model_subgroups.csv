@@ -1,0 +1,14 @@
+breakdown,group,rows,layoff_cases,share_with_layoff,caught_in_top50,auc
+frontline,frontline-heavy,1580,13,0.008,0.462,0.689
+frontline,office-heavy,5457,291,0.053,0.44,0.86
+history,filed before,1194,222,0.186,0.604,0.746
+history,first-time,5843,82,0.014,0.0,0.691
+stock,no stock data,5281,103,0.02,0.214,0.751
+stock,public (has stock),1756,201,0.114,0.557,0.848
+sector,education,184,4,0.022,0.0,0.529
+sector,food_service,382,0,0.0,0.0,
+sector,healthcare,309,6,0.019,0.0,0.658
+sector,management,249,4,0.016,0.5,0.777
+sector,other or unknown,744,8,0.011,0.125,0.756
+sector,professional,4358,273,0.063,0.462,0.861
+sector,retail,811,9,0.011,0.556,0.83
