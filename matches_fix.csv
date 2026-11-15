@@ -110,7 +110,6 @@ chegg,chegg,100.0,exact,1,Chegg,62,50,Chegg,,1,0,0,,2025-05-13,False,0,0,0.0
 chevron,chevron,100.0,exact,8,Chevron,106,93,Chevron,,8,3,300,2025-08-22,2025-03-28,False,23,22,0.22
 childrens hospital los angeles,childrens hospital los angeles,100.0,exact,1,Children's Hospital Los Angeles,13,13,Children's Hospital Los Angeles,,1,1,439,2025-08-27,2025-08-27,False,4,4,0.31
 childrens institute,childrens institute,100.0,exact,1,Children's Institute Inc.,5,5,Children's Institute,,1,1,47,2026-04-30,2026-04-30,False,0,0,0.0
-cisco systems,cisco systems,100.0,exact,14,"Cisco Systems, Inc.",1,1,Cisco Systems,,14,5,692,2025-08-13,2023-07-17,True,0,0,0.0
 city national bank,city national bank,100.0,exact,26,City National Bank,79,79,City National Bank,,26,10,66,2026-01-30,2023-09-13,True,2,2,0.03
 city of hope,city of hope,100.0,exact,3,City of Hope,16,16,City of Hope,,3,3,269,2025-09-25,2025-09-25,False,6,6,0.38
 cj logistics america,cj logistics america,100.0,exact,2,CJ Logistics America,1,0,CJ Logistics America,,2,1,71,2026-02-27,2025-04-29,False,1,0,1.0
@@ -537,3 +536,6 @@ michaels stores,michaels,100.0,manual,1,"Michaels Stores Procurement, Inc.",59,4
 petco animal supplies stores,petco,100.0,manual,2,Petco Animal Supplies Stores,131,111,Petco,ADDED: frontline-heavy company missed by name matching,2,0,0,,2023-07-24,True,45,34,0.34
 fedex supply chain,fedex,100.0,manual,1,"FedEx Supply Chain, Inc.",302,188,FedEx,ADDED: frontline-heavy company missed by name matching,1,0,0,,2024-01-19,True,222,156,0.74
 universal protection service,allied universal,100.0,manual,8,"Universal Protection Service, LP dba Allied Universal Security Services",128,109,Allied Universal,ADDED: frontline-heavy company missed by name matching,8,0,0,,2023-07-27,True,107,89,0.84
+meta platforms,meta,100.0,manual,21,"Meta Platforms, Inc.",2427,2350,Meta,"ADDED: WARN files as 'Meta Platforms, Inc.'; missed by name matching",21,21,4150,2025-10-22,2025-10-22,False,21,21,0.01
+oracle america,oracle,100.0,manual,16,"Oracle America, Inc.",735,527,Oracle,"ADDED: WARN files as 'Oracle America, Inc.'; missed by name matching",16,15,1691,2025-08-13,2023-11-13,True,2,2,0.01
+cisco systems,cisco,100.0,manual,14,"Cisco Systems, Inc.",561,491,Cisco,FIXED: was 'Cisco Systems' (1 review); main Glassdoor page is 'Cisco',14,5,692,2025-08-13,2023-07-17,True,1,1,0.0

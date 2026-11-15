@@ -1,0 +1,322 @@
+company,ticker,link,source,n_ca_reviews,has_warn_match
+Google,GOOGL,direct,manual,2111,True
+Meta,META,direct,manual,1703,True
+Amazon,AMZN,direct,sp500_company_list,1529,True
+Apple,AAPL,direct,sp500_company_list,1298,True
+Tesla,TSLA,direct,sp500_company_list,937,True
+Starbucks,SBUX,direct,sp500_company_list,915,False
+McDonald's,MCD,direct,sp500_company_list,902,True
+Target,TGT,direct,sp500_company_list,781,True
+Walmart,WMT,direct,sp500_company_list,691,True
+Northrop Grumman,NOC,direct,sp500_company_list,561,True
+Intuit,INTU,direct,sp500_company_list,547,True
+Salesforce,CRM,direct,sp500_company_list,438,True
+Cisco,CSCO,direct,manual,438,True
+Oracle,ORCL,direct,sp500_company_list,411,True
+Walt Disney Company,DIS,direct,sp500_company_list,401,True
+NVIDIA,NVDA,direct,sp500_company_list,367,False
+LinkedIn,MSFT,parent_company,manual,338,True
+Microsoft,MSFT,direct,sp500_company_list,337,True
+Intel Corporation,INTC,direct,sp500_company_list,315,True
+Qualcomm,QCOM,direct,sp500_company_list,315,True
+The Home Depot,HD,direct,sp500_company_list,306,False
+DoorDash,DASH,direct,manual,297,False
+Workday,WDAY,direct,manual,292,True
+ServiceNow,NOW,direct,sp500_company_list,291,True
+Wells Fargo,WFC,direct,sp500_company_list,290,True
+Adobe,ADBE,direct,sp500_company_list,270,False
+Uber,UBER,direct,manual,255,True
+Chipotle,CMG,direct,manual,244,False
+Best Buy,BBY,direct,sp500_company_list,222,True
+Accenture,ACN,direct,sp500_company_list,220,True
+Thermo Fisher Scientific,TMO,direct,sp500_company_list,217,True
+Netflix,NFLX,direct,sp500_company_list,210,True
+CVS Health,CVS,direct,sp500_company_list,208,True
+Whole Foods Market,AMZN,parent_company,manual,198,False
+Bank of America,BAC,direct,sp500_company_list,197,False
+Costco Wholesale,COST,direct,sp500_company_list,196,False
+Palo Alto Networks,PANW,direct,sp500_company_list,194,False
+Boeing,BA,direct,sp500_company_list,193,True
+Applied Materials,AMAT,direct,sp500_company_list,193,True
+PayPal,PYPL,direct,sp500_company_list,191,True
+FedEx,FDX,direct,sp500_company_list,188,True
+Macy's,M,direct,manual,183,True
+Lucid Motors,LCID,direct,manual,179,False
+Visa Inc.,V,direct,sp500_company_list,179,True
+IBM,IBM,direct,manual,175,False
+Block,XYZ,direct,manual,171,True
+JPMorganChase,JPM,direct,manual,168,False
+Johnson & Johnson,JNJ,direct,sp500_company_list,166,False
+Rivian,RIVN,direct,manual,164,False
+"Super Micro Computer, Inc. (Supermicro)",SMCI,direct,sp500_company_list,164,False
+Gilead Sciences,GILD,direct,sp500_company_list,163,True
+Broadcom,AVGO,direct,sp500_company_list,162,True
+Snap,SNAP,direct,manual,162,True
+Safeway,ACI,parent_company,manual,161,True
+Abbott,ABT,direct,manual,160,False
+Taco Bell,YUM,parent_company,manual,156,False
+Amgen,AMGN,direct,sp500_company_list,153,True
+Medtronic,MDT,direct,sp500_company_list,153,True
+NBCUniversal,CMCSA,parent_company,manual,150,True
+AT&T,T,direct,sp500_company_list,149,True
+Lockheed Martin,LMT,direct,sp500_company_list,149,True
+Pacific Gas and Electric,PCG,direct,sp500_company_list,143,False
+UPS,UPS,direct,manual,137,True
+Illumina,ILMN,direct,manual,132,True
+eBay,EBAY,direct,sp500_company_list,132,True
+Roblox,RBLX,direct,manual,131,False
+T-Mobile,TMUS,direct,manual,130,False
+Instacart,CART,direct,manual,122,True
+Ross Stores,ROST,direct,sp500_company_list,122,False
+Sprouts Farmers Market,SFM,direct,manual,122,False
+Hewlett Packard Enterprise | HPE,HPE,direct,manual,121,True
+Intuitive,ISRG,direct,manual,121,False
+Kohl's,KSS,direct,manual,120,True
+Optum,UNH,parent_company,manual,119,True
+lululemon,LULU,direct,manual,115,False
+Snowflake,SNOW,direct,manual,115,False
+East West Bank,EWBC,direct,manual,114,False
+Petco,WOOF,direct,manual,112,True
+Zoox,AMZN,parent_company,manual,111,False
+Lowe's Home Improvement,LOW,direct,manual,110,False
+Cruise,GM,parent_company,manual,110,True
+Albertsons Companies,ACI,direct,manual,109,True
+Sunrun,RUN,direct,manual,108,True
+Marriott International,MAR,direct,sp500_company_list,105,True
+Infosys,INFY,direct,manual,104,False
+Marvell Technology,MRVL,direct,manual,104,False
+Airbnb,ABNB,direct,sp500_company_list,103,False
+SAP,SAP,direct,manual,102,False
+Southern California Edison,EIX,parent_company,manual,102,True
+Cepheid,DHR,parent_company,manual,102,True
+ASML,ASML,direct,manual,102,False
+Warner Bros. Discovery,WBD,direct,sp500_company_list,102,True
+Ulta Beauty,ULTA,direct,sp500_company_list,100,False
+Yelp,YELP,direct,manual,100,False
+Lyft,LYFT,direct,manual,100,False
+CBRE,CBRE,direct,sp500_company_list,99,True
+U.S. Bank,USB,direct,manual,98,True
+Booz Allen Hamilton,BAH,direct,manual,98,False
+AMD,AMD,direct,manual,97,True
+Lam Research,LRCX,direct,sp500_company_list,97,False
+Robert Half,RHI,direct,manual,96,False
+Samsara,IOT,direct,manual,96,False
+ADP,ADP,direct,manual,96,False
+Chevron,CVX,direct,sp500_company_list,94,True
+Autodesk,ADSK,direct,sp500_company_list,90,True
+Nutanix,NTNX,direct,manual,90,True
+Jack in the Box,JACK,direct,manual,88,False
+BILL,BILL,direct,manual,88,False
+Mattel,MAT,direct,manual,88,True
+Pinterest,PINS,direct,manual,87,True
+Old Navy,GAP,parent_company,manual,86,False
+LPL Financial,LPLA,direct,manual,86,True
+J.P. Morgan,JPM,direct,manual,86,False
+Vons,ACI,parent_company,manual,85,True
+BD,BDX,direct,manual,84,False
+Edwards Lifesciences,EW,direct,sp500_company_list,84,True
+ServiceTitan,TTAN,direct,manual,84,False
+Ralphs,KR,parent_company,manual,83,False
+Bio-Rad Laboratories,BIO,direct,manual,82,True
+Amazon Web Services,AMZN,parent_company,manual,81,False
+AbbVie,ABBV,direct,sp500_company_list,81,True
+C3 AI,AI,direct,manual,81,True
+Okta,OKTA,direct,manual,80,True
+Fortinet,FTNT,direct,sp500_company_list,79,False
+The Cheesecake Factory,CAKE,direct,manual,79,False
+Asana,ASAN,direct,manual,79,True
+Dexcom,DXCM,direct,sp500_company_list,78,True
+Atlassian,TEAM,direct,manual,78,True
+KLA,KLAC,direct,sp500_company_list,78,False
+Domino's,DPZ,direct,manual,77,False
+Western Digital,WDC,direct,sp500_company_list,74,True
+Viasat,VSAT,direct,manual,74,True
+TJ Maxx,TJX,parent_company,manual,73,False
+Levi Strauss,LEVI,direct,manual,73,False
+Spectrum,CHTR,parent_company,manual,73,False
+NIKE,NKE,direct,sp500_company_list,72,False
+Zoom Communications,ZM,direct,manual,72,False
+Juniper Networks,JNPR,direct,sp500_company_list,71,True
+Verizon,VZ,direct,manual,70,True
+"Williams-Sonoma, Inc.",WSM,direct,manual,69,False
+Gap,GAP,direct,manual,69,True
+Avis Budget Group,CAR,direct,manual,69,False
+Molina Healthcare,MOH,direct,sp500_company_list,68,True
+Gap Inc.,GAP,direct,manual,68,False
+Hertz,HTZ,direct,manual,68,False
+AMC Entertainment,AMC,direct,manual,67,False
+Docusign,DOCU,direct,manual,67,False
+loanDepot,LDI,direct,manual,67,False
+Coinbase,COIN,direct,manual,67,False
+HP Inc.,HPQ,direct,sp500_company_list,66,False
+Compass,COMP,direct,manual,65,False
+Tillys,TLYS,direct,manual,65,False
+United Airlines,UAL,direct,sp500_company_list,64,False
+CarMax,KMX,direct,sp500_company_list,64,False
+Vans,VFC,parent_company,manual,64,False
+Jones Lang LaSalle,JLL,direct,manual,64,False
+AutoZone,AZO,direct,sp500_company_list,63,False
+Burlington Stores,BURL,direct,manual,63,False
+Hollister Co.,ANF,parent_company,manual,62,False
+Live Nation Entertainment,LYV,direct,sp500_company_list,61,False
+BJ's Restaurants,BJRI,direct,manual,61,False
+Robinhood,HOOD,direct,manual,61,False
+SoFi,SOFI,direct,manual,61,False
+Blizzard Entertainment,MSFT,parent_company,manual,60,False
+Natera,NTRA,direct,manual,60,False
+L3Harris,LHX,direct,manual,60,False
+Tandem Diabetes,TNDM,direct,manual,60,False
+Synopsys,SNPS,direct,sp500_company_list,59,True
+Olive Garden Italian Restaurants,DRI,parent_company,manual,58,False
+Applebee's,DIN,parent_company,manual,58,False
+DICK'S Sporting Goods,DKS,direct,manual,58,False
+AMN Healthcare,AMN,direct,manual,58,False
+Hilton,HLT,direct,manual,58,True
+Zscaler,ZS,direct,manual,58,False
+Raytheon,RTX,direct,manual,58,True
+Cadence Design Systems,CDNS,direct,sp500_company_list,57,False
+AppFolio,APPF,direct,manual,57,True
+Agilent Technologies,A,direct,sp500_company_list,57,True
+Electronic Arts,EA,direct,sp500_company_list,57,False
+Cognizant,CTSH,direct,manual,57,False
+BioMarin Pharmaceutical,BMRN,direct,manual,56,True
+Box,BOX,direct,manual,56,False
+Twilio,TWLO,direct,manual,56,False
+RadNet,RDNT,direct,manual,55,False
+Six Flags,FUN,direct,manual,55,True
+Procore Technologies,PCOR,direct,manual,55,False
+Dell Technologies,DELL,direct,sp500_company_list,54,False
+Dutch Bros.,BROS,direct,manual,54,False
+Stryker,SYK,direct,sp500_company_list,54,False
+BlackRock,BLK,direct,sp500_company_list,54,False
+The Clorox Company,CLX,direct,sp500_company_list,53,False
+Masimo,MASI,direct,manual,53,True
+Pizza Hut,YUM,parent_company,manual,53,True
+H&R Block,HRB,direct,manual,52,False
+ABC,DIS,parent_company,manual,52,False
+Dolby,DLB,direct,manual,52,False
+RTX,RTX,direct,sp500_company_list,52,True
+Marshalls,TJX,parent_company,manual,51,True
+Victoria's Secret,VSCO,direct,manual,51,False
+PepsiCo,PEP,direct,sp500_company_list,51,False
+Universal Studios,CMCSA,parent_company,manual,51,False
+Keysight Technologies,KEYS,direct,sp500_company_list,51,False
+Teradata,TDC,direct,manual,50,False
+YouTube,GOOGL,parent_company,manual,50,False
+Dropbox,DBX,direct,manual,50,True
+CoStar Group,CSGP,direct,sp500_company_list,50,False
+CrowdStrike,CRWD,direct,sp500_company_list,50,False
+Disneyland Resort,DIS,parent_company,manual,49,True
+Sam's Club,WMT,parent_company,manual,49,False
+RH,RH,direct,manual,47,False
+Capital One,COF,direct,manual,47,False
+Hyatt,H,direct,manual,47,False
+Splunk,CSCO,parent_company,manual,47,True
+Abercrombie & Fitch,ANF,direct,manual,46,False
+Chili's Grill and Bar,EAT,parent_company,manual,46,False
+Amazon Flex,AMZN,parent_company,manual,46,False
+Wendy's,WEN,direct,manual,46,False
+Equinix,EQIX,direct,sp500_company_list,46,True
+Dollar Tree,DLTR,direct,sp500_company_list,46,False
+Cintas,CTAS,direct,sp500_company_list,45,False
+Essex Property Trust,ESS,direct,sp500_company_list,44,False
+Centene,CNC,direct,sp500_company_list,44,False
+Quest Diagnostics,DGX,direct,sp500_company_list,44,False
+NetApp,NTAP,direct,sp500_company_list,44,True
+Morgan Stanley,MS,direct,sp500_company_list,42,False
+Skyworks Solutions,SWKS,direct,sp500_company_list,39,False
+Elevance Health,ELV,direct,sp500_company_list,39,True
+Texas Instruments,TXN,direct,sp500_company_list,37,False
+DaVita,DVA,direct,sp500_company_list,37,False
+Arista Networks,ANET,direct,sp500_company_list,37,False
+Leidos,LDOS,direct,sp500_company_list,37,False
+Labcorp,LH,direct,sp500_company_list,36,False
+Goldman Sachs,GS,direct,sp500_company_list,36,False
+Cognizant Technology Solutions,CTSH,direct,sp500_company_list,35,False
+Comcast,CMCSA,direct,sp500_company_list,35,True
+Analog Devices,ADI,direct,sp500_company_list,34,True
+Sherwin-Williams,SHW,direct,sp500_company_list,33,False
+Travelers,TRV,direct,sp500_company_list,33,False
+Delta Air Lines,DAL,direct,sp500_company_list,33,False
+Charles Schwab,SCHW,direct,sp500_company_list,32,False
+UnitedHealth Group,UNH,direct,sp500_company_list,31,False
+Hologic,HOLX,direct,sp500_company_list,31,False
+Pfizer,PFE,direct,sp500_company_list,31,True
+Paychex,PAYX,direct,sp500_company_list,30,False
+IQVIA,IQV,direct,sp500_company_list,30,False
+Resmed,RMD,direct,sp500_company_list,30,True
+Southwest Airlines,LUV,direct,sp500_company_list,29,False
+Extra Space Storage,EXR,direct,sp500_company_list,29,False
+Fox Corporation,FOXA,direct,sp500_company_list,28,False
+Parker Hannifin,PH,direct,sp500_company_list,28,True
+Public Storage,PSA,direct,sp500_company_list,27,False
+Revvity,RVTY,direct,sp500_company_list,27,False
+Ford Motor Company,F,direct,sp500_company_list,26,False
+Allstate,ALL,direct,sp500_company_list,25,False
+Gartner,IT,direct,sp500_company_list,25,False
+Boston Scientific,BSX,direct,sp500_company_list,25,True
+Prologis,PLD,direct,sp500_company_list,24,False
+Micron Technology,MU,direct,sp500_company_list,23,False
+Sysco,SYY,direct,sp500_company_list,23,False
+Align Technology,ALGN,direct,sp500_company_list,23,False
+Lennar,LEN,direct,sp500_company_list,23,False
+Eaton,ETN,direct,sp500_company_list,23,False
+United Rentals,URI,direct,sp500_company_list,22,False
+Equity Residential,EQR,direct,sp500_company_list,20,False
+Howmet Aerospace,HWM,direct,sp500_company_list,20,False
+Procter & Gamble,PG,direct,sp500_company_list,20,False
+Seagate Technology,STX,direct,sp500_company_list,20,False
+Merck,MRK,direct,sp500_company_list,20,False
+Teledyne Technologies,TDY,direct,sp500_company_list,19,False
+Motorola Solutions,MSI,direct,sp500_company_list,18,False
+Ecolab,ECL,direct,sp500_company_list,18,False
+Insulet Corporation,PODD,direct,sp500_company_list,18,False
+Fastenal,FAST,direct,sp500_company_list,17,False
+Constellation Brands,STZ,direct,sp500_company_list,17,True
+Aflac,AFL,direct,sp500_company_list,17,False
+Palantir Technologies,PLTR,direct,sp500_company_list,17,False
+Cardinal Health,CAH,direct,sp500_company_list,17,False
+NXP Semiconductors,NXPI,direct,sp500_company_list,17,False
+The Coca-Cola Company,KO,direct,sp500_company_list,16,True
+Microchip Technology,MCHP,direct,sp500_company_list,16,False
+General Motors (GM),GM,direct,sp500_company_list,16,False
+Chubb,CB,direct,sp500_company_list,16,False
+Jabil,JBL,direct,sp500_company_list,16,True
+TE Connectivity,TEL,direct,sp500_company_list,16,True
+Moody's,MCO,direct,sp500_company_list,16,False
+Keurig Dr Pepper,KDP,direct,sp500_company_list,15,False
+State Street,STT,direct,sp500_company_list,15,False
+Ralph Lauren,RL,direct,sp500_company_list,15,False
+Danaher,DHR,direct,sp500_company_list,14,False
+American Express,AXP,direct,sp500_company_list,14,False
+Marathon Petroleum,MPC,direct,sp500_company_list,14,False
+Bristol Myers Squibb,BMY,direct,sp500_company_list,14,True
+Fiserv,FI,direct,sp500_company_list,13,False
+Global Payments,GPN,direct,sp500_company_list,13,False
+Dollar General,DG,direct,sp500_company_list,13,False
+The Cigna Group,CI,direct,sp500_company_list,13,False
+Mastercard,MA,direct,sp500_company_list,13,False
+EPAM Systems,EPAM,direct,sp500_company_list,13,False
+"The TJX Companies, Inc.",TJX,direct,sp500_company_list,12,False
+AvalonBay Communities,AVB,direct,sp500_company_list,12,False
+Republic Services,RSG,direct,sp500_company_list,12,False
+Humana,HUM,direct,sp500_company_list,12,False
+GoDaddy,GDDY,direct,sp500_company_list,12,False
+Henry Schein,HSIC,direct,sp500_company_list,11,False
+Teradyne,TER,direct,sp500_company_list,11,False
+Expedia Group,EXPE,direct,sp500_company_list,11,False
+HCA Healthcare,HCA,direct,sp500_company_list,11,False
+Yum! Brands,YUM,direct,sp500_company_list,11,False
+Monolithic Power Systems,MPWR,direct,sp500_company_list,11,False
+Kroger,KR,direct,sp500_company_list,10,False
+Aon,AON,direct,sp500_company_list,10,False
+Realty Income,O,direct,sp500_company_list,10,False
+Crown Castle,CCI,direct,sp500_company_list,10,False
+Phillips 66,PSX,direct,sp500_company_list,10,True
+Estée Lauder Companies,EL,direct,sp500_company_list,10,False
+Solventum,SOLV,direct,sp500_company_list,10,False
+PNC Financial Services Group,PNC,direct,sp500_company_list,10,False
+Amphenol,APH,direct,sp500_company_list,10,False
+F5,FFIV,direct,sp500_company_list,10,False
+Becton Dickinson,BDX,direct,sp500_company_list,10,False
+Charter Communications,CHTR,direct,sp500_company_list,10,True
