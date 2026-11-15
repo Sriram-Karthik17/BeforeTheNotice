@@ -1,0 +1,605 @@
+rank,company,risk_level,reason,risk_score,last_notice_date,notices_past_year,frontline_share,sector,as_of
+1,ServiceNow,High,"8 WARN notices in the past year, most recent 5 days ago, 486 workers affected, 2 sites",0.993,2026-11-04,8,0.0,professional,2026-11-09
+2,Meta,High,"16 WARN notices in the past year, most recent 167 days ago, 3,842 workers affected, 10 sites",0.991,2026-05-26,16,0.0,professional,2026-11-09
+3,City National Bank,High,"10 WARN notices in the past year, most recent 5 days ago, 66 workers affected, 4 sites",0.986,2026-11-04,10,0.0,professional,2026-11-09
+4,Apple,High,"4 WARN notices in the past year, most recent 80 days ago, 204 workers affected, 4 sites",0.984,2026-08-21,4,0.12,professional,2026-11-09
+5,Oracle,High,"7 WARN notices in the past year, most recent 55 days ago, 1,143 workers affected, 4 sites",0.981,2026-09-15,7,0.0,professional,2026-11-09
+6,Walmart,High,"9 WARN notices in the past year, most recent 139 days ago, 394 workers affected, 9 sites",0.974,2026-06-23,9,0.43,professional,2026-11-09
+7,Walt Disney Company,High,"1 WARN notice in the past year, most recent 13 days ago, 159 workers affected",0.974,2026-10-27,1,0.19,professional,2026-11-09
+8,Intel Corporation,High,"14 WARN notices in the past year, most recent 18 days ago, 281 workers affected, 8 sites",0.974,2026-10-22,14,0.0,professional,2026-11-09
+9,Uber,High,"11 WARN notices in the past year, most recent 55 days ago, 463 workers affected, 7 sites",0.973,2026-09-15,11,0.07,professional,2026-11-09
+10,Salesforce,High,"3 WARN notices in the past year, most recent 96 days ago, 211 workers affected",0.969,2026-08-05,3,0.0,professional,2026-11-09
+11,Google,Elevated,"7 WARN notices in the past year, most recent 286 days ago, 77 workers affected, 7 sites",0.965,2026-01-27,7,0.01,professional,2026-11-09
+12,Workday,Elevated,"2 WARN notices in the past year, most recent 41 days ago, 296 workers affected",0.965,2026-09-29,2,0.02,professional,2026-11-09
+13,Netflix,Elevated,"3 WARN notices in the past year, most recent 21 days ago, 553 workers affected, 3 sites",0.961,2026-10-19,3,0.04,professional,2026-11-09
+14,Cepheid,Elevated,"7 WARN notices in the past year, most recent 6 days ago, 67 workers affected, 6 sites",0.954,2026-11-03,7,0.0,professional,2026-11-09
+15,eBay,Elevated,"4 WARN notices in the past year, most recent 19 days ago, 698 workers affected, 4 sites",0.951,2026-10-21,4,0.0,professional,2026-11-09
+16,Illumina,Elevated,"4 WARN notices in the past year, most recent 321 days ago, 18 workers affected",0.948,2025-12-23,4,0.04,professional,2026-11-09
+17,LinkedIn,Elevated,"5 WARN notices in the past year, most recent 178 days ago, 606 workers affected, 5 sites",0.947,2026-05-15,5,0.01,professional,2026-11-09
+18,Intuit,Elevated,"4 WARN notices in the past year, most recent 172 days ago, 910 workers affected, 4 sites",0.947,2026-05-21,4,0.02,professional,2026-11-09
+19,Qualcomm,Elevated,"20 WARN notices in the past year, most recent 214 days ago, 105 workers affected, 19 sites",0.944,2026-04-09,20,0.0,professional,2026-11-09
+20,Wells Fargo,Elevated,"3 WARN notices in the past year, most recent 250 days ago, 141 workers affected, 2 sites",0.944,2026-03-04,3,0.2,professional,2026-11-09
+21,McDonald's,Elevated,"1 WARN notice in the past year, most recent 131 days ago, 2 workers affected",0.942,2026-07-01,1,0.91,food_service,2026-11-09
+22,Gilead Sciences,Elevated,"4 WARN notices in the past year, most recent 192 days ago, 210 workers affected, 3 sites",0.942,2026-05-01,4,0.0,professional,2026-11-09
+23,Snap,Elevated,"2 WARN notices in the past year, most recent 207 days ago, 320 workers affected, 2 sites",0.936,2026-04-16,2,0.0,professional,2026-11-09
+24,PayPal,Elevated,"1 WARN notice in the past year, most recent 69 days ago, 251 workers affected",0.934,2026-09-01,1,0.0,professional,2026-11-09
+25,Experian,Elevated,"4 WARN notices in the past year, most recent 222 days ago, 71 workers affected",0.93,2026-04-01,4,0.0,professional,2026-11-09
+26,Target,Elevated,Last WARN notice 831 days ago; none in the past year,0.922,2024-07-31,0,0.81,retail,2026-11-09
+27,Genentech,Elevated,"2 WARN notices in the past year, most recent 131 days ago, 244 workers affected",0.92,2026-07-01,2,0.0,professional,2026-11-09
+28,Northrop Grumman,Elevated,Last WARN notice 446 days ago; none in the past year,0.919,2025-08-20,0,0.0,professional,2026-11-09
+29,Tesla,Elevated,Last WARN notice 910 days ago; none in the past year,0.913,2024-05-13,0,0.12,professional,2026-11-09
+30,Synopsys,Elevated,"6 WARN notices in the past year, most recent 70 days ago, 358 workers affected, 5 sites",0.908,2026-08-31,6,0.0,professional,2026-11-09
+31,Visa Inc.,Elevated,"1 WARN notice in the past year, most recent 101 days ago, 320 workers affected",0.905,2026-07-31,1,0.0,professional,2026-11-09
+32,Cisco,Elevated,"3 WARN notices in the past year, most recent 138 days ago, 471 workers affected, 3 sites",0.89,2026-06-24,3,0.0,professional,2026-11-09
+33,Safeway,Elevated,"3 WARN notices in the past year, most recent 20 days ago, 142 workers affected, 3 sites",0.888,2026-10-20,3,0.79,retail,2026-11-09
+34,Microsoft,Elevated,Last WARN notice 525 days ago; none in the past year,0.879,2025-06-02,0,0.0,professional,2026-11-09
+35,RTX,Elevated,"3 WARN notices in the past year, most recent 10 days ago, 22 workers affected, 3 sites",0.876,2026-10-30,3,0.0,professional,2026-11-09
+36,Comcast,Elevated,"1 WARN notice in the past year, most recent 11 days ago, 82 workers affected",0.858,2026-10-29,1,0.14,tech,2026-11-09
+37,JPMorganChase,Elevated,"1 WARN notice in the past year, most recent 216 days ago, 53 workers affected",0.85,2026-04-07,1,0.03,retail,2026-11-09
+38,CVS Health,Elevated,Last WARN notice 516 days ago; none in the past year,0.837,2025-06-11,0,0.48,healthcare,2026-11-09
+39,Block,Elevated,Last WARN notice 453 days ago; none in the past year,0.837,2025-08-13,0,0.0,professional,2026-11-09
+40,Mattel,Elevated,"2 WARN notices in the past year, most recent 230 days ago, 154 workers affected, 2 sites",0.837,2026-03-24,2,0.0,professional,2026-11-09
+41,NBCUniversal,Elevated,"3 WARN notices in the past year, most recent 361 days ago, 137 workers affected, 3 sites",0.832,2025-11-13,3,0.04,professional,2026-11-09
+42,Accenture,Elevated,Last WARN notice 1062 days ago; none in the past year,0.83,2023-12-13,0,0.0,professional,2026-11-09
+43,Medtronic,Elevated,"1 WARN notice in the past year, most recent 277 days ago, 81 workers affected",0.826,2026-02-05,1,0.04,professional,2026-11-09
+44,Nutanix,Elevated,"1 WARN notice in the past year, most recent 97 days ago, 65 workers affected",0.815,2026-08-04,1,0.06,professional,2026-11-09
+45,Macy's,Elevated,"1 WARN notice in the past year, most recent 301 days ago, 77 workers affected",0.813,2026-01-12,1,0.8,retail,2026-11-09
+46,BioMarin Pharmaceutical,Elevated,"1 WARN notice in the past year, most recent 42 days ago, 117 workers affected",0.811,2026-09-28,1,0.18,professional,2026-11-09
+47,Atlassian,Elevated,"1 WARN notice in the past year, most recent 242 days ago, 252 workers affected",0.811,2026-03-12,1,0.0,professional,2026-11-09
+48,Thermo Fisher Scientific,Elevated,"1 WARN notice in the past year, most recent 286 days ago, 173 workers affected",0.802,2026-01-27,1,0.03,professional,2026-11-09
+49,Dropbox,Elevated,"1 WARN notice in the past year, most recent 12 days ago, 57 workers affected",0.801,2026-10-28,1,0.0,professional,2026-11-09
+50,Nordstrom,Elevated,Last WARN notice 977 days ago; none in the past year,0.801,2024-03-07,0,0.88,retail,2026-11-09
+51,C3 AI,No signal,"1 WARN notice in the past year, most recent 259 days ago, 71 workers affected",0.799,2026-02-23,1,0.0,professional,2026-11-09
+52,Best Buy,No signal,"2 WARN notices in the past year, most recent 297 days ago, 106 workers affected, 2 sites",0.799,2026-01-16,2,0.76,retail,2026-11-09
+53,Vons,No signal,"4 WARN notices in the past year, most recent 10 days ago, 268 workers affected, 4 sites",0.799,2026-10-30,4,0.9,retail,2026-11-09
+54,Broadcom,No signal,Last WARN notice 385 days ago; none in the past year,0.789,2025-10-20,0,0.0,professional,2026-11-09
+55,Hewlett Packard Enterprise | HPE,No signal,Last WARN notice 375 days ago; none in the past year,0.786,2025-10-30,0,0.0,professional,2026-11-09
+56,Applied Materials,No signal,Last WARN notice 381 days ago; none in the past year,0.784,2025-10-24,0,0.02,professional,2026-11-09
+57,Pinterest,No signal,"3 WARN notices in the past year, most recent 285 days ago, 118 workers affected, 3 sites",0.783,2026-01-28,3,0.0,professional,2026-11-09
+58,FedEx,No signal,Last WARN notice 1013 days ago; none in the past year,0.781,2024-01-31,0,0.86,transportation_warehouse,2026-11-09
+59,Amgen,No signal,Last WARN notice 1211 days ago; none in the past year,0.775,2023-07-17,0,0.0,professional,2026-11-09
+60,Verizon,No signal,"2 WARN notices in the past year, most recent 353 days ago, 193 workers affected, 2 sites",0.77,2025-11-21,2,0.24,professional,2026-11-09
+61,Lockheed Martin,No signal,Last WARN notice 861 days ago; none in the past year,0.761,2024-07-01,0,0.0,professional,2026-11-09
+62,LPL Financial,No signal,"1 WARN notice in the past year, most recent 269 days ago, 72 workers affected",0.759,2026-02-13,1,0.14,professional,2026-11-09
+63,Cloudflare,No signal,"1 WARN notice in the past year, most recent 185 days ago, 224 workers affected",0.754,2026-05-08,1,0.0,professional,2026-11-09
+64,Sony Pictures Entertainment,No signal,"4 WARN notices in the past year, most recent 214 days ago, 133 workers affected, 4 sites",0.753,2026-04-09,4,0.0,professional,2026-11-09
+65,Molina Healthcare,No signal,"1 WARN notice in the past year, most recent 271 days ago, 156 workers affected",0.749,2026-02-11,1,0.07,professional,2026-11-09
+66,AT&T,No signal,Last WARN notice 605 days ago; none in the past year,0.747,2025-03-14,0,0.3,management,2026-11-09
+67,Starbucks,No signal,No WARN layoff notices on record in California since mid-2023,0.746,,0,0.94,food_service,2026-11-09
+68,Autodesk,No signal,"1 WARN notice in the past year, most recent 290 days ago, 104 workers affected",0.74,2026-01-23,1,0.0,professional,2026-11-09
+69,Airtable,No signal,"1 WARN notice in the past year, most recent 25 days ago, 190 workers affected",0.74,2026-10-15,1,0.0,professional,2026-11-09
+70,Randstad US,No signal,"1 WARN notice in the past year, most recent 20 days ago, 91 workers affected",0.735,2026-10-20,1,0.0,professional,2026-11-09
+71,UPS,No signal,Last WARN notice 543 days ago; none in the past year,0.724,2025-05-15,0,0.81,transportation_warehouse,2026-11-09
+72,AMD,No signal,Last WARN notice 727 days ago; none in the past year,0.72,2024-11-12,0,0.0,professional,2026-11-09
+73,Disneyland Resort,No signal,Last WARN notice 377 days ago; none in the past year,0.715,2025-10-28,0,0.73,professional,2026-11-09
+74,Okta,No signal,Last WARN notice 643 days ago; none in the past year,0.713,2025-02-04,0,0.0,professional,2026-11-09
+75,Southern California Edison,No signal,Last WARN notice 602 days ago; none in the past year,0.712,2025-03-17,0,0.12,professional,2026-11-09
+76,Exelixis,No signal,Last WARN notice 433 days ago; none in the past year,0.711,2025-09-02,0,0.0,professional,2026-11-09
+77,Boeing,No signal,"5 WARN notices in the past year, most recent 210 days ago, 19 workers affected, 5 sites",0.707,2026-04-13,5,0.0,professional,2026-11-09
+78,Edwards Lifesciences,No signal,Last WARN notice 796 days ago; none in the past year,0.707,2024-09-04,0,0.12,professional,2026-11-09
+79,Petco,No signal,Last WARN notice 1168 days ago; none in the past year,0.7,2023-08-29,0,0.22,professional,2026-11-09
+80,NetApp,No signal,"1 WARN notice in the past year, most recent 172 days ago, 77 workers affected",0.696,2026-05-21,1,0.0,professional,2026-11-09
+81,Instacart,No signal,Last WARN notice 999 days ago; none in the past year,0.696,2024-02-14,0,0.24,professional,2026-11-09
+82,Gap,No signal,Last WARN notice 1211 days ago; none in the past year,0.696,2023-07-17,0,0.29,professional,2026-11-09
+83,Warner Bros. Discovery,No signal,Last WARN notice 467 days ago; none in the past year,0.693,2025-07-30,0,0.0,professional,2026-11-09
+84,Optum,No signal,Last WARN notice 844 days ago; none in the past year,0.692,2024-07-18,0,0.11,professional,2026-11-09
+85,Dexcom,No signal,Last WARN notice 438 days ago; none in the past year,0.691,2025-08-28,0,0.0,professional,2026-11-09
+86,Asana,No signal,Last WARN notice 643 days ago; none in the past year,0.687,2025-02-04,0,0.0,professional,2026-11-09
+87,Staples,No signal,"1 WARN notice in the past year, most recent 95 days ago, 109 workers affected",0.685,2026-08-06,1,0.75,retail,2026-11-09
+88,Chevron,No signal,"1 WARN notice in the past year, most recent 124 days ago, 180 workers affected",0.683,2026-07-08,1,0.21,professional,2026-11-09
+89,Primo Brands,No signal,"5 WARN notices in the past year, most recent 234 days ago, 46 workers affected, 4 sites",0.681,2026-03-20,5,0.38,professional,2026-11-09
+90,TikTok,No signal,Last WARN notice 899 days ago; none in the past year,0.68,2024-05-24,0,0.0,professional,2026-11-09
+91,Albertsons Companies,No signal,"1 WARN notice in the past year, most recent 297 days ago, 75 workers affected",0.679,2026-01-16,1,0.43,tech,2026-11-09
+92,Kohl's,No signal,Last WARN notice 670 days ago; none in the past year,0.676,2025-01-08,0,0.86,retail,2026-11-09
+93,AbbVie,No signal,"4 WARN notices in the past year, most recent 174 days ago, 144 workers affected, 4 sites",0.67,2026-05-19,4,0.0,professional,2026-11-09
+94,NVIDIA,No signal,No WARN layoff notices on record in California since mid-2023,0.67,,0,0.0,professional,2026-11-09
+95,Raytheon,No signal,"3 WARN notices in the past year, most recent 138 days ago, 57 workers affected",0.664,2026-06-24,3,0.0,management,2026-11-09
+96,Marriott International,No signal,Last WARN notice 991 days ago; none in the past year,0.66,2024-02-22,0,0.21,professional,2026-11-09
+97,Penumbra,No signal,Last WARN notice 811 days ago; none in the past year,0.659,2024-08-20,0,0.36,professional,2026-11-09
+98,Walgreens,No signal,Last WARN notice 647 days ago; none in the past year,0.65,2025-01-31,0,0.71,healthcare,2026-11-09
+99,ChargePoint,No signal,Last WARN notice 796 days ago; none in the past year,0.642,2024-09-04,0,0.0,professional,2026-11-09
+100,Trailer Park Group,No signal,"1 WARN notice in the past year, most recent 61 days ago, 119 workers affected",0.637,2026-09-09,1,0.0,professional,2026-11-09
+101,Hilton,No signal,Last WARN notice 391 days ago; none in the past year,0.627,2025-10-14,0,0.7,professional,2026-11-09
+102,Bio-Rad Laboratories,No signal,Last WARN notice 636 days ago; none in the past year,0.621,2025-02-11,0,0.0,professional,2026-11-09
+103,Credit Karma,No signal,"1 WARN notice in the past year, most recent 173 days ago, 117 workers affected",0.619,2026-05-20,1,0.0,professional,2026-11-09
+104,Sunrun,No signal,Last WARN notice 1036 days ago; none in the past year,0.612,2024-01-08,0,0.33,retail,2026-11-09
+105,Kaiser Permanente,No signal,"30 WARN notices in the past year, most recent 21 days ago, 172 workers affected, 18 sites",0.608,2026-10-19,30,0.29,healthcare,2026-11-09
+106,Zendesk,No signal,Last WARN notice 628 days ago; none in the past year,0.607,2025-02-19,0,0.0,professional,2026-11-09
+107,Masimo,No signal,Last WARN notice 725 days ago; none in the past year,0.607,2024-11-14,0,0.0,professional,2026-11-09
+108,CBRE,No signal,Last WARN notice 619 days ago; none in the past year,0.595,2025-02-28,0,0.08,professional,2026-11-09
+109,Coherent Corp.,No signal,Last WARN notice 913 days ago; none in the past year,0.595,2024-05-10,0,0.0,intern,2026-11-09
+110,Collins Aerospace,No signal,Last WARN notice 600 days ago; none in the past year,0.594,2025-03-19,0,0.0,professional,2026-11-09
+111,Equinix,No signal,Last WARN notice 727 days ago; none in the past year,0.591,2024-11-12,0,0.0,professional,2026-11-09
+112,DoorDash,No signal,No WARN layoff notices on record in California since mid-2023,0.581,,0,0.34,professional,2026-11-09
+113,Deloitte,No signal,No WARN layoff notices on record in California since mid-2023,0.576,,0,0.01,professional,2026-11-09
+114,Elevance Health,No signal,Last WARN notice 755 days ago; none in the past year,0.574,2024-10-15,0,0.0,professional,2026-11-09
+115,Adobe,No signal,No WARN layoff notices on record in California since mid-2023,0.573,,0,0.0,professional,2026-11-09
+116,PwC,No signal,No WARN layoff notices on record in California since mid-2023,0.57,,0,0.0,professional,2026-11-09
+117,Hinge Health,No signal,Last WARN notice 938 days ago; none in the past year,0.57,2024-04-15,0,0.0,professional,2026-11-09
+118,U.S. Bank,No signal,Last WARN notice 1140 days ago; none in the past year,0.567,2023-09-26,0,0.2,professional,2026-11-09
+119,Palo Alto Networks,No signal,No WARN layoff notices on record in California since mid-2023,0.564,,0,0.0,professional,2026-11-09
+120,EY,No signal,No WARN layoff notices on record in California since mid-2023,0.564,,0,0.0,professional,2026-11-09
+121,SpaceX,No signal,No WARN layoff notices on record in California since mid-2023,0.561,,0,0.12,professional,2026-11-09
+122,Frito-Lay,No signal,"1 WARN notice in the past year, most recent 270 days ago, 248 workers affected",0.554,2026-02-12,1,0.5,management,2026-11-09
+123,Agilent Technologies,No signal,Last WARN notice 885 days ago; none in the past year,0.553,2024-06-07,0,0.0,professional,2026-11-09
+124,Roku,No signal,Last WARN notice 1112 days ago; none in the past year,0.551,2023-10-24,0,0.0,professional,2026-11-09
+125,Marshalls,No signal,Last WARN notice 388 days ago; none in the past year,0.55,2025-10-17,0,0.86,retail,2026-11-09
+126,FormFactor,No signal,"2 WARN notices in the past year, most recent 307 days ago, 220 workers affected, 2 sites",0.539,2026-01-06,2,0.0,professional,2026-11-09
+127,Roblox,No signal,No WARN layoff notices on record in California since mid-2023,0.538,,0,0.02,professional,2026-11-09
+128,East West Bank,No signal,No WARN layoff notices on record in California since mid-2023,0.535,,0,0.0,professional,2026-11-09
+129,Alteryx,No signal,Last WARN notice 894 days ago; none in the past year,0.534,2024-05-29,0,0.0,professional,2026-11-09
+130,The Home Depot,No signal,No WARN layoff notices on record in California since mid-2023,0.531,,0,0.9,retail,2026-11-09
+131,Lucid Motors,No signal,No WARN layoff notices on record in California since mid-2023,0.528,,0,0.04,professional,2026-11-09
+132,KPMG,No signal,No WARN layoff notices on record in California since mid-2023,0.517,,0,0.0,professional,2026-11-09
+133,Avis Budget Group,No signal,No WARN layoff notices on record in California since mid-2023,0.513,,0,0.66,office_support,2026-11-09
+134,Pfizer,No signal,Last WARN notice 584 days ago; none in the past year,0.511,2025-04-04,0,0.0,professional,2026-11-09
+135,Six Flags,No signal,Last WARN notice 431 days ago; none in the past year,0.509,2025-09-04,0,1.0,retail,2026-11-09
+136,Michaels,No signal,Last WARN notice 521 days ago; none in the past year,0.504,2025-06-06,0,1.0,retail,2026-11-09
+137,American Eagle Outfitters,No signal,"1 WARN notice in the past year, most recent 280 days ago, 108 workers affected",0.503,2026-02-02,1,1.0,retail,2026-11-09
+138,Viasat,No signal,Last WARN notice 1008 days ago; none in the past year,0.5,2024-02-05,0,0.25,professional,2026-11-09
+139,Abbott,No signal,No WARN layoff notices on record in California since mid-2023,0.496,,0,0.07,professional,2026-11-09
+140,GSK,No signal,Last WARN notice 406 days ago; none in the past year,0.494,2025-09-29,0,0.0,professional,2026-11-09
+141,Bank of America,No signal,No WARN layoff notices on record in California since mid-2023,0.492,,0,0.17,professional,2026-11-09
+142,Warner Music Group,No signal,"1 WARN notice in the past year, most recent 326 days ago, 5 workers affected",0.49,2025-12-18,1,0.0,professional,2026-11-09
+143,Pizza Hut,No signal,Last WARN notice 1020 days ago; none in the past year,0.488,2024-01-24,0,0.92,retail,2026-11-09
+144,"Super Micro Computer, Inc. (Supermicro)",No signal,No WARN layoff notices on record in California since mid-2023,0.483,,0,0.07,professional,2026-11-09
+145,LEGOLAND,No signal,Last WARN notice 650 days ago; none in the past year,0.479,2025-01-28,0,0.83,security,2026-11-09
+146,Juniper Networks,No signal,Last WARN notice 978 days ago; none in the past year,0.479,2024-03-06,0,0.0,professional,2026-11-09
+147,AppFolio,No signal,Last WARN notice 1011 days ago; none in the past year,0.475,2024-02-02,0,0.0,professional,2026-11-09
+148,Boston Scientific,No signal,Last WARN notice 517 days ago; none in the past year,0.471,2025-06-10,0,0.0,professional,2026-11-09
+149,SK hynix America,No signal,Last WARN notice 593 days ago; none in the past year,0.47,2025-03-26,0,0.0,professional,2026-11-09
+150,Upwork,No signal,Last WARN notice 747 days ago; none in the past year,0.47,2024-10-23,0,0.0,professional,2026-11-09
+151,IBM,No signal,No WARN layoff notices on record in California since mid-2023,0.469,,0,0.0,professional,2026-11-09
+152,J.B. Hunt Transport,No signal,Last WARN notice 941 days ago; none in the past year,0.464,2024-04-12,0,0.14,management,2026-11-09
+153,Smart & Final,No signal,Last WARN notice 629 days ago; none in the past year,0.464,2025-02-18,0,0.33,management,2026-11-09
+154,Virgin Galactic,No signal,Last WARN notice 1057 days ago; none in the past year,0.464,2023-12-18,0,0.0,professional,2026-11-09
+155,Parker Hannifin,No signal,Last WARN notice 1070 days ago; none in the past year,0.462,2023-12-05,0,0.0,professional,2026-11-09
+156,US Navy,No signal,No WARN layoff notices on record in California since mid-2023,0.46,,0,0.08,professional,2026-11-09
+157,Whole Foods Market,No signal,No WARN layoff notices on record in California since mid-2023,0.455,,0,0.95,retail,2026-11-09
+158,Johnson & Johnson,No signal,No WARN layoff notices on record in California since mid-2023,0.455,,0,0.02,professional,2026-11-09
+159,Anduril,No signal,No WARN layoff notices on record in California since mid-2023,0.455,,0,0.0,professional,2026-11-09
+160,Activision Blizzard,No signal,Last WARN notice 489 days ago; none in the past year,0.451,2025-07-08,0,0.0,professional,2026-11-09
+161,Chipotle,No signal,No WARN layoff notices on record in California since mid-2023,0.449,,0,0.78,food_service,2026-11-09
+162,JCPenney,No signal,Last WARN notice 607 days ago; none in the past year,0.449,2025-03-12,0,1.0,retail,2026-11-09
+163,Indeed,No signal,Last WARN notice 909 days ago; none in the past year,0.448,2024-05-14,0,0.0,professional,2026-11-09
+164,Niagara Bottling,No signal,Last WARN notice 629 days ago; none in the past year,0.433,2025-02-18,0,0.25,tech,2026-11-09
+165,Costco Wholesale,No signal,No WARN layoff notices on record in California since mid-2023,0.433,,0,0.94,retail,2026-11-09
+166,Axos Bank,No signal,No WARN layoff notices on record in California since mid-2023,0.433,,0,0.0,professional,2026-11-09
+167,Rivian,No signal,No WARN layoff notices on record in California since mid-2023,0.433,,0,0.0,professional,2026-11-09
+168,Gigamon,No signal,Last WARN notice 760 days ago; none in the past year,0.431,2024-10-10,0,0.2,professional,2026-11-09
+169,Bristol Myers Squibb,No signal,Last WARN notice 620 days ago; none in the past year,0.427,2025-02-27,0,0.0,professional,2026-11-09
+170,10x Genomics,No signal,Last WARN notice 550 days ago; none in the past year,0.426,2025-05-08,0,0.0,professional,2026-11-09
+171,Cushman & Wakefield,No signal,Last WARN notice 501 days ago; none in the past year,0.412,2025-06-26,0,0.2,management,2026-11-09
+172,Booz Allen Hamilton,No signal,No WARN layoff notices on record in California since mid-2023,0.409,,0,0.07,professional,2026-11-09
+173,Pacific Gas and Electric,No signal,No WARN layoff notices on record in California since mid-2023,0.403,,0,0.03,professional,2026-11-09
+174,Sprouts Farmers Market,No signal,No WARN layoff notices on record in California since mid-2023,0.403,,0,0.89,retail,2026-11-09
+175,Snowflake,No signal,No WARN layoff notices on record in California since mid-2023,0.403,,0,0.0,professional,2026-11-09
+176,PENNYMAC,No signal,Last WARN notice 1008 days ago; none in the past year,0.401,2024-02-05,0,0.0,professional,2026-11-09
+177,Wayfair,No signal,Last WARN notice 1012 days ago; none in the past year,0.4,2024-02-01,0,0.0,professional,2026-11-09
+178,Databricks,No signal,No WARN layoff notices on record in California since mid-2023,0.396,,0,0.0,professional,2026-11-09
+179,Flex,No signal,Last WARN notice 1068 days ago; none in the past year,0.394,2023-12-07,0,0.33,social_services,2026-11-09
+180,Anaplan,No signal,Last WARN notice 1208 days ago; none in the past year,0.391,2023-07-20,0,0.0,tech,2026-11-09
+181,Lyft,No signal,No WARN layoff notices on record in California since mid-2023,0.39,,0,0.08,professional,2026-11-09
+182,In-N-Out Burger,No signal,No WARN layoff notices on record in California since mid-2023,0.39,,0,1.0,retail,2026-11-09
+183,Carbon Health,No signal,Last WARN notice 1118 days ago; none in the past year,0.388,2023-10-18,0,0.17,healthcare,2026-11-09
+184,Baker Tilly,No signal,No WARN layoff notices on record in California since mid-2023,0.383,,0,0.0,professional,2026-11-09
+185,Bloom Energy,No signal,Last WARN notice 1071 days ago; none in the past year,0.379,2023-12-04,0,0.0,professional,2026-11-09
+186,SCAN Health Plan,No signal,No WARN layoff notices on record in California since mid-2023,0.376,,0,0.06,professional,2026-11-09
+187,Ross Stores,No signal,No WARN layoff notices on record in California since mid-2023,0.376,,0,0.58,retail,2026-11-09
+188,lululemon,No signal,No WARN layoff notices on record in California since mid-2023,0.376,,0,0.88,social_services,2026-11-09
+189,BILL,No signal,No WARN layoff notices on record in California since mid-2023,0.361,,0,0.0,professional,2026-11-09
+190,Lam Research,No signal,No WARN layoff notices on record in California since mid-2023,0.361,,0,0.0,professional,2026-11-09
+191,OpenAI,No signal,No WARN layoff notices on record in California since mid-2023,0.361,,0,0.04,professional,2026-11-09
+192,Astrana Health,No signal,No WARN layoff notices on record in California since mid-2023,0.353,,0,0.33,healthcare,2026-11-09
+193,ADP,No signal,No WARN layoff notices on record in California since mid-2023,0.345,,0,0.09,professional,2026-11-09
+194,J.P. Morgan,No signal,No WARN layoff notices on record in California since mid-2023,0.345,,0,0.13,professional,2026-11-09
+195,Infosys,No signal,No WARN layoff notices on record in California since mid-2023,0.345,,0,0.0,professional,2026-11-09
+196,Marvell Technology,No signal,No WARN layoff notices on record in California since mid-2023,0.345,,0,0.0,professional,2026-11-09
+197,Farmers Insurance Group,No signal,No WARN layoff notices on record in California since mid-2023,0.337,,0,0.19,professional,2026-11-09
+198,Airbnb,No signal,No WARN layoff notices on record in California since mid-2023,0.337,,0,0.05,professional,2026-11-09
+199,Old Navy,No signal,No WARN layoff notices on record in California since mid-2023,0.337,,0,0.73,retail,2026-11-09
+200,KLA,No signal,No WARN layoff notices on record in California since mid-2023,0.337,,0,0.1,professional,2026-11-09
+201,Spectrum,No signal,No WARN layoff notices on record in California since mid-2023,0.337,,0,0.35,retail,2026-11-09
+202,Applied Intuition,No signal,No WARN layoff notices on record in California since mid-2023,0.337,,0,0.0,professional,2026-11-09
+203,Fortinet,No signal,No WARN layoff notices on record in California since mid-2023,0.328,,0,0.0,tech,2026-11-09
+204,SAP,No signal,No WARN layoff notices on record in California since mid-2023,0.328,,0,0.0,professional,2026-11-09
+205,Roche,No signal,No WARN layoff notices on record in California since mid-2023,0.328,,0,0.05,professional,2026-11-09
+206,McKinsey & Company,No signal,No WARN layoff notices on record in California since mid-2023,0.328,,0,0.0,professional,2026-11-09
+207,Taco Bell,No signal,No WARN layoff notices on record in California since mid-2023,0.319,,0,0.85,retail,2026-11-09
+208,ASML,No signal,No WARN layoff notices on record in California since mid-2023,0.319,,0,0.06,professional,2026-11-09
+209,Postman,No signal,No WARN layoff notices on record in California since mid-2023,0.319,,0,0.07,professional,2026-11-09
+210,Ralphs,No signal,No WARN layoff notices on record in California since mid-2023,0.319,,0,0.83,retail,2026-11-09
+211,Chime,No signal,No WARN layoff notices on record in California since mid-2023,0.319,,0,0.0,professional,2026-11-09
+212,Lowe's Home Improvement,No signal,No WARN layoff notices on record in California since mid-2023,0.319,,0,0.95,retail,2026-11-09
+213,AMN Healthcare,No signal,No WARN layoff notices on record in California since mid-2023,0.31,,0,0.0,professional,2026-11-09
+214,Sephora,No signal,No WARN layoff notices on record in California since mid-2023,0.31,,0,0.56,retail,2026-11-09
+215,Samsara,No signal,No WARN layoff notices on record in California since mid-2023,0.31,,0,0.0,professional,2026-11-09
+216,Din Tai Fung,No signal,No WARN layoff notices on record in California since mid-2023,0.31,,0,1.0,food_service,2026-11-09
+217,Banc of California,No signal,No WARN layoff notices on record in California since mid-2023,0.301,,0,0.15,professional,2026-11-09
+218,T-Mobile,No signal,No WARN layoff notices on record in California since mid-2023,0.301,,0,0.39,professional,2026-11-09
+219,ServiceTitan,No signal,No WARN layoff notices on record in California since mid-2023,0.301,,0,0.06,professional,2026-11-09
+220,Jones Lang LaSalle,No signal,No WARN layoff notices on record in California since mid-2023,0.301,,0,0.19,professional,2026-11-09
+221,Nuro,No signal,No WARN layoff notices on record in California since mid-2023,0.301,,0,0.2,professional,2026-11-09
+222,Natera,No signal,No WARN layoff notices on record in California since mid-2023,0.301,,0,0.06,professional,2026-11-09
+223,Ulta Beauty,No signal,No WARN layoff notices on record in California since mid-2023,0.301,,0,0.82,retail,2026-11-09
+224,US Marine Corps,No signal,No WARN layoff notices on record in California since mid-2023,0.301,,0,0.07,professional,2026-11-09
+225,L3Harris,No signal,No WARN layoff notices on record in California since mid-2023,0.301,,0,0.0,professional,2026-11-09
+226,Coinbase,No signal,No WARN layoff notices on record in California since mid-2023,0.301,,0,0.07,professional,2026-11-09
+227,Cintas,No signal,No WARN layoff notices on record in California since mid-2023,0.291,,0,0.21,retail,2026-11-09
+228,Tandem Diabetes,No signal,No WARN layoff notices on record in California since mid-2023,0.291,,0,0.08,professional,2026-11-09
+229,Samsung Research America,No signal,No WARN layoff notices on record in California since mid-2023,0.291,,0,0.0,professional,2026-11-09
+230,Archer,No signal,No WARN layoff notices on record in California since mid-2023,0.291,,0,0.0,professional,2026-11-09
+231,Dolby,No signal,No WARN layoff notices on record in California since mid-2023,0.291,,0,0.0,professional,2026-11-09
+232,Live Nation Entertainment,No signal,No WARN layoff notices on record in California since mid-2023,0.291,,0,0.0,professional,2026-11-09
+233,Burlington Stores,No signal,No WARN layoff notices on record in California since mid-2023,0.291,,0,0.88,retail,2026-11-09
+234,BD,No signal,No WARN layoff notices on record in California since mid-2023,0.291,,0,0.06,professional,2026-11-09
+235,Robinhood,No signal,No WARN layoff notices on record in California since mid-2023,0.291,,0,0.0,professional,2026-11-09
+236,Cruise,No signal,Last WARN notice 404 days ago; none in the past year,0.285,2025-10-01,0,0.0,professional,2026-11-09
+237,BlackRock,No signal,No WARN layoff notices on record in California since mid-2023,0.281,,0,0.0,professional,2026-11-09
+238,Neurocrine Biosciences,No signal,No WARN layoff notices on record in California since mid-2023,0.281,,0,0.0,professional,2026-11-09
+239,Goldman Sachs,No signal,No WARN layoff notices on record in California since mid-2023,0.281,,0,0.0,professional,2026-11-09
+240,Panasonic,No signal,No WARN layoff notices on record in California since mid-2023,0.281,,0,0.0,professional,2026-11-09
+241,SoFi,No signal,No WARN layoff notices on record in California since mid-2023,0.27,,0,0.07,professional,2026-11-09
+242,Teradata,No signal,No WARN layoff notices on record in California since mid-2023,0.27,,0,0.0,professional,2026-11-09
+243,Zscaler,No signal,No WARN layoff notices on record in California since mid-2023,0.27,,0,0.0,professional,2026-11-09
+244,AMR,No signal,No WARN layoff notices on record in California since mid-2023,0.27,,0,0.73,healthcare,2026-11-09
+245,Intuitive,No signal,No WARN layoff notices on record in California since mid-2023,0.27,,0,0.0,professional,2026-11-09
+246,BDO,No signal,No WARN layoff notices on record in California since mid-2023,0.27,,0,0.0,professional,2026-11-09
+247,Insight Global,No signal,No WARN layoff notices on record in California since mid-2023,0.27,,0,0.07,professional,2026-11-09
+248,Proofpoint,No signal,No WARN layoff notices on record in California since mid-2023,0.27,,0,0.0,professional,2026-11-09
+249,NIKE,No signal,No WARN layoff notices on record in California since mid-2023,0.27,,0,0.67,retail,2026-11-09
+250,CrowdStrike,No signal,No WARN layoff notices on record in California since mid-2023,0.27,,0,0.0,professional,2026-11-09
+251,Travelers,No signal,No WARN layoff notices on record in California since mid-2023,0.27,,0,0.0,professional,2026-11-09
+252,Yelp,No signal,No WARN layoff notices on record in California since mid-2023,0.259,,0,0.07,professional,2026-11-09
+253,Panera Bread,No signal,No WARN layoff notices on record in California since mid-2023,0.259,,0,0.85,retail,2026-11-09
+254,Capital One,No signal,No WARN layoff notices on record in California since mid-2023,0.259,,0,0.0,professional,2026-11-09
+255,Cadence Design Systems,No signal,No WARN layoff notices on record in California since mid-2023,0.259,,0,0.0,tech,2026-11-09
+256,The Clorox Company,No signal,No WARN layoff notices on record in California since mid-2023,0.259,,0,0.0,professional,2026-11-09
+257,Keysight Technologies,No signal,No WARN layoff notices on record in California since mid-2023,0.259,,0,0.0,professional,2026-11-09
+258,Securitas,No signal,No WARN layoff notices on record in California since mid-2023,0.259,,0,0.79,security,2026-11-09
+259,Eurofins,No signal,No WARN layoff notices on record in California since mid-2023,0.259,,0,0.31,professional,2026-11-09
+260,Box,No signal,No WARN layoff notices on record in California since mid-2023,0.259,,0,0.0,professional,2026-11-09
+261,Zoom Communications,No signal,No WARN layoff notices on record in California since mid-2023,0.259,,0,0.0,professional,2026-11-09
+262,Cognizant,No signal,No WARN layoff notices on record in California since mid-2023,0.247,,0,0.0,professional,2026-11-09
+263,Kite Pharma,No signal,No WARN layoff notices on record in California since mid-2023,0.247,,0,0.09,professional,2026-11-09
+264,Levi Strauss,No signal,No WARN layoff notices on record in California since mid-2023,0.247,,0,0.25,professional,2026-11-09
+265,TJ Maxx,No signal,No WARN layoff notices on record in California since mid-2023,0.247,,0,0.85,retail,2026-11-09
+266,Waymo,No signal,No WARN layoff notices on record in California since mid-2023,0.247,,0,0.0,professional,2026-11-09
+267,The Coffee Bean & Tea Leaf,No signal,No WARN layoff notices on record in California since mid-2023,0.247,,0,0.85,food_service,2026-11-09
+268,BJ's Restaurants,No signal,No WARN layoff notices on record in California since mid-2023,0.247,,0,0.85,food_service,2026-11-09
+269,Jersey Mike's,No signal,No WARN layoff notices on record in California since mid-2023,0.247,,0,0.85,food_service,2026-11-09
+270,GitHub,No signal,No WARN layoff notices on record in California since mid-2023,0.247,,0,0.0,professional,2026-11-09
+271,H&R Block,No signal,No WARN layoff notices on record in California since mid-2023,0.247,,0,0.15,professional,2026-11-09
+272,Yahoo,No signal,No WARN layoff notices on record in California since mid-2023,0.247,,0,0.0,tech,2026-11-09
+273,Zoox,No signal,No WARN layoff notices on record in California since mid-2023,0.247,,0,0.31,professional,2026-11-09
+274,Stryker,No signal,No WARN layoff notices on record in California since mid-2023,0.247,,0,0.08,professional,2026-11-09
+275,Paramount,No signal,No WARN layoff notices on record in California since mid-2023,0.247,,0,0.0,professional,2026-11-09
+276,HP Inc.,No signal,No WARN layoff notices on record in California since mid-2023,0.247,,0,0.0,professional,2026-11-09
+277,Envista,No signal,No WARN layoff notices on record in California since mid-2023,0.235,,0,0.09,professional,2026-11-09
+278,"Williams-Sonoma, Inc.",No signal,No WARN layoff notices on record in California since mid-2023,0.235,,0,0.45,professional,2026-11-09
+279,Compass,No signal,No WARN layoff notices on record in California since mid-2023,0.235,,0,0.25,management,2026-11-09
+280,Robert Half,No signal,No WARN layoff notices on record in California since mid-2023,0.235,,0,0.0,professional,2026-11-09
+281,Citi,No signal,No WARN layoff notices on record in California since mid-2023,0.235,,0,0.09,professional,2026-11-09
+282,Joby Aviation,No signal,No WARN layoff notices on record in California since mid-2023,0.235,,0,0.0,professional,2026-11-09
+283,The RealReal,No signal,No WARN layoff notices on record in California since mid-2023,0.235,,0,0.0,professional,2026-11-09
+284,Jamba,No signal,No WARN layoff notices on record in California since mid-2023,0.235,,0,0.83,food_service,2026-11-09
+285,Tata Consultancy Services,No signal,No WARN layoff notices on record in California since mid-2023,0.235,,0,0.0,professional,2026-11-09
+286,Universal Music Group,No signal,No WARN layoff notices on record in California since mid-2023,0.235,,0,0.0,management,2026-11-09
+287,Poshmark,No signal,No WARN layoff notices on record in California since mid-2023,0.235,,0,0.17,professional,2026-11-09
+288,Procore Technologies,No signal,No WARN layoff notices on record in California since mid-2023,0.235,,0,0.0,professional,2026-11-09
+289,Veeva Systems,No signal,No WARN layoff notices on record in California since mid-2023,0.222,,0,0.0,professional,2026-11-09
+290,Weedmaps,No signal,No WARN layoff notices on record in California since mid-2023,0.222,,0,0.0,professional,2026-11-09
+291,VITAS Healthcare,No signal,No WARN layoff notices on record in California since mid-2023,0.222,,0,0.3,professional,2026-11-09
+292,RH,No signal,No WARN layoff notices on record in California since mid-2023,0.222,,0,0.38,professional,2026-11-09
+293,First Republic,No signal,No WARN layoff notices on record in California since mid-2023,0.222,,0,0.09,professional,2026-11-09
+294,TEKsystems,No signal,No WARN layoff notices on record in California since mid-2023,0.222,,0,0.0,professional,2026-11-09
+295,Happen Bank,No signal,No WARN layoff notices on record in California since mid-2023,0.222,,0,0.0,professional,2026-11-09
+296,Subway,No signal,No WARN layoff notices on record in California since mid-2023,0.222,,0,0.64,food_service,2026-11-09
+297,Stripe,No signal,No WARN layoff notices on record in California since mid-2023,0.222,,0,0.0,professional,2026-11-09
+298,xAI,No signal,No WARN layoff notices on record in California since mid-2023,0.222,,0,0.0,tech,2026-11-09
+299,Skyworks Solutions,No signal,No WARN layoff notices on record in California since mid-2023,0.222,,0,0.0,professional,2026-11-09
+300,Grant Thornton,No signal,No WARN layoff notices on record in California since mid-2023,0.222,,0,0.0,professional,2026-11-09
+301,Vans,No signal,No WARN layoff notices on record in California since mid-2023,0.222,,0,0.7,retail,2026-11-09
+302,Anthropic,No signal,No WARN layoff notices on record in California since mid-2023,0.222,,0,0.0,professional,2026-11-09
+303,iRhythm Technologies,No signal,No WARN layoff notices on record in California since mid-2023,0.222,,0,0.29,tech,2026-11-09
+304,RadNet,No signal,No WARN layoff notices on record in California since mid-2023,0.222,,0,0.75,healthcare,2026-11-09
+305,Thomson Reuters,No signal,No WARN layoff notices on record in California since mid-2023,0.222,,0,0.0,professional,2026-11-09
+306,ABC,No signal,No WARN layoff notices on record in California since mid-2023,0.222,,0,0.18,professional,2026-11-09
+307,Centene,No signal,No WARN layoff notices on record in California since mid-2023,0.222,,0,0.11,professional,2026-11-09
+308,Rocket Lab,No signal,No WARN layoff notices on record in California since mid-2023,0.222,,0,0.0,professional,2026-11-09
+309,Delta Air Lines,No signal,No WARN layoff notices on record in California since mid-2023,0.222,,0,0.64,transportation_warehouse,2026-11-09
+310,Hollister Co.,No signal,No WARN layoff notices on record in California since mid-2023,0.222,,0,0.91,retail,2026-11-09
+311,DaVita,No signal,No WARN layoff notices on record in California since mid-2023,0.222,,0,0.55,healthcare,2026-11-09
+312,AMC Entertainment,No signal,No WARN layoff notices on record in California since mid-2023,0.209,,0,0.78,food_service,2026-11-09
+313,SAIC,No signal,No WARN layoff notices on record in California since mid-2023,0.209,,0,0.0,professional,2026-11-09
+314,Dutch Bros.,No signal,No WARN layoff notices on record in California since mid-2023,0.209,,0,1.0,food_service,2026-11-09
+315,Rippling,No signal,No WARN layoff notices on record in California since mid-2023,0.209,,0,0.2,professional,2026-11-09
+316,Toast Inc,No signal,No WARN layoff notices on record in California since mid-2023,0.209,,0,0.0,professional,2026-11-09
+317,BAE Systems USA,No signal,No WARN layoff notices on record in California since mid-2023,0.209,,0,0.0,tech,2026-11-09
+318,YouTube,No signal,No WARN layoff notices on record in California since mid-2023,0.209,,0,0.0,professional,2026-11-09
+319,US Air Force,No signal,No WARN layoff notices on record in California since mid-2023,0.209,,0,0.12,professional,2026-11-09
+320,Terran Orbital ,No signal,No WARN layoff notices on record in California since mid-2023,0.209,,0,0.1,professional,2026-11-09
+321,Ford Motor Company,No signal,No WARN layoff notices on record in California since mid-2023,0.209,,0,0.22,professional,2026-11-09
+322,GEICO,No signal,No WARN layoff notices on record in California since mid-2023,0.209,,0,0.1,professional,2026-11-09
+323,Heartflow,No signal,No WARN layoff notices on record in California since mid-2023,0.209,,0,0.0,professional,2026-11-09
+324,Corsair,No signal,No WARN layoff notices on record in California since mid-2023,0.209,,0,0.0,professional,2026-11-09
+325,PetSmart,No signal,No WARN layoff notices on record in California since mid-2023,0.209,,0,0.88,personal_care,2026-11-09
+326,PepsiCo,No signal,No WARN layoff notices on record in California since mid-2023,0.209,,0,0.11,professional,2026-11-09
+327,The Trade Desk,No signal,No WARN layoff notices on record in California since mid-2023,0.209,,0,0.0,professional,2026-11-09
+328,Nokia,No signal,No WARN layoff notices on record in California since mid-2023,0.209,,0,0.11,professional,2026-11-09
+329,Carta,No signal,No WARN layoff notices on record in California since mid-2023,0.209,,0,0.0,professional,2026-11-09
+330,Essex Property Trust,No signal,No WARN layoff notices on record in California since mid-2023,0.209,,0,0.11,professional,2026-11-09
+331,Samsung Electronics,No signal,No WARN layoff notices on record in California since mid-2023,0.195,,0,0.0,professional,2026-11-09
+332,Acadia Pharmaceuticals,No signal,No WARN layoff notices on record in California since mid-2023,0.195,,0,0.0,tech,2026-11-09
+333,Arista Networks,No signal,No WARN layoff notices on record in California since mid-2023,0.195,,0,0.0,professional,2026-11-09
+334,AstraZeneca,No signal,No WARN layoff notices on record in California since mid-2023,0.195,,0,0.0,retail,2026-11-09
+335,GitLab,No signal,No WARN layoff notices on record in California since mid-2023,0.195,,0,0.0,professional,2026-11-09
+336,Techtronic Industries North America,No signal,No WARN layoff notices on record in California since mid-2023,0.195,,0,0.12,professional,2026-11-09
+337,AECOM,No signal,No WARN layoff notices on record in California since mid-2023,0.195,,0,0.0,professional,2026-11-09
+338,Allstate,No signal,No WARN layoff notices on record in California since mid-2023,0.195,,0,0.11,professional,2026-11-09
+339,WTW,No signal,No WARN layoff notices on record in California since mid-2023,0.195,,0,0.0,professional,2026-11-09
+340,Chase,No signal,No WARN layoff notices on record in California since mid-2023,0.195,,0,0.11,retail,2026-11-09
+341,Penske Automotive Group,No signal,No WARN layoff notices on record in California since mid-2023,0.195,,0,0.33,professional,2026-11-09
+342,Quest Diagnostics,No signal,No WARN layoff notices on record in California since mid-2023,0.195,,0,0.4,healthcare,2026-11-09
+343,QuidelOrtho Corporation,No signal,No WARN layoff notices on record in California since mid-2023,0.195,,0,0.12,professional,2026-11-09
+344,Jobot,No signal,No WARN layoff notices on record in California since mid-2023,0.195,,0,0.0,professional,2026-11-09
+345,Knott's Berry Farm,No signal,No WARN layoff notices on record in California since mid-2023,0.195,,0,0.78,food_service,2026-11-09
+346,Kellermeyer Bergensons Services,No signal,No WARN layoff notices on record in California since mid-2023,0.195,,0,0.5,professional,2026-11-09
+347,REVOLVE,No signal,No WARN layoff notices on record in California since mid-2023,0.195,,0,0.29,professional,2026-11-09
+348,Hologic,No signal,No WARN layoff notices on record in California since mid-2023,0.195,,0,0.0,professional,2026-11-09
+349,DICK'S Sporting Goods,No signal,No WARN layoff notices on record in California since mid-2023,0.195,,0,0.71,retail,2026-11-09
+350,Domino's,No signal,No WARN layoff notices on record in California since mid-2023,0.195,,0,0.89,transportation_warehouse,2026-11-09
+351,Dell Technologies,No signal,No WARN layoff notices on record in California since mid-2023,0.195,,0,0.0,professional,2026-11-09
+352,Electronic Arts,No signal,No WARN layoff notices on record in California since mid-2023,0.195,,0,0.0,professional,2026-11-09
+353,Sears,No signal,No WARN layoff notices on record in California since mid-2023,0.195,,0,0.67,professional,2026-11-09
+354,BlackLine,No signal,No WARN layoff notices on record in California since mid-2023,0.195,,0,0.0,professional,2026-11-09
+355,RSM,No signal,No WARN layoff notices on record in California since mid-2023,0.195,,0,0.0,professional,2026-11-09
+356,EisnerAmper,No signal,No WARN layoff notices on record in California since mid-2023,0.195,,0,0.0,intern,2026-11-09
+357,OmniVision Technologies,No signal,No WARN layoff notices on record in California since mid-2023,0.195,,0,0.0,professional,2026-11-09
+358,CarMax,No signal,No WARN layoff notices on record in California since mid-2023,0.195,,0,0.89,retail,2026-11-09
+359,Cubic,No signal,No WARN layoff notices on record in California since mid-2023,0.195,,0,0.0,professional,2026-11-09
+360,LiveRamp,No signal,No WARN layoff notices on record in California since mid-2023,0.195,,0,0.0,professional,2026-11-09
+361,Abercrombie & Fitch,No signal,No WARN layoff notices on record in California since mid-2023,0.195,,0,0.56,management,2026-11-09
+362,UCLA,No signal,No WARN layoff notices on record in California since mid-2023,0.195,,0,0.14,professional,2026-11-09
+363,Merrill,No signal,No WARN layoff notices on record in California since mid-2023,0.195,,0,0.12,professional,2026-11-09
+364,Twilio,No signal,No WARN layoff notices on record in California since mid-2023,0.195,,0,0.0,professional,2026-11-09
+365,TriNet,No signal,No WARN layoff notices on record in California since mid-2023,0.195,,0,0.0,retail,2026-11-09
+366,Topgolf,No signal,No WARN layoff notices on record in California since mid-2023,0.195,,0,0.6,food_service,2026-11-09
+367,Uniqlo,No signal,No WARN layoff notices on record in California since mid-2023,0.195,,0,0.88,retail,2026-11-09
+368,European Wax Center,No signal,No WARN layoff notices on record in California since mid-2023,0.195,,0,1.0,office_support,2026-11-09
+369,UST,No signal,No WARN layoff notices on record in California since mid-2023,0.195,,0,0.0,management,2026-11-09
+370,Anthrolopogie,No signal,No WARN layoff notices on record in California since mid-2023,0.195,,0,0.67,retail,2026-11-09
+371,United Airlines,No signal,No WARN layoff notices on record in California since mid-2023,0.195,,0,0.75,transportation_warehouse,2026-11-09
+372,Amplitude,No signal,No WARN layoff notices on record in California since mid-2023,0.18,,0,0.0,tech,2026-11-09
+373,United Talent,No signal,No WARN layoff notices on record in California since mid-2023,0.18,,0,0.0,professional,2026-11-09
+374,Urban Outfitters,No signal,No WARN layoff notices on record in California since mid-2023,0.18,,0,0.88,retail,2026-11-09
+375,Ticketmaster,No signal,No WARN layoff notices on record in California since mid-2023,0.18,,0,0.0,professional,2026-11-09
+376,Texas Instruments,No signal,No WARN layoff notices on record in California since mid-2023,0.18,,0,0.0,professional,2026-11-09
+377,Tillys,No signal,No WARN layoff notices on record in California since mid-2023,0.18,,0,0.88,retail,2026-11-09
+378,MuleSoft,No signal,No WARN layoff notices on record in California since mid-2023,0.18,,0,0.12,professional,2026-11-09
+379,Morgan Stanley,No signal,No WARN layoff notices on record in California since mid-2023,0.18,,0,0.0,retail,2026-11-09
+380,Moog Inc.,No signal,No WARN layoff notices on record in California since mid-2023,0.18,,0,0.0,professional,2026-11-09
+381,Calix,No signal,No WARN layoff notices on record in California since mid-2023,0.18,,0,0.0,professional,2026-11-09
+382,CareDx,No signal,No WARN layoff notices on record in California since mid-2023,0.18,,0,0.4,professional,2026-11-09
+383,Paycom,No signal,No WARN layoff notices on record in California since mid-2023,0.18,,0,0.0,professional,2026-11-09
+384,Raising Cane's,No signal,No WARN layoff notices on record in California since mid-2023,0.18,,0,0.62,food_service,2026-11-09
+385,Red Robin,No signal,No WARN layoff notices on record in California since mid-2023,0.18,,0,1.0,food_service,2026-11-09
+386,Procter & Gamble,No signal,No WARN layoff notices on record in California since mid-2023,0.18,,0,0.0,professional,2026-11-09
+387,PowerSchool Group,No signal,No WARN layoff notices on record in California since mid-2023,0.18,,0,0.0,professional,2026-11-09
+388,Coram AI,No signal,No WARN layoff notices on record in California since mid-2023,0.18,,0,0.0,professional,2026-11-09
+389,CoStar Group,No signal,No WARN layoff notices on record in California since mid-2023,0.18,,0,0.0,professional,2026-11-09
+390,O'Reilly Auto Parts,No signal,No WARN layoff notices on record in California since mid-2023,0.18,,0,1.0,retail,2026-11-09
+391,loanDepot,No signal,No WARN layoff notices on record in California since mid-2023,0.18,,0,0.0,professional,2026-11-09
+392,Lionsgate,No signal,No WARN layoff notices on record in California since mid-2023,0.18,,0,0.0,management,2026-11-09
+393,Novartis,No signal,No WARN layoff notices on record in California since mid-2023,0.18,,0,0.0,professional,2026-11-09
+394,Paylocity,No signal,No WARN layoff notices on record in California since mid-2023,0.18,,0,0.0,professional,2026-11-09
+395,Jack in the Box,No signal,No WARN layoff notices on record in California since mid-2023,0.18,,0,0.5,professional,2026-11-09
+396,Renesas,No signal,No WARN layoff notices on record in California since mid-2023,0.18,,0,0.0,professional,2026-11-09
+397,General Motors (GM),No signal,No WARN layoff notices on record in California since mid-2023,0.18,,0,0.0,tech,2026-11-09
+398,HomeGoods,No signal,No WARN layoff notices on record in California since mid-2023,0.18,,0,1.0,retail,2026-11-09
+399,Banana Republic,No signal,No WARN layoff notices on record in California since mid-2023,0.18,,0,0.38,management,2026-11-09
+400,Greystar,No signal,No WARN layoff notices on record in California since mid-2023,0.18,,0,0.0,professional,2026-11-09
+401,Baskin Robbins,No signal,No WARN layoff notices on record in California since mid-2023,0.18,,0,1.0,food_service,2026-11-09
+402,AutoZone,No signal,No WARN layoff notices on record in California since mid-2023,0.18,,0,0.75,retail,2026-11-09
+403,Aurora Innovation,No signal,No WARN layoff notices on record in California since mid-2023,0.18,,0,0.0,management,2026-11-09
+404,WSP,No signal,No WARN layoff notices on record in California since mid-2023,0.18,,0,0.0,professional,2026-11-09
+405,Denny's,No signal,No WARN layoff notices on record in California since mid-2023,0.18,,0,0.88,food_service,2026-11-09
+406,Big 5 Sporting Goods,No signal,No WARN layoff notices on record in California since mid-2023,0.18,,0,0.88,retail,2026-11-09
+407,HubSpot,No signal,No WARN layoff notices on record in California since mid-2023,0.18,,0,0.0,professional,2026-11-09
+408,Dollar Tree,No signal,No WARN layoff notices on record in California since mid-2023,0.18,,0,0.75,retail,2026-11-09
+409,Manpower,No signal,No WARN layoff notices on record in California since mid-2023,0.164,,0,1.0,manufacturing,2026-11-09
+410,Ultragenyx,No signal,No WARN layoff notices on record in California since mid-2023,0.164,,0,0.0,professional,2026-11-09
+411,Cold Stone Creamery,No signal,No WARN layoff notices on record in California since mid-2023,0.164,,0,1.0,food_service,2026-11-09
+412,Coupa Software Inc,No signal,No WARN layoff notices on record in California since mid-2023,0.164,,0,0.0,professional,2026-11-09
+413,Jacobs,No signal,No WARN layoff notices on record in California since mid-2023,0.164,,0,0.0,professional,2026-11-09
+414,LegalZoom,No signal,No WARN layoff notices on record in California since mid-2023,0.164,,0,0.0,tech,2026-11-09
+415,LA Fitness,No signal,No WARN layoff notices on record in California since mid-2023,0.164,,0,0.5,retail,2026-11-09
+416,Kindred Hospitals,No signal,No WARN layoff notices on record in California since mid-2023,0.164,,0,0.14,healthcare,2026-11-09
+417,Belong (CA),No signal,No WARN layoff notices on record in California since mid-2023,0.164,,0,0.25,food_service,2026-11-09
+418,Blend,No signal,No WARN layoff notices on record in California since mid-2023,0.164,,0,0.0,office_support,2026-11-09
+419,Rundoo,No signal,No WARN layoff notices on record in California since mid-2023,0.164,,0,0.0,professional,2026-11-09
+420,Howmet Aerospace,No signal,No WARN layoff notices on record in California since mid-2023,0.164,,0,0.0,professional,2026-11-09
+421,eHealth,No signal,No WARN layoff notices on record in California since mid-2023,0.164,,0,0.0,professional,2026-11-09
+422,Siemens,No signal,No WARN layoff notices on record in California since mid-2023,0.164,,0,0.0,professional,2026-11-09
+423,Grocery Outlet,No signal,No WARN layoff notices on record in California since mid-2023,0.164,,0,0.83,retail,2026-11-09
+424,First Citizens Bank,No signal,No WARN layoff notices on record in California since mid-2023,0.164,,0,0.0,management,2026-11-09
+425,Guardant Health,No signal,No WARN layoff notices on record in California since mid-2023,0.164,,0,0.25,professional,2026-11-09
+426,Houzz,No signal,No WARN layoff notices on record in California since mid-2023,0.164,,0,0.0,professional,2026-11-09
+427,BridgeBio,No signal,No WARN layoff notices on record in California since mid-2023,0.164,,0,0.0,professional,2026-11-09
+428,Skechers U.S.A.,No signal,No WARN layoff notices on record in California since mid-2023,0.164,,0,0.17,professional,2026-11-09
+429,Arcus Biosciences,No signal,No WARN layoff notices on record in California since mid-2023,0.164,,0,0.0,management,2026-11-09
+430,Arm,No signal,No WARN layoff notices on record in California since mid-2023,0.164,,0,0.0,professional,2026-11-09
+431,American Express,No signal,No WARN layoff notices on record in California since mid-2023,0.164,,0,0.0,professional,2026-11-09
+432,Applebee's,No signal,No WARN layoff notices on record in California since mid-2023,0.164,,0,0.71,food_service,2026-11-09
+433,Amazon Flex,No signal,No WARN layoff notices on record in California since mid-2023,0.164,,0,1.0,transportation_warehouse,2026-11-09
+434,Alcon,No signal,No WARN layoff notices on record in California since mid-2023,0.164,,0,0.0,professional,2026-11-09
+435,ABM Industries,No signal,No WARN layoff notices on record in California since mid-2023,0.164,,0,0.71,office_support,2026-11-09
+436,World Market,No signal,No WARN layoff notices on record in California since mid-2023,0.164,,0,1.0,retail,2026-11-09
+437,First American Financial Corporation,No signal,No WARN layoff notices on record in California since mid-2023,0.164,,0,0.0,tech,2026-11-09
+438,Gong,No signal,No WARN layoff notices on record in California since mid-2023,0.164,,0,0.0,professional,2026-11-09
+439,Aritzia,No signal,No WARN layoff notices on record in California since mid-2023,0.164,,0,0.29,professional,2026-11-09
+440,Slack,No signal,No WARN layoff notices on record in California since mid-2023,0.164,,0,0.0,professional,2026-11-09
+441,Famous Footwear,No signal,No WARN layoff notices on record in California since mid-2023,0.164,,0,0.86,retail,2026-11-09
+442,FIGS (CA),No signal,No WARN layoff notices on record in California since mid-2023,0.164,,0,0.0,professional,2026-11-09
+443,SurveyMonkey,No signal,No WARN layoff notices on record in California since mid-2023,0.164,,0,0.0,professional,2026-11-09
+444,sweetgreen,No signal,No WARN layoff notices on record in California since mid-2023,0.164,,0,0.71,retail,2026-11-09
+445,Revvity,No signal,No WARN layoff notices on record in California since mid-2023,0.164,,0,0.17,professional,2026-11-09
+446,Rubrik,No signal,No WARN layoff notices on record in California since mid-2023,0.164,,0,0.0,professional,2026-11-09
+447,Uniphore Software Systems,No signal,No WARN layoff notices on record in California since mid-2023,0.164,,0,0.0,professional,2026-11-09
+448,CBIZ,No signal,No WARN layoff notices on record in California since mid-2023,0.164,,0,0.0,professional,2026-11-09
+449,Cinemark,No signal,No WARN layoff notices on record in California since mid-2023,0.164,,0,0.71,management,2026-11-09
+450,Crusoe,No signal,No WARN layoff notices on record in California since mid-2023,0.164,,0,0.0,professional,2026-11-09
+451,Pacific Sunwear,No signal,No WARN layoff notices on record in California since mid-2023,0.164,,0,0.6,retail,2026-11-09
+452,Lytx,No signal,No WARN layoff notices on record in California since mid-2023,0.164,,0,0.0,professional,2026-11-09
+453,Paystand,No signal,No WARN layoff notices on record in California since mid-2023,0.164,,0,0.0,professional,2026-11-09
+454,Public Storage,No signal,No WARN layoff notices on record in California since mid-2023,0.164,,0,0.0,professional,2026-11-09
+455,iHeartMedia,No signal,No WARN layoff notices on record in California since mid-2023,0.164,,0,0.14,professional,2026-11-09
+456,Samsung Electronics America,No signal,No WARN layoff notices on record in California since mid-2023,0.164,,0,0.17,professional,2026-11-09
+457,Sam's Club,No signal,No WARN layoff notices on record in California since mid-2023,0.164,,0,0.57,retail,2026-11-09
+458,HydraFacial,No signal,No WARN layoff notices on record in California since mid-2023,0.164,,0,0.0,professional,2026-11-09
+459,Dave & Buster's,No signal,No WARN layoff notices on record in California since mid-2023,0.164,,0,0.57,management,2026-11-09
+460,Burger King,No signal,No WARN layoff notices on record in California since mid-2023,0.164,,0,0.83,food_service,2026-11-09
+461,WeWork,No signal,No WARN layoff notices on record in California since mid-2023,0.164,,0,0.17,professional,2026-11-09
+462,Exponent,No signal,No WARN layoff notices on record in California since mid-2023,0.164,,0,0.0,professional,2026-11-09
+463,Protiviti,No signal,No WARN layoff notices on record in California since mid-2023,0.164,,0,0.0,professional,2026-11-09
+464,UBS,No signal,No WARN layoff notices on record in California since mid-2023,0.164,,0,0.0,professional,2026-11-09
+465,Quantumscape,No signal,No WARN layoff notices on record in California since mid-2023,0.148,,0,0.0,professional,2026-11-09
+466,Progressive Insurance,No signal,No WARN layoff notices on record in California since mid-2023,0.148,,0,0.0,professional,2026-11-09
+467,Capgemini,No signal,No WARN layoff notices on record in California since mid-2023,0.148,,0,0.0,professional,2026-11-09
+468,Paychex,No signal,No WARN layoff notices on record in California since mid-2023,0.148,,0,0.0,professional,2026-11-09
+469,Wilshire Law Firm,No signal,No WARN layoff notices on record in California since mid-2023,0.148,,0,0.0,professional,2026-11-09
+470,Wipro,No signal,No WARN layoff notices on record in California since mid-2023,0.148,,0,0.17,professional,2026-11-09
+471,Chick-fil-A Restaurants,No signal,No WARN layoff notices on record in California since mid-2023,0.148,,0,0.75,management,2026-11-09
+472,Newegg,No signal,No WARN layoff notices on record in California since mid-2023,0.148,,0,0.0,professional,2026-11-09
+473,Colliers,No signal,No WARN layoff notices on record in California since mid-2023,0.148,,0,0.0,professional,2026-11-09
+474,Charles Schwab,No signal,No WARN layoff notices on record in California since mid-2023,0.148,,0,0.17,professional,2026-11-09
+475,UC Davis,No signal,No WARN layoff notices on record in California since mid-2023,0.148,,0,0.0,education,2026-11-09
+476,Wendy's,No signal,No WARN layoff notices on record in California since mid-2023,0.148,,0,1.0,food_service,2026-11-09
+477,AeroVironment,No signal,No WARN layoff notices on record in California since mid-2023,0.148,,0,0.0,professional,2026-11-09
+478,ZipRecruiter,No signal,No WARN layoff notices on record in California since mid-2023,0.148,,0,0.0,professional,2026-11-09
+479,Astera Labs,No signal,No WARN layoff notices on record in California since mid-2023,0.148,,0,0.0,intern,2026-11-09
+480,Anthropologie,No signal,No WARN layoff notices on record in California since mid-2023,0.148,,0,0.67,retail,2026-11-09
+481,Gallagher,No signal,No WARN layoff notices on record in California since mid-2023,0.148,,0,0.0,management,2026-11-09
+482,Sunrise Senior Living,No signal,No WARN layoff notices on record in California since mid-2023,0.148,,0,0.6,personal_care,2026-11-09
+483,Fidelity Investments,No signal,No WARN layoff notices on record in California since mid-2023,0.148,,0,0.0,professional,2026-11-09
+484,Legends,No signal,No WARN layoff notices on record in California since mid-2023,0.148,,0,1.0,food_service,2026-11-09
+485,Boston Consulting Group,No signal,No WARN layoff notices on record in California since mid-2023,0.148,,0,0.0,professional,2026-11-09
+486,Dollar General,No signal,No WARN layoff notices on record in California since mid-2023,0.148,,0,0.6,professional,2026-11-09
+487,Brilliant Earth,No signal,No WARN layoff notices on record in California since mid-2023,0.148,,0,0.0,professional,2026-11-09
+488,Grainger,No signal,No WARN layoff notices on record in California since mid-2023,0.148,,0,0.6,professional,2026-11-09
+489,Fox Corporation,No signal,No WARN layoff notices on record in California since mid-2023,0.148,,0,0.2,professional,2026-11-09
+490,Workato,No signal,No WARN layoff notices on record in California since mid-2023,0.148,,0,0.0,professional,2026-11-09
+491,Everforth Apex Systems,No signal,No WARN layoff notices on record in California since mid-2023,0.148,,0,0.0,professional,2026-11-09
+492,Extra Space Storage,No signal,No WARN layoff notices on record in California since mid-2023,0.148,,0,0.0,professional,2026-11-09
+493,One Medical,No signal,No WARN layoff notices on record in California since mid-2023,0.148,,0,0.0,office_support,2026-11-09
+494,ClickUp,No signal,No WARN layoff notices on record in California since mid-2023,0.148,,0,0.0,professional,2026-11-09
+495,Cotality,No signal,No WARN layoff notices on record in California since mid-2023,0.148,,0,0.0,tech,2026-11-09
+496,Confluent,No signal,No WARN layoff notices on record in California since mid-2023,0.148,,0,0.0,professional,2026-11-09
+497,CoreWeave,No signal,No WARN layoff notices on record in California since mid-2023,0.148,,0,0.0,professional,2026-11-09
+498,Varian Medical Systems,No signal,No WARN layoff notices on record in California since mid-2023,0.148,,0,0.0,tech,2026-11-09
+499,Buffalo Wild Wings,No signal,No WARN layoff notices on record in California since mid-2023,0.148,,0,1.0,food_service,2026-11-09
+500,Deckers Brands,No signal,No WARN layoff notices on record in California since mid-2023,0.148,,0,0.17,management,2026-11-09
+501,SiriusXM,No signal,No WARN layoff notices on record in California since mid-2023,0.148,,0,0.0,professional,2026-11-09
+502,Schneider Electric,No signal,No WARN layoff notices on record in California since mid-2023,0.148,,0,0.0,professional,2026-11-09
+503,Datadog,No signal,No WARN layoff notices on record in California since mid-2023,0.148,,0,0.0,professional,2026-11-09
+504,Bloomingdale's,No signal,No WARN layoff notices on record in California since mid-2023,0.148,,0,0.83,retail,2026-11-09
+505,Labcorp,No signal,No WARN layoff notices on record in California since mid-2023,0.148,,0,0.67,healthcare,2026-11-09
+506,Leidos,No signal,No WARN layoff notices on record in California since mid-2023,0.148,,0,0.0,professional,2026-11-09
+507,RGP,No signal,No WARN layoff notices on record in California since mid-2023,0.148,,0,0.0,professional,2026-11-09
+508,Reddit,No signal,No WARN layoff notices on record in California since mid-2023,0.148,,0,0.0,professional,2026-11-09
+509,Tinder,No signal,No WARN layoff notices on record in California since mid-2023,0.148,,0,0.0,intern,2026-11-09
+510,Mercury Insurance Company,No signal,No WARN layoff notices on record in California since mid-2023,0.148,,0,0.0,professional,2026-11-09
+511,"The TJX Companies, Inc.",No signal,No WARN layoff notices on record in California since mid-2023,0.13,,0,0.25,management,2026-11-09
+512,Victoria's Secret,No signal,No WARN layoff notices on record in California since mid-2023,0.13,,0,1.0,retail,2026-11-09
+513,Warby Parker,No signal,No WARN layoff notices on record in California since mid-2023,0.13,,0,1.0,retail,2026-11-09
+514,WEBTOON,No signal,No WARN layoff notices on record in California since mid-2023,0.13,,0,0.0,professional,2026-11-09
+515,WD,No signal,No WARN layoff notices on record in California since mid-2023,0.13,,0,0.0,professional,2026-11-09
+516,Expedia Group,No signal,No WARN layoff notices on record in California since mid-2023,0.13,,0,0.0,intern,2026-11-09
+517,Unity,No signal,No WARN layoff notices on record in California since mid-2023,0.13,,0,0.0,professional,2026-11-09
+518,UnitedHealth Group,No signal,No WARN layoff notices on record in California since mid-2023,0.13,,0,0.2,professional,2026-11-09
+519,Universal Studios,No signal,No WARN layoff notices on record in California since mid-2023,0.13,,0,1.0,personal_care,2026-11-09
+520,Twist Bioscience,No signal,No WARN layoff notices on record in California since mid-2023,0.13,,0,0.2,management,2026-11-09
+521,Equinox,No signal,No WARN layoff notices on record in California since mid-2023,0.13,,0,0.8,retail,2026-11-09
+522,Lucky Strike Entertainment,No signal,No WARN layoff notices on record in California since mid-2023,0.13,,0,1.0,food_service,2026-11-09
+523,Parexel,No signal,No WARN layoff notices on record in California since mid-2023,0.13,,0,0.0,professional,2026-11-09
+524,California Bank & Trust,No signal,No WARN layoff notices on record in California since mid-2023,0.13,,0,0.0,management,2026-11-09
+525,L'Oréal,No signal,No WARN layoff notices on record in California since mid-2023,0.13,,0,0.0,professional,2026-11-09
+526,Life Time,No signal,No WARN layoff notices on record in California since mid-2023,0.13,,0,1.0,social_services,2026-11-09
+527,Cornerstone OnDemand,No signal,No WARN layoff notices on record in California since mid-2023,0.13,,0,0.0,management,2026-11-09
+528,Cohesity,No signal,No WARN layoff notices on record in California since mid-2023,0.13,,0,0.0,professional,2026-11-09
+529,Cross Country,No signal,No WARN layoff notices on record in California since mid-2023,0.13,,0,0.0,education,2026-11-09
+530,Moody's,No signal,No WARN layoff notices on record in California since mid-2023,0.13,,0,0.0,management,2026-11-09
+531,Netskope,No signal,No WARN layoff notices on record in California since mid-2023,0.13,,0,0.0,tech,2026-11-09
+532,Nothing Bundt Cakes,No signal,No WARN layoff notices on record in California since mid-2023,0.13,,0,1.0,retail,2026-11-09
+533,Tri Counties Bank,No signal,No WARN layoff notices on record in California since mid-2023,0.13,,0,0.2,professional,2026-11-09
+534,UniFirst,No signal,No WARN layoff notices on record in California since mid-2023,0.13,,0,0.4,retail,2026-11-09
+535,UL Solutions,No signal,No WARN layoff notices on record in California since mid-2023,0.13,,0,0.0,intern,2026-11-09
+536,Marathon Petroleum,No signal,No WARN layoff notices on record in California since mid-2023,0.13,,0,0.4,intern,2026-11-09
+537,Mechanics Bank,No signal,No WARN layoff notices on record in California since mid-2023,0.13,,0,0.0,management,2026-11-09
+538,Mettler-Toledo,No signal,No WARN layoff notices on record in California since mid-2023,0.13,,0,0.0,professional,2026-11-09
+539,MilliporeSigma,No signal,No WARN layoff notices on record in California since mid-2023,0.13,,0,0.0,professional,2026-11-09
+540,Miter,No signal,No WARN layoff notices on record in California since mid-2023,0.13,,0,0.2,professional,2026-11-09
+541,RBC Bearings,No signal,No WARN layoff notices on record in California since mid-2023,0.13,,0,0.0,professional,2026-11-09
+542,QuinStreet,No signal,No WARN layoff notices on record in California since mid-2023,0.13,,0,0.0,professional,2026-11-09
+543,Prologis,No signal,No WARN layoff notices on record in California since mid-2023,0.13,,0,0.0,professional,2026-11-09
+544,Pottery Barn,No signal,No WARN layoff notices on record in California since mid-2023,0.13,,0,0.6,retail_warehouse,2026-11-09
+545,Popeyes,No signal,No WARN layoff notices on record in California since mid-2023,0.13,,0,0.8,retail,2026-11-09
+546,PlayStation,No signal,No WARN layoff notices on record in California since mid-2023,0.13,,0,0.0,intern,2026-11-09
+547,The Cheesecake Factory,No signal,No WARN layoff notices on record in California since mid-2023,0.13,,0,1.0,food_service,2026-11-09
+548,Chili's Grill and Bar,No signal,No WARN layoff notices on record in California since mid-2023,0.13,,0,1.0,food_service,2026-11-09
+549,Calpine,No signal,No WARN layoff notices on record in California since mid-2023,0.13,,0,0.0,professional,2026-11-09
+550,Cathay General Bancorp,No signal,No WARN layoff notices on record in California since mid-2023,0.13,,0,0.33,retail,2026-11-09
+551,Carrington College,No signal,No WARN layoff notices on record in California since mid-2023,0.13,,0,0.0,professional,2026-11-09
+552,Capricor Therapeutics,No signal,No WARN layoff notices on record in California since mid-2023,0.13,,0,0.5,manufacturing,2026-11-09
+553,Catalent Pharma,No signal,No WARN layoff notices on record in California since mid-2023,0.13,,0,0.0,professional,2026-11-09
+554,Dine Brands Global,No signal,No WARN layoff notices on record in California since mid-2023,0.13,,0,0.33,professional,2026-11-09
+555,SambaNova,No signal,No WARN layoff notices on record in California since mid-2023,0.13,,0,0.0,professional,2026-11-09
+556,El Pollo Loco,No signal,No WARN layoff notices on record in California since mid-2023,0.13,,0,1.0,retail,2026-11-09
+557,Lawrence Livermore National Laboratory,No signal,No WARN layoff notices on record in California since mid-2023,0.13,,0,0.0,professional,2026-11-09
+558,Reformation,No signal,No WARN layoff notices on record in California since mid-2023,0.13,,0,0.6,professional,2026-11-09
+559,KFC,No signal,No WARN layoff notices on record in California since mid-2023,0.13,,0,0.8,food_service,2026-11-09
+560,JFrog,No signal,No WARN layoff notices on record in California since mid-2023,0.13,,0,0.0,management,2026-11-09
+561,Insperity,No signal,No WARN layoff notices on record in California since mid-2023,0.13,,0,0.2,professional,2026-11-09
+562,Kforce,No signal,No WARN layoff notices on record in California since mid-2023,0.13,,0,0.0,professional,2026-11-09
+563,IQVIA,No signal,No WARN layoff notices on record in California since mid-2023,0.13,,0,0.0,professional,2026-11-09
+564,Dermalogica,No signal,No WARN layoff notices on record in California since mid-2023,0.13,,0,0.0,professional,2026-11-09
+565,Bright Horizons Family Solutions,No signal,No WARN layoff notices on record in California since mid-2023,0.13,,0,0.0,education,2026-11-09
+566,Ruckus Networks,No signal,No WARN layoff notices on record in California since mid-2023,0.13,,0,0.2,management,2026-11-09
+567,Lennar,No signal,No WARN layoff notices on record in California since mid-2023,0.13,,0,0.2,professional,2026-11-09
+568,Levelpath,No signal,No WARN layoff notices on record in California since mid-2023,0.13,,0,0.0,professional,2026-11-09
+569,Bayer,No signal,No WARN layoff notices on record in California since mid-2023,0.13,,0,0.0,professional,2026-11-09
+570,Baxter,No signal,No WARN layoff notices on record in California since mid-2023,0.13,,0,0.0,professional,2026-11-09
+571,Bath & Body Works,No signal,No WARN layoff notices on record in California since mid-2023,0.13,,0,0.8,retail,2026-11-09
+572,Blackhawk Network,No signal,No WARN layoff notices on record in California since mid-2023,0.13,,0,0.0,professional,2026-11-09
+573,Shell,No signal,No WARN layoff notices on record in California since mid-2023,0.13,,0,0.8,retail,2026-11-09
+574,Dunkin',No signal,No WARN layoff notices on record in California since mid-2023,0.13,,0,0.75,food_service,2026-11-09
+575,eGain,No signal,No WARN layoff notices on record in California since mid-2023,0.13,,0,0.0,professional,2026-11-09
+576,DIRECTV,No signal,No WARN layoff notices on record in California since mid-2023,0.13,,0,0.0,professional,2026-11-09
+577,GameStop,No signal,No WARN layoff notices on record in California since mid-2023,0.13,,0,0.5,retail,2026-11-09
+578,Stitch Fix,No signal,No WARN layoff notices on record in California since mid-2023,0.13,,0,0.25,professional,2026-11-09
+579,Gartner,No signal,No WARN layoff notices on record in California since mid-2023,0.13,,0,0.0,professional,2026-11-09
+580,Geek Squad,No signal,No WARN layoff notices on record in California since mid-2023,0.13,,0,0.0,,2026-11-09
+581,StepStone Group,No signal,No WARN layoff notices on record in California since mid-2023,0.13,,0,0.0,professional,2026-11-09
+582,State Farm,No signal,No WARN layoff notices on record in California since mid-2023,0.13,,0,0.6,office_support,2026-11-09
+583,Southwest Airlines,No signal,No WARN layoff notices on record in California since mid-2023,0.13,,0,0.67,retail,2026-11-09
+584,Southern Glazer's Wine & Spirits,No signal,No WARN layoff notices on record in California since mid-2023,0.13,,0,0.0,professional,2026-11-09
+585,SOLV Energy,No signal,No WARN layoff notices on record in California since mid-2023,0.13,,0,0.0,professional,2026-11-09
+586,Figma,No signal,No WARN layoff notices on record in California since mid-2023,0.13,,0,0.0,professional,2026-11-09
+587,Sysco,No signal,No WARN layoff notices on record in California since mid-2023,0.13,,0,0.4,retail,2026-11-09
+588,Skydio,No signal,No WARN layoff notices on record in California since mid-2023,0.13,,0,0.0,professional,2026-11-09
+589,Grifols,No signal,No WARN layoff notices on record in California since mid-2023,0.13,,0,0.2,professional,2026-11-09
+590,Granite Construction,No signal,No WARN layoff notices on record in California since mid-2023,0.13,,0,0.0,professional,2026-11-09
+591,AVEVA,No signal,No WARN layoff notices on record in California since mid-2023,0.13,,0,0.0,intern,2026-11-09
+592,Bain & Company,No signal,No WARN layoff notices on record in California since mid-2023,0.13,,0,0.0,professional,2026-11-09
+593,Teradyne,No signal,No WARN layoff notices on record in California since mid-2023,0.13,,0,0.0,professional,2026-11-09
+594,Tempus AI,No signal,No WARN layoff notices on record in California since mid-2023,0.13,,0,0.0,professional,2026-11-09
+595,Tekion,No signal,No WARN layoff notices on record in California since mid-2023,0.13,,0,0.0,professional,2026-11-09
+596,HashiCorp,No signal,No WARN layoff notices on record in California since mid-2023,0.13,,0,0.0,professional,2026-11-09
+597,Barnes & Noble,No signal,No WARN layoff notices on record in California since mid-2023,0.13,,0,1.0,food_service,2026-11-09
+598,The Y (YMCA),No signal,No WARN layoff notices on record in California since mid-2023,0.13,,0,0.25,professional,2026-11-09
+599,Tetra Tech,No signal,No WARN layoff notices on record in California since mid-2023,0.13,,0,0.0,professional,2026-11-09
+600,WPP Media,No signal,No WARN layoff notices on record in California since mid-2023,0.13,,0,0.0,management,2026-11-09
+601,AIG,No signal,No WARN layoff notices on record in California since mid-2023,0.13,,0,0.0,professional,2026-11-09
+602,72andSunny,No signal,No WARN layoff notices on record in California since mid-2023,0.13,,0,0.0,professional,2026-11-09
+603,Aeva,No signal,No WARN layoff notices on record in California since mid-2023,0.13,,0,0.0,professional,2026-11-09
+604,Amazon,No signal,"52 WARN notices in the past year, most recent 6 days ago, 5,122 workers affected, 51 sites",0.031,2026-11-03,52,0.23,professional,2026-11-09
