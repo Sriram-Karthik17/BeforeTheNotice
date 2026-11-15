@@ -92,7 +92,9 @@ python make_watchlist.py
 
 These commands may overwrite existing output files. Run them in a fresh clone if you want to preserve the committed snapshots. The complete raw-source pipeline requires additional path/configuration validation; in particular, `build_matches.py` defaults to `matches_fixed.csv` while the training-table pipeline consumes `matches_fix.csv`.
 
-## Google Colab notebook
+## Website Demo
+
+[Live Website Demo](https://lookout-puce.vercel.app/)
 
 
 ## Google Colab Notebook
