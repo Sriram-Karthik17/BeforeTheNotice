@@ -1,123 +1,123 @@
 title,company,n_reviews,label,source
-associate,In-N-Out Burger,90,frontline,draft_by_claude_needs_team_check
-educator,lululemon,64,frontline,draft_by_claude_needs_team_check
-specialist,Apple,47,frontline,draft_by_claude_needs_team_check
-associate,Amazon,40,frontline,draft_by_claude_needs_team_check
-associate,McKinsey & Company,20,not_frontline,draft_by_claude_needs_team_check
-associate,Walmart,20,frontline,draft_by_claude_needs_team_check
-associate,PwC,17,not_frontline,draft_by_claude_needs_team_check
-associate,KPMG,16,not_frontline,draft_by_claude_needs_team_check
-sales specialist,Apple,11,frontline,draft_by_claude_needs_team_check
-sales representative,Sunrun,11,not_frontline,draft_by_claude_needs_team_check
-supervisor,Starbucks,9,frontline,draft_by_claude_needs_team_check
-technician,Tesla,9,frontline,draft_by_claude_needs_team_check
-associate,McDonald's,9,frontline,draft_by_claude_needs_team_check
-sales representative,AT&T,9,frontline,draft_by_claude_needs_team_check
-sales representative,Cintas,8,not_frontline,draft_by_claude_needs_team_check
-associate,Target,8,frontline,draft_by_claude_needs_team_check
-supervisor,Costco Wholesale,8,frontline,draft_by_claude_needs_team_check
-sales consultant,CarMax,8,frontline,draft_by_claude_needs_team_check
-team lead,Panera Bread,8,frontline,draft_by_claude_needs_team_check
-associate,Panera Bread,8,frontline,draft_by_claude_needs_team_check
-associate,Marcus & Millichap,8,not_frontline,draft_by_claude_needs_team_check
-client advisor,Gucci,7,frontline,draft_by_claude_needs_team_check
-associate,J.P. Morgan,7,not_frontline,draft_by_claude_needs_team_check
-associate,Goldman Sachs,7,not_frontline,draft_by_claude_needs_team_check
-associate,Booz Allen Hamilton,7,not_frontline,draft_by_claude_needs_team_check
-sales representative,Verizon,7,frontline,draft_by_claude_needs_team_check
-sales,Apple,7,frontline,draft_by_claude_needs_team_check
-sales representative,Spectrum,7,frontline,draft_by_claude_needs_team_check
-associate,Tesla,6,frontline,draft_by_claude_needs_team_check
-sales,Nordstrom,6,frontline,draft_by_claude_needs_team_check
-associate,BlackRock,6,not_frontline,draft_by_claude_needs_team_check
-technician,Google,6,frontline,draft_by_claude_needs_team_check
-technician,Apple,6,frontline,draft_by_claude_needs_team_check
-associate,Kohl's,6,frontline,draft_by_claude_needs_team_check
-client advisor,VinFast,6,frontline,draft_by_claude_needs_team_check
-associate,JPMorganChase,6,not_frontline,draft_by_claude_needs_team_check
-sales,Google,6,not_frontline,draft_by_claude_needs_team_check
-sales,AT&T,6,frontline,draft_by_claude_needs_team_check
-associate,Google,6,not_frontline,draft_by_claude_needs_team_check
-sales representative,T-Mobile,6,frontline,draft_by_claude_needs_team_check
-coordinator,NBCUniversal,6,not_frontline,draft_by_claude_needs_team_check
-sales representative,Wajax,6,not_frontline,draft_by_claude_needs_team_check
-sales representative,AstraZeneca,5,not_frontline,draft_by_claude_needs_team_check
-associate,Taco Bell,5,frontline,draft_by_claude_needs_team_check
-associate,TPG,5,not_frontline,draft_by_claude_needs_team_check
-associate,Infosys,5,not_frontline,draft_by_claude_needs_team_check
-associate,The Home Depot,5,frontline,draft_by_claude_needs_team_check
-sales,Uniphore Software Systems,5,not_frontline,draft_by_claude_needs_team_check
-sales consultant,Best Buy,5,frontline,draft_by_claude_needs_team_check
-sales representative,Best Buy,5,frontline,draft_by_claude_needs_team_check
-sales representative,Google,5,not_frontline,draft_by_claude_needs_team_check
-associate,Boston Consulting Group,5,not_frontline,draft_by_claude_needs_team_check
-sales,JFrog,5,not_frontline,draft_by_claude_needs_team_check
-sales,Rippling,5,not_frontline,draft_by_claude_needs_team_check
-associate,Andersen,5,not_frontline,draft_by_claude_needs_team_check
-team leader,Target,5,frontline,draft_by_claude_needs_team_check
-associate,RSM,5,not_frontline,draft_by_claude_needs_team_check
-sales consultant,Sysco,5,not_frontline,draft_by_claude_needs_team_check
-associate,Silicon Valley Bank,5,not_frontline,draft_by_claude_needs_team_check
-production assistant,NBCUniversal,5,not_frontline,draft_by_claude_needs_team_check
-team leader,Jack in the Box,5,frontline,draft_by_claude_needs_team_check
-operations associate,Sephora,5,frontline,draft_by_claude_needs_team_check
-production,Tesla,5,frontline,draft_by_claude_needs_team_check
-team leader,Galileo Learning,5,not_frontline,draft_by_claude_needs_team_check
-associate,Marshalls,4,frontline,draft_by_claude_needs_team_check
-technician,SpaceX,4,frontline,draft_by_claude_needs_team_check
-supervisor,UPS,4,frontline,draft_by_claude_needs_team_check
-associate,Third Bridge,4,not_frontline,draft_by_claude_needs_team_check
-associate,Ross Stores,4,frontline,draft_by_claude_needs_team_check
-sales,Vans,4,frontline,draft_by_claude_needs_team_check
-sales representative,Breakthru Beverage Group,4,not_frontline,draft_by_claude_needs_team_check
-sales representative,ADT,4,not_frontline,draft_by_claude_needs_team_check
-team lead,Walmart,4,frontline,draft_by_claude_needs_team_check
-team lead,Target,4,frontline,draft_by_claude_needs_team_check
-associate,Cooley,4,not_frontline,draft_by_claude_needs_team_check
-sales representative,Thermo Fisher Scientific,4,not_frontline,draft_by_claude_needs_team_check
-sales representative,Republic National Distributing Company,4,not_frontline,draft_by_claude_needs_team_check
-associate,HighPoint Associates,4,not_frontline,draft_by_claude_needs_team_check
-associate,EY,4,not_frontline,draft_by_claude_needs_team_check
-sales representative,Paycom,4,not_frontline,draft_by_claude_needs_team_check
-supervisor,The Home Depot,4,frontline,draft_by_claude_needs_team_check
-coach,F45 Training,4,frontline,draft_by_claude_needs_team_check
-sales specialist,Lowe's Home Improvement,4,frontline,draft_by_claude_needs_team_check
-coordinator,Universal Music Group,4,not_frontline,draft_by_claude_needs_team_check
-supervisor,Baxter,3,not_frontline,draft_by_claude_needs_team_check
-supervisor,Bath & Body Works,3,frontline,draft_by_claude_needs_team_check
-supervisor,BPM,3,not_frontline,draft_by_claude_needs_team_check
-supervisor,CVS Health,3,frontline,draft_by_claude_needs_team_check
-advisor,Apple,3,frontline,draft_by_claude_needs_team_check
-advisor,Tesla,3,frontline,draft_by_claude_needs_team_check
-advisor,Southern California Edison,3,not_frontline,draft_by_claude_needs_team_check
-associate,Gilead Sciences,3,not_frontline,draft_by_claude_needs_team_check
-associate,Exponent,3,not_frontline,draft_by_claude_needs_team_check
-associate,Deloitte,3,not_frontline,draft_by_claude_needs_team_check
-sales representative,Paychex,3,not_frontline,draft_by_claude_needs_team_check
-contractor,Robert Half,3,not_frontline,draft_by_claude_needs_team_check
-supervisor,Molina Healthcare,3,not_frontline,draft_by_claude_needs_team_check
-supervisor,US Navy,3,not_frontline,draft_by_claude_needs_team_check
-sales representative,Vivint,3,not_frontline,draft_by_claude_needs_team_check
-specialist,Southern California Edison,3,not_frontline,draft_by_claude_needs_team_check
-specialist,UC San Francisco,3,not_frontline,draft_by_claude_needs_team_check
-independent contractor,DoorDash,3,frontline,draft_by_claude_needs_team_check
-coordinator,Netflix,3,not_frontline,draft_by_claude_needs_team_check
-associate,Harris Williams & Co.,3,not_frontline,draft_by_claude_needs_team_check
-sales representative,Techtronic Industries North America,3,not_frontline,draft_by_claude_needs_team_check
-associate,Cognizant,3,not_frontline,draft_by_claude_needs_team_check
-sales,Cintas,3,not_frontline,draft_by_claude_needs_team_check
-sales,Best Buy,3,frontline,draft_by_claude_needs_team_check
-sales,AutoZone,3,frontline,draft_by_claude_needs_team_check
-sales,Botrista,3,not_frontline,draft_by_claude_needs_team_check
-sales representative,Stryker,3,not_frontline,draft_by_claude_needs_team_check
-quality assurance,Catalent Pharma,3,not_frontline,draft_by_claude_needs_team_check
-sales,Oracle,3,not_frontline,draft_by_claude_needs_team_check
-associate,CBRE,3,not_frontline,draft_by_claude_needs_team_check
-sales,Lithia & Driveway,3,frontline,draft_by_claude_needs_team_check
-sales,Salesforce,3,not_frontline,draft_by_claude_needs_team_check
-sales,Semper Solaris,3,not_frontline,draft_by_claude_needs_team_check
-sales,T-Mobile,3,frontline,draft_by_claude_needs_team_check
-associate,Cognizant Technology Solutions,3,not_frontline,draft_by_claude_needs_team_check
-sales,Tesla,3,frontline,draft_by_claude_needs_team_check
-sales representative,Global Investments Construction,3,not_frontline,draft_by_claude_needs_team_check
-associate,Apple,3,frontline,draft_by_claude_needs_team_check
+associate,In-N-Out Burger,90,frontline,manual_label
+educator,lululemon,64,frontline,manual_label
+specialist,Apple,47,frontline,manual_label
+associate,Amazon,40,frontline,manual_label
+associate,McKinsey & Company,20,not_frontline,manual_label
+associate,Walmart,20,frontline,manual_label
+associate,PwC,17,not_frontline,manual_label
+associate,KPMG,16,not_frontline,manual_label
+sales specialist,Apple,11,frontline,manual_label
+sales representative,Sunrun,11,not_frontline,manual_label
+supervisor,Starbucks,9,frontline,manual_label
+technician,Tesla,9,frontline,manual_label
+associate,McDonald's,9,frontline,manual_label
+sales representative,AT&T,9,frontline,manual_label
+sales representative,Cintas,8,not_frontline,manual_label
+associate,Target,8,frontline,manual_label
+supervisor,Costco Wholesale,8,frontline,manual_label
+sales consultant,CarMax,8,frontline,manual_label
+team lead,Panera Bread,8,frontline,manual_label
+associate,Panera Bread,8,frontline,manual_label
+associate,Marcus & Millichap,8,not_frontline,manual_label
+client advisor,Gucci,7,frontline,manual_label
+associate,J.P. Morgan,7,not_frontline,manual_label
+associate,Goldman Sachs,7,not_frontline,manual_label
+associate,Booz Allen Hamilton,7,not_frontline,manual_label
+sales representative,Verizon,7,frontline,manual_label
+sales,Apple,7,frontline,manual_label
+sales representative,Spectrum,7,frontline,manual_label
+associate,Tesla,6,frontline,manual_label
+sales,Nordstrom,6,frontline,manual_label
+associate,BlackRock,6,not_frontline,manual_label
+technician,Google,6,frontline,manual_label
+technician,Apple,6,frontline,manual_label
+associate,Kohl's,6,frontline,manual_label
+client advisor,VinFast,6,frontline,manual_label
+associate,JPMorganChase,6,not_frontline,manual_label
+sales,Google,6,not_frontline,manual_label
+sales,AT&T,6,frontline,manual_label
+associate,Google,6,not_frontline,manual_label
+sales representative,T-Mobile,6,frontline,manual_label
+coordinator,NBCUniversal,6,not_frontline,manual_label
+sales representative,Wajax,6,not_frontline,manual_label
+sales representative,AstraZeneca,5,not_frontline,manual_label
+associate,Taco Bell,5,frontline,manual_label
+associate,TPG,5,not_frontline,manual_label
+associate,Infosys,5,not_frontline,manual_label
+associate,The Home Depot,5,frontline,manual_label
+sales,Uniphore Software Systems,5,not_frontline,manual_label
+sales consultant,Best Buy,5,frontline,manual_label
+sales representative,Best Buy,5,frontline,manual_label
+sales representative,Google,5,not_frontline,manual_label
+associate,Boston Consulting Group,5,not_frontline,manual_label
+sales,JFrog,5,not_frontline,manual_label
+sales,Rippling,5,not_frontline,manual_label
+associate,Andersen,5,not_frontline,manual_label
+team leader,Target,5,frontline,manual_label
+associate,RSM,5,not_frontline,manual_label
+sales consultant,Sysco,5,not_frontline,manual_label
+associate,Silicon Valley Bank,5,not_frontline,manual_label
+production assistant,NBCUniversal,5,not_frontline,manual_label
+team leader,Jack in the Box,5,frontline,manual_label
+operations associate,Sephora,5,frontline,manual_label
+production,Tesla,5,frontline,manual_label
+team leader,Galileo Learning,5,not_frontline,manual_label
+associate,Marshalls,4,frontline,manual_label
+technician,SpaceX,4,frontline,manual_label
+supervisor,UPS,4,frontline,manual_label
+associate,Third Bridge,4,not_frontline,manual_label
+associate,Ross Stores,4,frontline,manual_label
+sales,Vans,4,frontline,manual_label
+sales representative,Breakthru Beverage Group,4,not_frontline,manual_label
+sales representative,ADT,4,not_frontline,manual_label
+team lead,Walmart,4,frontline,manual_label
+team lead,Target,4,frontline,manual_label
+associate,Cooley,4,not_frontline,manual_label
+sales representative,Thermo Fisher Scientific,4,not_frontline,manual_label
+sales representative,Republic National Distributing Company,4,not_frontline,manual_label
+associate,HighPoint Associates,4,not_frontline,manual_label
+associate,EY,4,not_frontline,manual_label
+sales representative,Paycom,4,not_frontline,manual_label
+supervisor,The Home Depot,4,frontline,manual_label
+coach,F45 Training,4,frontline,manual_label
+sales specialist,Lowe's Home Improvement,4,frontline,manual_label
+coordinator,Universal Music Group,4,not_frontline,manual_label
+supervisor,Baxter,3,not_frontline,manual_label
+supervisor,Bath & Body Works,3,frontline,manual_label
+supervisor,BPM,3,not_frontline,manual_label
+supervisor,CVS Health,3,frontline,manual_label
+advisor,Apple,3,frontline,manual_label
+advisor,Tesla,3,frontline,manual_label
+advisor,Southern California Edison,3,not_frontline,manual_label
+associate,Gilead Sciences,3,not_frontline,manual_label
+associate,Exponent,3,not_frontline,manual_label
+associate,Deloitte,3,not_frontline,manual_label
+sales representative,Paychex,3,not_frontline,manual_label
+contractor,Robert Half,3,not_frontline,manual_label
+supervisor,Molina Healthcare,3,not_frontline,manual_label
+supervisor,US Navy,3,not_frontline,manual_label
+sales representative,Vivint,3,not_frontline,manual_label
+specialist,Southern California Edison,3,not_frontline,manual_label
+specialist,UC San Francisco,3,not_frontline,manual_label
+independent contractor,DoorDash,3,frontline,manual_label
+coordinator,Netflix,3,not_frontline,manual_label
+associate,Harris Williams & Co.,3,not_frontline,manual_label
+sales representative,Techtronic Industries North America,3,not_frontline,manual_label
+associate,Cognizant,3,not_frontline,manual_label
+sales,Cintas,3,not_frontline,manual_label
+sales,Best Buy,3,frontline,manual_label
+sales,AutoZone,3,frontline,manual_label
+sales,Botrista,3,not_frontline,manual_label
+sales representative,Stryker,3,not_frontline,manual_label
+quality assurance,Catalent Pharma,3,not_frontline,manual_label
+sales,Oracle,3,not_frontline,manual_label
+associate,CBRE,3,not_frontline,manual_label
+sales,Lithia & Driveway,3,frontline,manual_label
+sales,Salesforce,3,not_frontline,manual_label
+sales,Semper Solaris,3,not_frontline,manual_label
+sales,T-Mobile,3,frontline,manual_label
+associate,Cognizant Technology Solutions,3,not_frontline,manual_label
+sales,Tesla,3,frontline,manual_label
+sales representative,Global Investments Construction,3,not_frontline,manual_label
+associate,Apple,3,frontline,manual_label
