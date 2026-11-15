@@ -216,5 +216,16 @@ marimo/_static/
 marimo/_lsp/
 __marimo__/
 
+# Lookout raw source datasets
+glassdoor_reviews.csv.xz
+2023-2026WARN_Data.csv
+stock_prices.csv
+job_titles.csv
+job_zones.csv
+occupation_data.csv
+
+# Private data directory
+private_data/
+
 # Streamlit
 .streamlit/secrets.toml
