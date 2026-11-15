@@ -1,0 +1,995 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Lookout: California layoff watchlist</title>
+<meta name="description" content="Lookout ranks California employers by how likely each is to file a WARN layoff notice in the next six months.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400..800&family=Plus+Jakarta+Sans:wght@400..700&display=swap" rel="stylesheet">
+<style>
+:root {
+  --paper: #F6F0E3;
+  --sheet: #FCF9F1;
+  --ink: #1E1930;
+  --ink-2: #6B6579;
+  --rule: #E4DAC6;
+  --quiet: #D6CCB8;
+  --lamp: #7C3AED;
+  --lamp-deep: #5B21B6;
+  --grad: linear-gradient(120deg, #5B2EE5, #9D4EDD 55%, #D16BFF);
+  --display: "Outfit", "Helvetica Neue", Arial, sans-serif;
+  --body: "Plus Jakarta Sans", "Segoe UI", system-ui, sans-serif;
+  --wrap: 1180px;
+  --ease: cubic-bezier(.2, .7, .1, 1);
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { margin: 0; background: var(--paper); color: var(--ink); font: 400 16px/1.55 var(--body); font-feature-settings: "tnum" 1; -webkit-font-smoothing: antialiased; }
+a { color: inherit; }
+button, input, select { font: inherit; color: inherit; }
+:focus-visible { outline: 3px solid var(--lamp-deep); outline-offset: 2px; }
+.wrap { max-width: var(--wrap); margin: 0 auto; padding: 0 28px; }
+h1, h2, h3 { font-family: var(--display); margin: 0; font-weight: 700; letter-spacing: -0.02em; }
+h2 { font-size: clamp(30px, 3.6vw, 46px); line-height: 1.02; font-stretch: 88%; }
+h3 { font-size: 20px; line-height: 1.2; letter-spacing: -0.01em; }
+p { margin: 0; }
+.lede { font-size: 19px; line-height: 1.5; max-width: 62ch; color: var(--ink); }
+.note { color: var(--ink-2); font-size: 14.5px; max-width: 74ch; }
+section { padding: 84px 0 0; scroll-margin-top: 40px; }
+.section-head { padding-bottom: 22px; border-bottom: 2px solid var(--ink); margin-bottom: 28px; }
+.section-head p { font-size: 17px; max-width: 58ch; }
+
+/* top bar */
+.bar { position: sticky; top: 0; z-index: 30; background: color-mix(in srgb, var(--paper) 92%, transparent); backdrop-filter: blur(8px); border-bottom: 1px solid var(--rule); }
+.bar .wrap { display: flex; align-items: center; gap: 28px; height: 60px; }
+.mark { display: flex; align-items: center; gap: 10px; font: 800 24px/1 var(--display); letter-spacing: -0.03em; text-decoration: none; font-stretch: 84%; }
+.lampicon { width: 22px; height: 22px; border-radius: 50%; background: var(--ink); position: relative; overflow: hidden; flex: none; }
+.lampicon::before { content: ""; position: absolute; inset: 0; background: conic-gradient(from 0deg, var(--lamp) 0 62deg, transparent 62deg 360deg); animation: turn 7s linear infinite; }
+.lampicon::after { content: ""; position: absolute; inset: 8px; border-radius: 50%; background: var(--ink); }
+@keyframes turn { to { transform: rotate(360deg); } }
+.bar nav { display: flex; gap: 22px; margin-left: auto; font-size: 14.5px; }
+.bar nav a { text-decoration: none; padding: 6px 0; border-bottom: 2px solid transparent; transition: border-color .2s; white-space: nowrap; }
+.bar nav a:hover { border-color: var(--ink); }
+.bar nav a.cur { border-color: var(--lamp); color: var(--lamp-deep); }
+.bar .asof { font-size: 13px; color: var(--ink-2); white-space: nowrap; }
+
+/* hero */
+.hero.wrap { padding-top: 64px; position: relative; }
+main { overflow-x: clip; }
+.orb { position: absolute; right: -120px; top: -60px; width: 520px; height: 520px; border-radius: 50%; background: radial-gradient(circle at 35% 35%, #B67BFF, #6D3BFF 55%, transparent 72%); filter: blur(70px); opacity: .34; pointer-events: none; animation: drift 14s ease-in-out infinite alternate; z-index: 0; }
+@keyframes drift { to { transform: translate(-90px, 50px) scale(1.15); } }
+.hero-grid, .skyline-wrap { position: relative; z-index: 1; }
+.hero h1 .w { display: inline-block; opacity: 0; transform: translateY(.5em); animation: rise .7s var(--ease) forwards; }
+@keyframes rise { to { opacity: 1; transform: none; } }
+section.rv { opacity: 0; transform: translateY(28px); transition: opacity .7s var(--ease), transform .7s var(--ease); }
+section.rv.in { opacity: 1; transform: none; }
+.bigfact em { font-style: normal; background: var(--grad); -webkit-background-clip: text; background-clip: text; color: transparent; background-size: 200% 100%; animation: sheen 6s ease-in-out infinite alternate; }
+@keyframes sheen { to { background-position: 100% 0; } }
+.gap b { background: var(--grad); -webkit-background-clip: text; background-clip: text; color: transparent; width: fit-content; }
+.search input:focus { border-color: var(--lamp); outline: none; box-shadow: 0 0 0 4px color-mix(in srgb, var(--lamp) 22%, transparent); }
+.fig { transition: transform .25s var(--ease), box-shadow .25s; }
+.fig:hover { transform: translateY(-3px); box-shadow: 0 18px 34px -24px rgba(91, 33, 182, .55); }
+.cell { transition: transform .2s var(--ease); }
+.cell:hover { transform: translateY(-2px); }
+.hero h1 { font-size: clamp(44px, 7.4vw, 104px); line-height: .92; font-stretch: 78%; font-weight: 800; letter-spacing: -0.035em; max-width: 12ch; }
+.hero-grid { display: grid; grid-template-columns: minmax(0, 7fr) minmax(0, 5fr); gap: 48px; align-items: end; }
+.hero-side { padding-bottom: 10px; }
+.hero-side .lede { margin-bottom: 18px; }
+.skyline-wrap { margin-top: 44px; position: relative; }
+.skyline { display: block; width: 100%; height: auto; overflow: visible; }
+.skyline .col { cursor: pointer; transition: opacity .15s; }
+.skyline:hover .col { opacity: .55; }
+.skyline .col:hover, .skyline .col.on { opacity: 1; }
+.skyline text { font-family: var(--body); fill: var(--ink); }
+.skyline .name { font: 600 13px var(--body); pointer-events: none; }
+.skyline .axis { font-size: 12px; fill: var(--ink-2); }
+.key { display: flex; flex-wrap: wrap; gap: 8px 22px; font-size: 14px; margin-top: 14px; color: var(--ink-2); align-items: center; }
+.key b { font-weight: 500; color: var(--ink); }
+.sw { display: inline-block; width: 12px; height: 12px; border-radius: 2px; margin-right: 7px; vertical-align: -1px; }
+.sw.high { background: var(--grad); } .sw.elev { background: var(--ink); } .sw.none { background: var(--quiet); }
+.tip { position: absolute; z-index: 40; pointer-events: none; background: var(--ink); color: var(--paper); padding: 9px 12px; border-radius: 6px; font-size: 13.5px; line-height: 1.4; max-width: 280px; opacity: 0; transform: translateY(4px); transition: opacity .12s, transform .12s; }
+.tip.show { opacity: 1; transform: none; }
+.tip strong { display: block; font-weight: 600; font-size: 14.5px; }
+
+/* controls */
+.controls { display: flex; flex-wrap: wrap; gap: 14px 22px; align-items: center; margin-bottom: 18px; }
+.controls > div { display: flex; align-items: center; min-width: 0; max-width: 100%; }
+.ctl-label { flex: none; }
+.seg { display: inline-flex; background: var(--sheet); border: 1px solid var(--rule); border-radius: 8px; padding: 3px; gap: 2px; max-width: 100%; overflow-x: auto; }
+.seg button { border: 0; background: transparent; padding: 7px 12px; border-radius: 6px; font-size: 14px; cursor: pointer; white-space: nowrap; transition: background .15s; }
+.seg button:hover { background: var(--paper); }
+.seg button[aria-pressed="true"] { background: var(--ink); color: var(--paper); }
+.seg button.live[aria-pressed="true"] { background: var(--grad); color: #fff; font-weight: 600; }
+.ctl-label { font-size: 13.5px; color: var(--ink-2); margin-right: 8px; }
+.btn { border: 1px solid var(--ink); background: transparent; border-radius: 8px; padding: 8px 14px; font-size: 14px; cursor: pointer; transition: background .15s, color .15s, transform .15s; }
+.btn:hover { background: var(--grad); border-color: transparent; color: #fff; transform: translateY(-1px); }
+.spacer { flex: 1; }
+.verdict { font: 600 clamp(20px, 2.2vw, 26px)/1.25 var(--display); letter-spacing: -0.015em; margin: 6px 0 20px; max-width: 46ch; font-stretch: 90%; }
+
+/* table */
+.tablebox { background: var(--sheet); border: 1px solid var(--rule); border-radius: 10px; overflow: hidden; }
+.scroll { overflow-x: auto; }
+table { border-collapse: collapse; width: 100%; font-size: 15px; }
+th { text-align: left; font-weight: 500; font-size: 13px; color: var(--ink-2); padding: 12px 14px; border-bottom: 1px solid var(--rule); white-space: nowrap; }
+td { padding: 11px 14px; border-bottom: 1px solid var(--rule); vertical-align: middle; }
+tr:last-child td { border-bottom: 0; }
+td.num, th.num { text-align: right; }
+tbody tr { cursor: pointer; transition: background .12s; }
+tbody tr:hover { background: color-mix(in srgb, var(--lamp) 16%, var(--sheet)); }
+tbody tr.enter { animation: rowin .32s var(--ease) both; }
+@keyframes rowin { from { opacity: 0; transform: translateY(6px); } }
+td.rank { font: 700 17px var(--display); width: 56px; }
+td.emp { font-weight: 500; min-width: 180px; }
+td.why { color: var(--ink-2); font-size: 14px; min-width: 260px; }
+.chip { display: inline-block; padding: 2px 9px; border-radius: 999px; font-size: 13px; font-weight: 500; white-space: nowrap; border: 1px solid var(--rule); color: var(--ink-2); }
+.chip.high { background: var(--grad); border-color: transparent; color: #fff; }
+.chip.elev { background: var(--ink); border-color: var(--ink); color: var(--paper); }
+.out { white-space: nowrap; font-size: 14px; }
+.out i { display: inline-block; width: 9px; height: 9px; border-radius: 50%; margin-right: 8px; background: var(--quiet); }
+.out.hit i { background: var(--ink); }
+.out.hit { font-weight: 500; }
+.tablefoot { padding: 12px 14px; font-size: 13.5px; color: var(--ink-2); border-top: 1px solid var(--rule); }
+
+/* lookup */
+.search { position: relative; max-width: 560px; }
+.search input { width: 100%; padding: 15px 18px; font-size: 18px; border: 2px solid var(--ink); border-radius: 10px; background: var(--sheet); }
+.search input::placeholder { color: var(--ink-2); }
+.sugg { position: absolute; left: 0; right: 0; top: calc(100% + 6px); background: var(--sheet); border: 1px solid var(--rule); border-radius: 10px; overflow: hidden; z-index: 20; box-shadow: 0 14px 30px -18px rgba(21, 33, 28, .5); display: none; }
+.sugg.open { display: block; }
+.sugg button { display: flex; justify-content: space-between; gap: 14px; width: 100%; text-align: left; border: 0; background: transparent; padding: 10px 16px; cursor: pointer; font-size: 15px; }
+.sugg button:hover, .sugg button.cur { background: color-mix(in srgb, var(--lamp) 22%, var(--sheet)); }
+.sugg small { color: var(--ink-2); font-size: 13px; white-space: nowrap; }
+.co { margin-top: 30px; display: grid; grid-template-columns: minmax(0, 5fr) minmax(0, 7fr); gap: 44px; animation: rowin .4s var(--ease) both; }
+.co h3.big { font-size: clamp(30px, 3.4vw, 44px); line-height: 1; font-stretch: 86%; margin-bottom: 14px; }
+.facts { display: grid; grid-template-columns: 1fr 1fr; gap: 0; border-top: 1px solid var(--rule); margin-top: 18px; }
+.facts div { padding: 12px 0; border-bottom: 1px solid var(--rule); }
+.facts div:nth-child(odd) { padding-right: 16px; }
+.facts dt { font-size: 13px; color: var(--ink-2); }
+.facts dd { margin: 2px 0 0; font-weight: 500; font-size: 16px; }
+.strip { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 6px; margin: 12px 0 28px; }
+.cell { background: var(--sheet); border: 1px solid var(--rule); border-radius: 8px; padding: 9px 10px; font-size: 13px; color: var(--ink-2); }
+.cell b { display: block; font: 700 21px/1.1 var(--display); color: var(--ink); margin: 3px 0; }
+.cell.high { background: var(--grad); border-color: transparent; color: #fff; }
+.cell.high b { color: #fff; }
+.cell.elev { background: var(--ink); border-color: var(--ink); color: var(--paper); }
+.cell.elev b { color: var(--paper); }
+.cell.na b { color: var(--quiet); }
+.subhead { font: 600 15px var(--body); margin-bottom: 2px; }
+.filings { margin-top: 10px; }
+.filings td, .filings th { padding: 8px 10px; font-size: 14px; }
+.empty { padding: 30px; background: var(--sheet); border: 1px dashed var(--quiet); border-radius: 10px; color: var(--ink-2); margin-top: 26px; max-width: 560px; }
+.caution { margin-top: 22px; padding: 12px 14px; border-left: 4px solid var(--lamp); background: var(--sheet); font-size: 14.5px; max-width: 70ch; }
+
+/* charts */
+.two { display: grid; grid-template-columns: 1fr 1fr; gap: 44px; }
+.fig { background: var(--sheet); border: 1px solid var(--rule); border-radius: 10px; padding: 22px 22px 18px; position: relative; }
+.fig h3 { margin-bottom: 4px; }
+.fig .note { margin-bottom: 16px; }
+.fig svg { display: block; width: 100%; height: auto; overflow: visible; }
+.fig svg text { font-family: var(--body); fill: var(--ink); font-size: 13px; }
+.fig svg .lab { fill: var(--ink-2); }
+.grow { transform-box: fill-box; transform-origin: 0 50%; transform: scaleX(0); transition: transform .9s var(--ease); }
+.growy { transform-box: fill-box; transform-origin: 50% 100%; transform: scaleY(0); transition: transform .9s var(--ease); }
+.seen .grow, .seen .growy { transform: none; }
+.fade { opacity: 0; transition: opacity .5s .5s; }
+.seen .fade { opacity: 1; }
+.legend { display: flex; gap: 18px; font-size: 13.5px; color: var(--ink-2); margin-top: 10px; }
+.trade { margin-top: 18px; }
+.trade td, .trade th { padding: 9px 10px; }
+.bigfact { font: 800 clamp(64px, 9vw, 128px)/.86 var(--display); letter-spacing: -0.04em; font-stretch: 78%; }
+.bigfact span { font-size: .42em; font-weight: 600; letter-spacing: -0.02em; }
+.factrow { display: grid; grid-template-columns: minmax(0, 5fr) minmax(0, 7fr); gap: 44px; align-items: end; margin-bottom: 34px; }
+.factrow p { font-size: 18px; max-width: 54ch; }
+.gaps { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0; border-top: 1px solid var(--rule); border-bottom: 1px solid var(--rule); margin-bottom: 30px; }
+.gap { padding: 22px 26px 24px 0; }
+.gap + .gap { border-left: 1px solid var(--rule); padding-left: 26px; }
+.gap b { display: block; font: 800 54px/.95 var(--display); letter-spacing: -0.03em; font-stretch: 80%; margin-bottom: 8px; }
+.gap p { font-size: 15.5px; max-width: 34ch; }
+
+/* method */
+.method { display: grid; grid-template-columns: minmax(0, 7fr) minmax(0, 5fr); gap: 56px; }
+.steps { counter-reset: s; list-style: none; padding: 0; margin: 0; }
+.steps li { counter-increment: s; padding: 13px 0 13px 46px; border-bottom: 1px solid var(--rule); position: relative; max-width: 64ch; }
+.steps li::before { content: counter(s); position: absolute; left: 0; top: 9px; color: var(--lamp); font: 800 24px var(--display); }
+.steps b { font-weight: 600; }
+.limits { padding: 0; margin: 0; list-style: none; }
+.limits li { padding: 12px 0; border-bottom: 1px solid var(--rule); font-size: 15px; }
+.limits b { font-weight: 600; display: block; }
+footer { margin-top: 96px; background: var(--ink); color: var(--paper); padding: 44px 0 52px; }
+footer .wrap { display: grid; grid-template-columns: minmax(0, 5fr) minmax(0, 7fr); gap: 44px; align-items: start; }
+footer .mark { color: var(--paper); font-size: 34px; }
+footer .lampicon { background: var(--paper); width: 28px; height: 28px; }
+footer .lampicon::after { background: var(--paper); inset: 10px; }
+footer p { font-size: 14.5px; color: color-mix(in srgb, var(--paper) 78%, transparent); max-width: 66ch; margin-bottom: 10px; }
+
+@media (max-width: 900px) {
+  .bar nav { display: none; }
+  .bar .asof { margin-left: auto; }
+  .hero-grid, .section-head, .co, .two, .method, .factrow, footer .wrap { grid-template-columns: 1fr; gap: 24px; }
+  .gaps { grid-template-columns: 1fr; }
+  .gap + .gap { border-left: 0; border-top: 1px solid var(--rule); padding-left: 0; }
+  section { padding-top: 60px; }
+  .wrap { padding: 0 18px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after { animation: none !important; transition: none !important; }
+  .grow, .growy { transform: none; } .fade { opacity: 1; }
+  section.rv, .hero h1 .w { opacity: 1; transform: none; }
+}
+
+.page { display: none; min-height: calc(100vh - 60px - 150px); padding-bottom: 80px; }
+.page.on { display: block; animation: pagein .55s var(--ease) both; }
+@keyframes pagein { from { opacity: 0; transform: translateY(18px); } }
+.page > .wrap.top { padding-top: 56px; }
+.bar nav a.cur { border-color: var(--lamp); color: var(--lamp-deep); }
+.bar nav { align-items: center; }
+.acct { border: 0; background: var(--grad); color: #fff; border-radius: 999px; padding: 8px 16px; font-size: 14px; font-weight: 500; cursor: pointer; white-space: nowrap; transition: transform .15s, box-shadow .15s; max-width: 190px; overflow: hidden; text-overflow: ellipsis; }
+.acct:hover { transform: translateY(-1px); box-shadow: 0 10px 20px -12px rgba(91, 33, 182, .8); }
+.finder { background: var(--sheet); border: 1px solid var(--rule); border-radius: 14px; padding: 18px; display: grid; gap: 12px; box-shadow: 0 24px 50px -36px rgba(91, 33, 182, .6); }
+.finder .search { max-width: none; }
+.finder .search input { font-size: 16px; padding: 13px 15px; border-width: 1.5px; }
+.field { display: grid; gap: 5px; font-size: 13px; color: var(--ink-2); }
+select, .input { width: 100%; padding: 13px 15px; font-size: 16px; border: 1.5px solid var(--ink); border-radius: 10px; background: var(--sheet); appearance: none; -webkit-appearance: none; }
+select { background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='9' viewBox='0 0 14 9'%3E%3Cpath d='M1 1l6 6 6-6' fill='none' stroke='%231E1930' stroke-width='2' stroke-linecap='round'/%3E%3C/svg%3E"); background-repeat: no-repeat; background-position: right 15px center; padding-right: 40px; cursor: pointer; }
+select:focus, .input:focus { border-color: var(--lamp); outline: none; box-shadow: 0 0 0 4px color-mix(in srgb, var(--lamp) 22%, transparent); }
+.cta { border: 0; background: var(--grad); background-size: 160% 100%; color: #fff; border-radius: 10px; padding: 15px 18px; font: 600 16px var(--body); cursor: pointer; transition: transform .15s, box-shadow .2s, background-position .4s; }
+.cta:hover { transform: translateY(-2px); background-position: 100% 0; box-shadow: 0 16px 28px -16px rgba(91, 33, 182, .9); }
+.cta:active { transform: none; }
+.filters { display: grid; grid-template-columns: minmax(0, 2fr) minmax(0, 1.4fr) auto; gap: 12px; align-items: end; margin-bottom: 18px; }
+.filters .btn { height: 50px; }
+.count { color: var(--ink-2); font-size: 14.5px; margin-bottom: 12px; }
+.morebox { display: flex; justify-content: center; padding: 18px 0 4px; }
+.more { display: inline-flex; align-items: center; gap: 10px; border: 1.5px solid var(--ink); background: var(--sheet); border-radius: 999px; padding: 11px 22px; font-size: 15px; font-weight: 500; cursor: pointer; transition: background .15s, color .15s, transform .15s, border-color .15s; }
+.more svg { transition: transform .25s var(--ease); }
+.more:hover { background: var(--grad); color: #fff; border-color: transparent; }
+.more:hover svg { transform: translateY(3px); }
+.back { display: inline-flex; align-items: center; gap: 8px; border: 0; background: none; padding: 0; margin-bottom: 26px; cursor: pointer; font-size: 14.5px; color: var(--ink-2); }
+.back:hover { color: var(--lamp-deep); }
+.nomatch { padding: 34px; text-align: center; color: var(--ink-2); }
+.auth { max-width: 460px; margin: 0 auto; background: var(--sheet); border: 1px solid var(--rule); border-radius: 16px; padding: 30px; box-shadow: 0 30px 60px -44px rgba(91, 33, 182, .7); }
+.auth h2 { font-size: 34px; margin-bottom: 20px; }
+.auth form { display: grid; gap: 14px; }
+.auth .seg { width: 100%; }
+.auth .seg button { flex: 1; padding: 10px 12px; }
+.auth .seg button[aria-pressed="true"] { background: var(--grad); color: #fff; }
+.err { color: #B4232A; font-size: 14px; min-height: 20px; }
+.who { text-align: center; display: grid; gap: 14px; justify-items: center; }
+.avatar { width: 72px; height: 72px; border-radius: 50%; background: var(--grad); color: #fff; display: grid; place-items: center; font: 800 30px var(--display); animation: pop .5s var(--ease) both; }
+@keyframes pop { from { transform: scale(.4); opacity: 0; } }
+footer { margin-top: 0; }
+td.ind { color: var(--ink-2); font-size: 14px; white-space: nowrap; }
+@media (max-width: 900px) {
+  .bar nav { display: flex; gap: 14px; font-size: 13.5px; }
+  .bar .asof { display: none; }
+  .bar .wrap { gap: 12px; }
+  .mark { font-size: 20px; }
+  .filters { grid-template-columns: 1fr; }
+  .acct { padding: 7px 12px; font-size: 13px; max-width: 110px; }
+}
+@media (max-width: 520px) { .bar nav a[data-go="counties"] { display: none; } }
+
+[data-theme="dark"] { --paper: #14111E; --sheet: #1D192B; --ink: #F3EEE2; --ink-2: #A8A2B8; --rule: #332D47; --quiet: #4B4462; --lamp: #A678FF; --lamp-deep: #CDB0FF; }
+[data-theme="dark"] select { background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='9' viewBox='0 0 14 9'%3E%3Cpath d='M1 1l6 6 6-6' fill='none' stroke='%23F3EEE2' stroke-width='2' stroke-linecap='round'/%3E%3C/svg%3E"); }
+[data-theme="dark"] .orb { opacity: .5; }
+[data-theme="dark"] .err { color: #FF8A8F; }
+body { transition: background .35s, color .35s; }
+footer { background: #1A1528; color: #F6F0E3; }
+footer .mark { color: #F6F0E3; }
+footer .lampicon { background: #F6F0E3; }
+footer .lampicon::after { background: #F6F0E3; }
+footer p { color: rgba(246, 240, 227, .78); }
+.footnav { display: flex; flex-wrap: wrap; gap: 8px 20px; margin-bottom: 14px; }
+.footnav a { color: #F6F0E3; text-decoration: none; font-size: 14.5px; border-bottom: 1px solid transparent; }
+.footnav a:hover { border-color: #F6F0E3; }
+.iconbtn { width: 36px; height: 36px; border-radius: 50%; border: 1px solid var(--rule); background: var(--sheet); display: grid; place-items: center; cursor: pointer; flex: none; transition: transform .3s var(--ease), border-color .15s; }
+.iconbtn:hover { transform: rotate(40deg); border-color: var(--lamp); }
+.tiles { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; margin-top: 44px; }
+.tile { text-align: left; background: var(--sheet); border: 1px solid var(--rule); border-radius: 14px; padding: 20px 22px; cursor: pointer; display: grid; gap: 6px; transition: transform .2s var(--ease), box-shadow .2s, border-color .2s; animation: rowin .5s var(--ease) both; }
+.tile:hover { transform: translateY(-4px); border-color: var(--lamp); box-shadow: 0 20px 36px -26px rgba(91, 33, 182, .7); }
+.tile b { font: 800 clamp(34px, 4vw, 52px)/1 var(--display); letter-spacing: -0.03em; font-stretch: 82%; background: var(--grad); -webkit-background-clip: text; background-clip: text; color: transparent; width: fit-content; }
+.tile span { color: var(--ink-2); font-size: 14.5px; }
+.duo { display: grid; grid-template-columns: 1fr 1fr; gap: 28px; margin-top: 28px; }
+.panel { background: var(--sheet); border: 1px solid var(--rule); border-radius: 14px; padding: 20px 8px 8px; }
+.panel h3 { padding: 0 14px 10px; }
+.panel .note { padding: 0 14px 10px; }
+.rowitem { display: grid; grid-template-columns: 34px minmax(0, 1fr) auto; gap: 12px; align-items: center; width: 100%; text-align: left; border: 0; background: transparent; padding: 11px 14px; border-radius: 10px; cursor: pointer; transition: background .12s, transform .15s; animation: rowin .4s var(--ease) both; }
+.rowitem:hover { background: color-mix(in srgb, var(--lamp) 14%, transparent); transform: translateX(3px); }
+.rowitem .k { font: 700 17px var(--display); }
+.rowitem .n { font-weight: 500; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.rowitem .n small { display: block; font-weight: 400; color: var(--ink-2); font-size: 13px; }
+.rowitem .v { color: var(--ink-2); font-size: 13.5px; white-space: nowrap; text-align: right; }
+.filters { grid-template-columns: minmax(0, 2fr) minmax(0, 1.5fr) auto auto; }
+.filters .seg { height: 50px; align-items: stretch; }
+.filters .seg button { padding: 0 14px; }
+.split { display: grid; grid-template-columns: minmax(0, 1fr) 310px; gap: 26px; align-items: start; }
+.split > * { min-width: 0; }
+#wl th, #wl td { padding-left: 10px; padding-right: 10px; }
+#wl td.last { white-space: nowrap; }
+#wl td.ind { white-space: normal; }
+.split aside { display: grid; gap: 18px; position: sticky; top: 84px; }
+.minis { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; }
+.mini { background: var(--sheet); border: 1px solid var(--rule); border-radius: 12px; padding: 12px 14px; font-size: 13px; color: var(--ink-2); text-align: left; cursor: pointer; transition: transform .2s var(--ease), border-color .2s; }
+.mini:hover { transform: translateY(-2px); border-color: var(--lamp); }
+.mini b { display: block; font: 800 26px/1.1 var(--display); color: var(--ink); }
+.mini[aria-pressed="true"] { background: var(--grad); border-color: transparent; color: #fff; }
+.mini[aria-pressed="true"] b { color: #fff; }
+td.emp { min-width: 120px; }
+.th { border: 0; background: none; padding: 0; font: inherit; color: inherit; cursor: pointer; display: inline-flex; align-items: center; gap: 6px; }
+.th:hover { color: var(--lamp-deep); }
+.th svg { opacity: 0; transition: transform .2s, opacity .2s; }
+.th.on { color: var(--ink); font-weight: 600; }
+.th.on svg { opacity: 1; }
+.th.on.up svg { transform: rotate(180deg); }
+.star { border: 0; background: none; padding: 6px; cursor: pointer; color: var(--quiet); display: grid; place-items: center; transition: transform .2s var(--ease), color .15s; }
+.star:hover { color: var(--lamp); transform: scale(1.2); }
+.star[aria-pressed="true"] { color: var(--lamp); animation: pop .35s var(--ease); }
+.star[aria-pressed="true"] svg { fill: currentColor; }
+td.starc { width: 44px; padding-left: 0; }
+.actions { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 18px; }
+.actions .btn { display: inline-flex; align-items: center; gap: 8px; }
+.actions .btn[aria-pressed="true"] { background: var(--grad); border-color: transparent; color: #fff; }
+.others { margin-top: 26px; }
+.others .rowitem { padding-left: 0; padding-right: 0; }
+.msg { background: color-mix(in srgb, var(--lamp) 14%, var(--sheet)); border-radius: 10px; padding: 10px 14px; font-size: 14.5px; margin-bottom: 16px; }
+.emptybox { text-align: center; padding: 60px 20px; background: var(--sheet); border: 1px dashed var(--quiet); border-radius: 14px; display: grid; gap: 16px; justify-items: center; color: var(--ink-2); }
+#chart-county .hit, #chart-ind .hit { cursor: pointer; }
+@media (max-width: 900px) {
+  .tiles, .duo, .split { grid-template-columns: minmax(0, 1fr); }
+  .split aside { position: static; }
+  .filters { grid-template-columns: 1fr; }
+  .bar nav a[data-go="home"] { display: none; }
+}
+@media (max-width: 520px) { .bar nav a[data-go="counties"] { display: none; } .bar nav { gap: 9px; min-width: 0; } .iconbtn { width: 32px; height: 32px; } .acct { max-width: 78px; padding: 7px 10px; } .bar .wrap { padding: 0 14px; } }
+@media print {
+  .bar, footer, .back, .actions, .morebox, .others, .orb { display: none !important; }
+  body { background: #fff; }
+  .page { padding: 0; min-height: 0; animation: none !important; }
+  .page > .wrap.top { padding-top: 0; }
+}
+.next { margin-top: 44px; }
+.next h3 { margin-bottom: 14px; }
+.nextgrid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; }
+.nextcard { display: grid; gap: 6px; text-decoration: none; background: var(--sheet); border: 1px solid var(--rule); border-radius: 14px; padding: 18px 20px; transition: transform .2s var(--ease), border-color .2s, box-shadow .2s; animation: rowin .5s var(--ease) both; }
+.nextcard:hover { transform: translateY(-4px); border-color: var(--lamp); box-shadow: 0 20px 36px -26px rgba(91, 33, 182, .7); }
+.nextcard b { font: 700 18px/1.2 var(--display); }
+.nextcard span { color: var(--ink-2); font-size: 14.5px; }
+.nextcard em { font-style: normal; font-size: 13px; color: var(--lamp-deep); font-weight: 500; }
+.window { color: var(--ink-2); font-size: 14px; margin-left: 8px; }
+.finder .btn { padding: 12px 14px; }
+.missing { margin-top: 14px; font-size: 14.5px; color: var(--ink-2); max-width: 80ch; }
+.missing b { color: var(--ink); font-weight: 600; }
+@media (max-width: 900px) { .nextgrid { grid-template-columns: minmax(0, 1fr); } }
+</style>
+</head>
+<body>
+<header class="bar">
+  <div class="wrap">
+    <a class="mark" href="#/" data-go="home"><span class="lampicon" aria-hidden="true"></span>Lookout</a>
+    <nav aria-label="Pages">
+      <a href="#/" data-go="home">Home</a>
+      <a href="#/watchlist" data-go="watchlist">Watchlist</a>
+      <a href="#/counties" data-go="counties">Counties</a>
+      <a href="#/saved" data-go="saved">Saved</a>
+      <button class="iconbtn" id="theme" type="button" aria-label="Switch between light and dark"></button>
+      <button class="acct" id="acct" type="button" data-go="account">Sign in</button>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <div class="page" id="p-home">
+    <div class="hero wrap">
+      <div class="orb" aria-hidden="true"></div>
+      <div class="hero-grid">
+        <h1>Who files the next layoff notice?</h1>
+        <div class="hero-side">
+          <p class="lede" id="lede"></p>
+          <div class="finder">
+            <label class="field">Company (optional)
+              <div class="search">
+                <input id="q" type="search" autocomplete="off" placeholder="Apple, Walmart, ..." aria-controls="sugg">
+                <div class="sugg" id="sugg" role="listbox"></div>
+              </div>
+            </label>
+            <label class="field">Industry (optional)
+              <select id="ind"></select>
+            </label>
+            <button class="cta" id="go" type="button">View top at-risk employers</button>
+            <button class="btn" id="golist" type="button">Check my employer list (CSV)</button>
+          </div>
+        </div>
+      </div>
+      <div class="skyline-wrap">
+        <svg class="skyline" id="skyline" role="img" aria-label="Every employer on the watchlist, ordered by rank"></svg>
+        <div class="key">
+          <span><i class="sw high"></i><b>High</b>, top 10</span>
+          <span><i class="sw elev"></i><b>Elevated</b>, 11 to 50</span>
+          <span><i class="sw none"></i><b>Lower</b>, everyone else</span>
+        </div>
+        <div class="tip" id="tip"></div>
+      </div>
+      <div class="tiles" id="tiles"></div>
+      <div class="duo">
+        <div class="panel"><h3>Highest risk right now</h3><div id="toplist"></div></div>
+        <div class="panel"><h3>Latest layoff notices</h3><div id="feed"></div></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="page" id="p-watchlist">
+    <div class="wrap top">
+      <div class="section-head"><h2>At-risk employers</h2></div>
+      <div class="filters">
+        <label class="field">Company<input class="input" id="f" type="search" autocomplete="off" placeholder="Filter by name"></label>
+        <label class="field">Industry<select id="ind2"></select></label>
+        <div class="field">Risk level<div class="seg" id="lev" role="group" aria-label="Risk level"><button type="button" data-l="">All</button><button type="button" data-l="High">High</button><button type="button" data-l="Elevated">Elevated</button></div></div>
+        <button class="btn" id="copy" type="button">Copy as CSV</button>
+      </div>
+      <div class="split">
+        <div>
+          <p class="count" id="count"></p>
+          <div class="tablebox">
+            <div class="scroll"><table id="wl"><thead><tr><th><button class="th" data-sort="rank">Rank<svg width="10" height="7" viewBox="0 0 14 9"><path d="M1 1l6 6 6-6" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/></svg></button></th><th><button class="th" data-sort="name">Employer<svg width="10" height="7" viewBox="0 0 14 9"><path d="M1 1l6 6 6-6" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/></svg></button></th><th>Industry</th><th>Level</th><th><button class="th" data-sort="last">Last notice<svg width="10" height="7" viewBox="0 0 14 9"><path d="M1 1l6 6 6-6" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/></svg></button></th><th class="num"><button class="th" data-sort="notices">Notices<svg width="10" height="7" viewBox="0 0 14 9"><path d="M1 1l6 6 6-6" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/></svg></button></th><th><span style="position:absolute;left:-9999px">Save</span></th></tr></thead><tbody></tbody></table></div>
+            <div class="nomatch" id="none" hidden>No employers match. Try a different name, industry or level.</div>
+          </div>
+          <div class="morebox"><button class="more" id="more" type="button"><span id="moretext">Show more</span><svg width="14" height="9" viewBox="0 0 14 9" aria-hidden="true"><path d="M1 1l6 6 6-6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></button></div>
+        </div>
+        <aside>
+          <div class="minis" id="minis"></div>
+          <div class="fig seen" id="fig-ind"><h3>Top 50 by industry</h3><p class="note">Select a bar to filter.</p><svg id="chart-ind"></svg></div>
+        </aside>
+      </div>
+    </div>
+  </div>
+
+  <div class="page" id="p-employer">
+    <div class="wrap top">
+      <button class="back" id="back" type="button"><svg width="9" height="14" viewBox="0 0 9 14" aria-hidden="true"><path d="M8 1L2 7l6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>Back to watchlist</button>
+      <div id="codetail"></div>
+    </div>
+  </div>
+
+  <div class="page" id="p-counties">
+    <div class="wrap top">
+      <div class="section-head"><h2>Layoffs by county</h2></div>
+      <div class="split">
+        <div class="fig" id="fig-county">
+          <h3>Workers in layoff notices, past 12 months</h3>
+          <p class="note" id="countytext"></p>
+          <svg id="chart-county"></svg>
+        </div>
+        <aside><div class="panel" id="countypanel"></div></aside>
+      </div>
+    </div>
+  </div>
+
+  <div class="page" id="p-list">
+    <div class="wrap top">
+      <div class="section-head"><h2>Your employer list</h2></div>
+      <div id="listbox"></div>
+      <input type="file" id="listfile" accept=".csv,text/csv,text/plain" hidden>
+    </div>
+  </div>
+
+  <div class="page" id="p-saved">
+    <div class="wrap top">
+      <div class="section-head"><h2>Saved employers</h2></div>
+      <div id="savedbox"></div>
+    </div>
+  </div>
+
+  <div class="page" id="p-account">
+    <div class="wrap top">
+      <div class="auth" id="auth"></div>
+    </div>
+  </div>
+</main>
+
+<footer>
+  <div class="wrap">
+    <a class="mark" href="#/" data-go="home"><span class="lampicon" aria-hidden="true"></span>Lookout</a>
+    <div>
+      <div class="footnav"><a href="#/" data-go="home">Home</a><a href="#/watchlist" data-go="watchlist">Watchlist</a><a href="#/counties" data-go="counties">Counties</a><a href="#/list" data-go="list">Check a list</a><a href="#/saved" data-go="saved">Saved</a><a href="#/account" data-go="account">Account</a></div>
+      <p>Data: California EDD WARN notices and Glassdoor reviews from Bright Data.</p>
+      <p>A ranking for planning, not a statement about any employer's plans.</p>
+    </div>
+  </div>
+</footer>
+
+<script>
+const DATA = /*__LOOKOUT_DATA__*/null;
+(function () {
+  if (!DATA) { document.getElementById("p-home").classList.add("on"); document.getElementById("lede").textContent = "Run make_site.py to load the data."; return; }
+  const $ = (s) => document.querySelector(s);
+  const NS = "http://www.w3.org/2000/svg";
+  const css = (v) => getComputedStyle(document.documentElement).getPropertyValue(v).trim();
+  let theme = "light";
+  try { theme = localStorage.getItem("lookout_theme") || "light"; } catch (e) {}
+  document.documentElement.dataset.theme = theme;
+  let INK, INK2, LAMP, QUIET, RULE;
+  const readColors = () => { INK = css("--ink"); INK2 = css("--ink-2"); LAMP = css("--lamp"); QUIET = css("--quiet"); RULE = css("--rule"); };
+  readColors();
+  const STAR = "<svg width='18' height='18' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linejoin='round' aria-hidden='true'><path d='M12 3l2.7 5.6 6.1.9-4.4 4.3 1 6.1L12 17l-5.4 2.9 1-6.1-4.4-4.3 6.1-.9z'/></svg>";
+  const countTo = (node, n) => { if (reduced) { node.textContent = num(n); return; } const t0 = performance.now(); const tick = (now) => { const p = Math.min(1, (now - t0) / 1100); node.textContent = num(Math.round(n * (1 - Math.pow(1 - p, 3)))); if (p < 1) requestAnimationFrame(tick); }; requestAnimationFrame(tick); };
+  const MONTHS = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+  const fmtDate = (s) => { const [y, m, d] = s.split("-").map(Number); return MONTHS[m - 1] + " " + d + ", " + y; };
+  const num = (n) => Number(n).toLocaleString("en-US");
+  const esc = (s) => String(s).replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
+  const level = (r) => (r <= 10 ? "High" : r <= 50 ? "Elevated" : "Lower");
+  const levelClass = (r) => (r <= 10 ? "high" : r <= 50 ? "elev" : "");
+  const ago = (d) => (d === null ? "None on record" : d === 0 ? "Today" : d === 1 ? "1 day ago" : d < 60 ? d + " days ago" : d < 730 ? Math.round(d / 30.4) + " months ago" : (d / 365).toFixed(1) + " years ago");
+  const el = (tag, attrs, text) => { const e = document.createElementNS(NS, tag); for (const k in attrs) e.setAttribute(k, attrs[k]); if (text !== undefined) e.textContent = text; return e; };
+  const reduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  const INDUSTRY = { tech: "Technology", retail: "Retail", "retail warehouse": "Retail", "food service": "Food service and hospitality", healthcare: "Healthcare and biotech", "transportation warehouse": "Transportation and telecom", manufacturing: "Manufacturing and energy" };
+  const ind = (c) => c.i || INDUSTRY[c.s] || "Other";
+  const indShow = (c) => { const v = ind(c); return v === "Other" ? "" : v; };
+
+  const M = DATA.meta, C = DATA.companies;
+  const live = DATA.dates.find((d) => d.live);
+  const liveRank = new Map(live.rows.map((r, i) => [r[0], i]));
+  const STEP = 10;
+  const state = { page: null, company: null, q: "", ind: "", level: "", sort: "rank", dir: 1, shown: STEP, county: DATA.counties[0][0], msg: "" };
+  const cutoff = Date.parse(M.data_through) - 365 * 864e5;
+  const feedAll = [];
+  Object.keys(DATA.filings).forEach((id) => { const by = {}; DATA.filings[id].forEach((f) => { by[f[0]] = by[f[0]] || [f[0], 0, +id, f[2], 0]; by[f[0]][1] += f[1]; by[f[0]][4] += 1; }); Object.keys(by).forEach((k) => feedAll.push(by[k])); });
+  feedAll.sort((a, b) => (a[0] < b[0] ? 1 : a[0] > b[0] ? -1 : b[1] - a[1]));
+  let user = null, saved = new Set();
+  try { user = JSON.parse(localStorage.getItem("lookout_user") || "null"); } catch (e) {}
+  const savedKey = () => "lookout_saved_" + (user ? user.email : "");
+  const loadSaved = () => { saved = new Set(); if (!user) return; try { saved = new Set(JSON.parse(localStorage.getItem(savedKey()) || "[]")); } catch (e) {} };
+  loadSaved();
+  function toggleSave(id) {
+    if (!user) { state.msg = "Sign in to save employers."; go("account"); return; }
+    if (saved.has(id)) saved.delete(id); else saved.add(id);
+    try { localStorage.setItem(savedKey(), JSON.stringify([...saved])); } catch (e) {}
+    document.querySelectorAll("[data-s='" + id + "']").forEach((b) => { b.setAttribute("aria-pressed", saved.has(id)); const t = b.querySelector("span"); if (t) t.textContent = saved.has(id) ? "Saved" : "Save"; });
+    if (state.page === "saved") renderSaved();
+  }
+  document.addEventListener("click", (e) => { const b = e.target.closest("[data-s]"); if (b) { e.stopPropagation(); toggleSave(+b.dataset.s); } }, true);
+
+  $("#lede").textContent = "California employers, ranked by risk of a layoff notice in the next six months.";
+  const inds = [...new Set(live.rows.map((r) => ind(C[r[0]])))].sort((a, b) => (a === "Other") - (b === "Other") || a.localeCompare(b));
+  ["#ind", "#ind2"].forEach((id) => { $(id).innerHTML = "<option value=''>All industries</option>" + inds.map((x) => "<option value='" + esc(x) + "'>" + esc(x === "Other" ? "Not listed" : x) + "</option>").join(""); });
+
+  const tip = $("#tip");
+  function showTip(html, evt, host) {
+    tip.innerHTML = html;
+    const box = host.getBoundingClientRect();
+    host.appendChild(tip);
+    tip.classList.add("show");
+    const x = Math.min(Math.max(evt.clientX - box.left + 14, 0), box.width - tip.offsetWidth - 4);
+    const y = evt.clientY - box.top - tip.offsetHeight - 14;
+    tip.style.left = x + "px";
+    tip.style.top = (y < -tip.offsetHeight ? evt.clientY - box.top + 18 : y) + "px";
+  }
+  const hideTip = () => tip.classList.remove("show");
+
+  function skyline(animate) {
+    const svg = $("#skyline");
+    svg.innerHTML = "";
+    const W = Math.max(320, svg.parentNode.clientWidth), H = W < 640 ? 200 : 270, base = H - 26, top = 8;
+    svg.setAttribute("viewBox", "0 0 " + W + " " + H);
+    const rows = live.rows, N = rows.length, L = Math.log(N + 1);
+    const x = (r) => (W * Math.log(r)) / L;
+    const defs = el("defs", {});
+    const play = animate && !reduced;
+    const clip = el("clipPath", { id: "reveal" });
+    const clipRect = el("rect", { x: 0, y: 0, width: play ? 0 : W, height: H });
+    clip.appendChild(clipRect); defs.appendChild(clip);
+    const frame = el("clipPath", { id: "frame" }); frame.appendChild(el("rect", { x: 0, y: 0, width: W, height: H })); defs.appendChild(frame);
+    const grad = el("linearGradient", { id: "beam", x1: 0, x2: 1, y1: 0, y2: 0 });
+    grad.appendChild(el("stop", { offset: 0, "stop-color": LAMP, "stop-opacity": 0 }));
+    grad.appendChild(el("stop", { offset: 0.8, "stop-color": LAMP, "stop-opacity": 0.55 }));
+    grad.appendChild(el("stop", { offset: 1, "stop-color": LAMP, "stop-opacity": 0.95 }));
+    defs.appendChild(grad);
+    const tg = el("linearGradient", { id: "topgrad", x1: 0, x2: 0, y1: 0, y2: 1 }); tg.appendChild(el("stop", { offset: 0, "stop-color": "#C06BFF" })); tg.appendChild(el("stop", { offset: 1, "stop-color": "#5B2EE5" })); defs.appendChild(tg);
+    svg.appendChild(defs);
+    const g = el("g", { "clip-path": "url(#reveal)" });
+    const hmin = 0.16;
+    rows.forEach((row, i) => {
+      const rank = i + 1, x0 = x(rank), x1 = x(rank + 1), w = x1 - x0;
+      const gap = w > 5 ? 2 : w > 2.4 ? 0.8 : 0;
+      const h = (base - top) * (hmin + (1 - hmin) * row[1]);
+      const fill = rank <= 10 ? "url(#topgrad)" : rank <= 50 ? INK : QUIET;
+      g.appendChild(el("rect", { class: "col", x: x0.toFixed(2), y: (base - h).toFixed(2), width: Math.max(0.6, w - gap).toFixed(2), height: h.toFixed(2), fill: fill, rx: w > 8 ? 3 : 0, "data-i": i }));
+      if (w - gap >= 20) {
+        const name = C[row[0]].n, maxChars = Math.floor((h - 46) / 7.2);
+        const label = name.length > maxChars ? name.slice(0, Math.max(3, maxChars - 1)).trim() + "…" : name;
+        const cx = x0 + (w - gap) / 2;
+        g.appendChild(el("text", { class: "name", transform: "translate(" + (cx + 4.5).toFixed(1) + "," + (base - 10) + ") rotate(-90)", style: "fill:#fff" }, label));
+        g.appendChild(el("text", { class: "name", x: cx.toFixed(1), y: (base - h + 20).toFixed(1), "text-anchor": "middle", style: "font:700 15px var(--display);fill:#fff" }, rank));
+      }
+    });
+    svg.appendChild(g);
+    svg.appendChild(el("line", { x1: 0, x2: W, y1: base + 0.5, y2: base + 0.5, stroke: INK, "stroke-width": 1 }));
+    [1, 10, 50, 100, N].forEach((r) => {
+      if (r > N) return;
+      const xr = r === N ? W : x(r);
+      svg.appendChild(el("line", { x1: xr, x2: xr, y1: base, y2: base + 5, stroke: INK2 }));
+      svg.appendChild(el("text", { class: "axis", x: xr, y: H - 4, "text-anchor": r === 1 ? "start" : r === N ? "end" : "middle" }, r === 1 ? "Rank 1" : r === N ? "Rank " + num(N) : r));
+    });
+    if (play) {
+      const beam = el("rect", { x: -160, y: 0, width: 160, height: base, fill: "url(#beam)", "pointer-events": "none" });
+      const beamBox = el("g", { "clip-path": "url(#frame)" }); beamBox.appendChild(beam); svg.appendChild(beamBox);
+      const dur = 1900, t0 = performance.now() + 250;
+      const step = (now) => {
+        const p = Math.min(1, Math.max(0, (now - t0) / dur)), e = 1 - Math.pow(1 - p, 2.2), px = e * (W + 160);
+        clipRect.setAttribute("width", Math.min(W, px));
+        beam.setAttribute("x", px - 160);
+        beam.setAttribute("opacity", p > 0.85 ? (1 - p) / 0.15 : 1);
+        if (p < 1) requestAnimationFrame(step); else beamBox.remove();
+      };
+      requestAnimationFrame(step);
+    }
+    svg.onmousemove = (evt) => {
+      const t = evt.target.closest(".col"); if (!t) return hideTip();
+      const i = +t.dataset.i, row = rows[i];
+      showTip("<strong>" + esc(C[row[0]].n) + "</strong>Rank " + (i + 1) + ", " + level(i + 1) + "<br>Last notice: " + ago(row[3]), evt, svg.parentNode);
+    };
+    svg.onmouseleave = hideTip;
+    svg.onclick = (evt) => { const t = evt.target.closest(".col"); if (t) go("employer", rows[+t.dataset.i][0]); };
+  }
+
+  function matches() {
+    const s = state.q.trim().toLowerCase();
+    const out = [];
+    live.rows.forEach((r, i) => { const c = C[r[0]], rank = i + 1; if ((!state.ind || ind(c) === state.ind) && (!s || c.n.toLowerCase().includes(s)) && (!state.level || level(rank) === state.level)) out.push([r, rank]); });
+    const k = state.sort, d = state.dir;
+    if (k !== "rank" || d < 0) out.sort((a, b) => {
+      if (k === "name") return d * C[a[0][0]].n.localeCompare(C[b[0][0]].n);
+      const x = k === "last" ? (a[0][3] === null ? 1e9 : a[0][3]) : k === "notices" ? -a[0][4] : a[1];
+      const y = k === "last" ? (b[0][3] === null ? 1e9 : b[0][3]) : k === "notices" ? -b[0][4] : b[1];
+      return d * (x - y) || a[1] - b[1];
+    });
+    return out;
+  }
+  let drawn = 0;
+  function renderList(fresh) {
+    const all = matches(), rows = all.slice(0, state.shown);
+    if (fresh) drawn = 0;
+    $("#wl tbody").innerHTML = rows.map((x, j) => {
+      const r = x[0], rank = x[1], c = C[r[0]];
+      return "<tr class='" + (j >= drawn ? "enter" : "") + "' style='animation-delay:" + Math.max(0, j - drawn) * 28 + "ms' data-c='" + r[0] + "' tabindex='0'><td class='rank'>" + rank + "</td><td class='emp'>" + esc(c.n) + "</td><td class='ind'>" + esc(indShow(c)) + "</td><td><span class='chip " + levelClass(rank) + "'>" + level(rank) + "</span></td><td class='last'>" + ago(r[3]) + "</td><td class='num'>" + r[4] + "</td><td class='starc'><button class='star' type='button' data-s='" + r[0] + "' aria-pressed='" + saved.has(r[0]) + "' aria-label='Save " + esc(c.n) + "'>" + STAR + "</button></td></tr>";
+    }).join("");
+    drawn = rows.length;
+    document.querySelectorAll(".th").forEach((b) => { b.classList.toggle("on", b.dataset.sort === state.sort); b.classList.toggle("up", b.dataset.sort === state.sort && state.dir < 0); });
+    document.querySelectorAll("#lev button").forEach((b) => b.setAttribute("aria-pressed", b.dataset.l === state.level));
+    document.querySelectorAll("#minis .mini").forEach((b) => b.setAttribute("aria-pressed", b.dataset.l === state.level));
+    indChart();
+    $("#wl").hidden = !all.length; $("#none").hidden = !!all.length;
+    $("#count").textContent = all.length ? "Showing " + num(rows.length) + " of " + num(all.length) + " employers" : "";
+    const left = all.length - rows.length;
+    $("#more").hidden = left <= 0;
+    $("#moretext").textContent = "Show " + Math.min(STEP, left) + " more";
+    $("#f").value = state.q; $("#ind2").value = state.ind;
+  }
+  $("#more").onclick = () => { state.shown += STEP; renderList(false); };
+  $("#f").addEventListener("input", (e) => { state.q = e.target.value; state.shown = STEP; renderList(true); });
+  $("#ind2").addEventListener("change", (e) => { state.ind = e.target.value; state.shown = STEP; renderList(true); });
+  $("#wl tbody").addEventListener("click", (e) => { if (e.target.closest(".star")) return; const tr = e.target.closest("tr"); if (tr) go("employer", +tr.dataset.c); });
+  const setLevel = (l) => { state.level = l; state.shown = STEP; renderList(true); };
+  document.querySelectorAll("#lev button").forEach((b) => (b.onclick = () => setLevel(b.dataset.l)));
+  document.querySelectorAll(".th").forEach((b) => (b.onclick = () => { if (state.sort === b.dataset.sort) state.dir = -state.dir; else { state.sort = b.dataset.sort; state.dir = 1; } state.shown = STEP; renderList(true); }));
+  $("#minis").innerHTML = [["High", 10, "High"], ["Elevated", Math.min(40, live.rows.length - 10), "Elevated"], ["", live.rows.length, "Tracked"]].map((x) => "<button class='mini' type='button' data-l='" + x[0] + "'><b>" + num(x[1]) + "</b>" + x[2] + "</button>").join("");
+  document.querySelectorAll("#minis .mini").forEach((b) => (b.onclick = () => setLevel(b.dataset.l)));
+  function indChart() {
+    const svg = $("#chart-ind"); if (!svg.parentNode.clientWidth) return; svg.innerHTML = "";
+    const cnt = {}; live.rows.slice(0, 50).forEach((r) => { const k = ind(C[r[0]]); cnt[k] = (cnt[k] || 0) + 1; });
+    const items = Object.keys(cnt).map((k) => [k, cnt[k]]).sort((a, b) => b[1] - a[1]);
+    const W = Math.max(240, svg.parentNode.clientWidth - 44), rowH = 30, labW = Math.min(170, W * 0.56), H = items.length * rowH + 4, x0 = labW + 8, span = W - x0 - 30, max = items[0][1];
+    svg.setAttribute("viewBox", "0 0 " + W + " " + H);
+    items.forEach((c, i) => {
+      const y = i * rowH + rowH / 2, w = Math.max(2, (c[1] / max) * span), on = state.ind === c[0];
+      svg.appendChild(el("text", { x: labW, y: y + 4.5, "text-anchor": "end", class: on ? "" : "lab", style: on ? "font-weight:600" : "" }, c[0].length > 24 ? c[0].slice(0, 23) + "…" : c[0]));
+      svg.appendChild(el("rect", { x: x0, y: y - 8, width: w, height: 16, rx: 3, fill: on ? LAMP : state.ind ? QUIET : INK }));
+      svg.appendChild(el("text", { x: x0 + w + 7, y: y + 4.5 }, c[1]));
+      const hit = el("rect", { class: "hit", x: 0, y: i * rowH, width: W, height: rowH, fill: "transparent" });
+      hit.addEventListener("click", () => { state.ind = on ? "" : c[0]; state.shown = STEP; renderList(true); });
+      svg.appendChild(hit);
+    });
+  }
+  $("#wl tbody").addEventListener("keydown", (e) => { if (e.key === "Enter") { const tr = e.target.closest("tr"); if (tr) go("employer", +tr.dataset.c); } });
+  $("#copy").onclick = () => {
+    const rows = matches().slice(0, state.shown), q = (t) => '"' + String(t).replace(/"/g, '""') + '"';
+    const lines = ["rank,employer,industry,level,days_since_last_notice,notices_past_year"];
+    rows.forEach((x) => lines.push([x[1], q(C[x[0][0]].n), q(ind(C[x[0][0]])), level(x[1]), x[0][3] === null ? "" : x[0][3], x[0][4]].join(",")));
+    const text = lines.join("\n"), btn = $("#copy");
+    const done = (ok) => { btn.textContent = ok ? "Copied " + rows.length + " rows" : "Copy failed"; setTimeout(() => (btn.textContent = "Copy as CSV"), 1800); };
+    const fallback = () => { const ta = document.createElement("textarea"); ta.value = text; document.body.appendChild(ta); ta.select(); let ok = false; try { ok = document.execCommand("copy"); } catch (e) {} ta.remove(); done(ok); };
+    if (navigator.clipboard && navigator.clipboard.writeText) navigator.clipboard.writeText(text).then(() => done(true), fallback); else fallback();
+  };
+
+  const q = $("#q"), sugg = $("#sugg");
+  let cur = -1, shown = [];
+  function suggest() {
+    const s = q.value.trim().toLowerCase();
+    if (!s) { sugg.classList.remove("open"); shown = []; return; }
+    shown = [];
+    C.forEach((c, i) => { const p = c.n.toLowerCase().indexOf(s); if (p >= 0) shown.push([p === 0 ? 0 : 1, liveRank.has(i) ? liveRank.get(i) : 9999, i]); });
+    shown.sort((a, b) => a[0] - b[0] || a[1] - b[1]); shown = shown.slice(0, 6); cur = -1;
+    sugg.innerHTML = shown.length ? shown.map((x, j) => "<button type='button' role='option' data-j='" + j + "'><span>" + esc(C[x[2]].n) + "</span><small>" + (x[1] < 9999 ? "Rank " + (x[1] + 1) : "Not ranked") + "</small></button>").join("") : "<button type='button' disabled><span>No employer matches that name</span></button>";
+    sugg.classList.add("open");
+  }
+  q.addEventListener("input", suggest);
+  q.addEventListener("focus", suggest);
+  q.addEventListener("keydown", (e) => {
+    if (e.key === "Enter") { e.preventDefault(); if (shown.length) go("employer", shown[Math.max(cur, 0)][2]); else $("#go").click(); return; }
+    if (!shown.length) return;
+    if (e.key === "ArrowDown" || e.key === "ArrowUp") { e.preventDefault(); cur = (cur + (e.key === "ArrowDown" ? 1 : -1) + shown.length) % shown.length; [...sugg.children].forEach((b, j) => b.classList.toggle("cur", j === cur)); }
+    if (e.key === "Escape") sugg.classList.remove("open");
+  });
+  sugg.addEventListener("mousedown", (e) => { const b = e.target.closest("button[data-j]"); if (b) { e.preventDefault(); go("employer", shown[+b.dataset.j][2]); } });
+  document.addEventListener("click", (e) => { if (!e.target.closest(".search")) sugg.classList.remove("open"); });
+  $("#go").onclick = () => { state.q = q.value.trim(); state.ind = $("#ind").value; state.shown = STEP; go("watchlist"); };
+  $("#back").onclick = () => go("watchlist");
+
+  const LINKS = {
+    rapid: "https://edd.ca.gov/en/jobs_and_training/rapid-response-services-for-business/",
+    center: "https://edd.ca.gov/en/office_locator/",
+    ui: "https://edd.ca.gov/en/unemployment/apply",
+    warn: "https://edd.ca.gov/en/jobs_and_training/layoff_services_warn",
+  };
+  const ADVICE = {
+    High: ["Act now", "In the top 10 statewide. Start outreach this month.", [
+      ["Request Rapid Response", "Contact the state team now so help is ready at the worksite.", LINKS.rapid],
+      ["Line up the local job center", "Tell the nearest center these workers may need them soon.", LINKS.center],
+      ["Have unemployment steps ready", "Hand workers the application steps on day one.", LINKS.ui]]],
+    Elevated: ["Get ready", "In the top 50. Prepare so you can move quickly.", [
+      ["Alert the local job center", "Let the nearest center know this employer is on your list.", LINKS.center],
+      ["Review Rapid Response", "See what the state team offers before you need it.", LINKS.rapid],
+      ["Know the notice rules", "A notice gives 60 days. Check who must file and when.", LINKS.warn]]],
+    Lower: ["Keep watching", "No strong signal right now. A low rank does not mean safe.", [
+      ["Know the notice rules", "Check who must file a layoff notice and when.", LINKS.warn],
+      ["Find the local job center", "Know where workers would go if things change.", LINKS.center]]],
+    none: ["Not enough data", "Too few recent reviews to rank this employer.", [
+      ["Know the notice rules", "Check who must file a layoff notice and when.", LINKS.warn],
+      ["Find the local job center", "Know where workers would go if things change.", LINKS.center]]],
+  };
+  function nextSteps(rank) {
+    const a = ADVICE[rank === null ? "none" : level(rank)];
+    return "<div class='next'><h3><span class='chip " + (rank === null ? "" : levelClass(rank)) + "' style='font:500 13px var(--body);vertical-align:3px;margin-right:10px'>" + a[0] + "</span>What to do next</h3><p class='note' style='margin:-6px 0 14px'>" + a[1] + "</p><div class='nextgrid'>" + a[2].map((x, j) => "<a class='nextcard' href='" + x[2] + "' target='_blank' rel='noopener' style='animation-delay:" + j * 70 + "ms'><b>" + x[0] + "</b><span>" + x[1] + "</span><em>edd.ca.gov</em></a>").join("") + "</div></div>";
+  }
+  let filShown = 8;
+  function renderCompany() {
+    const box = $("#codetail"), id = state.company;
+    if (id === null || !C[id]) { box.innerHTML = "<div class='empty'>Pick an employer from the watchlist.</div>"; return; }
+    const c = C[id], li = liveRank.get(id), row = li === undefined ? null : live.rows[li], fil = DATA.filings[id] || [];
+    const workers = fil.reduce((a, f) => a + f[1], 0);
+    const facts = [
+      ["Rank", row ? (li + 1) + " of " + num(live.rows.length) : "Not ranked"],
+      ["Industry", indShow(c) || "Not listed"],
+      ["Last layoff notice", fil.length ? fmtDate(fil[0][0]) : "None on record"],
+      ["Since 2023", fil.length ? num(fil.length) + " notices, " + num(workers) + " workers" : "No notices"],
+    ];
+    const mine = ind(c), near = row && mine !== "Other" ? live.rows.map((r, i) => [r[0], i + 1]).filter((x) => x[0] !== id && ind(C[x[0]]) === mine).sort((a, b) => Math.abs(a[1] - li - 1) - Math.abs(b[1] - li - 1)).slice(0, 4).sort((a, b) => a[1] - b[1]) : [];
+    const others = near.length ? "<div class='others'><p class='subhead'>Others in " + esc(mine === "Other" ? "other industries" : mine) + "</p>" + near.map((x) => "<button class='rowitem' type='button' data-e='" + x[0] + "'><span class='k'>" + x[1] + "</span><span class='n'>" + esc(C[x[0]].n) + "</span><span class='v'><span class='chip " + levelClass(x[1]) + "'>" + level(x[1]) + "</span></span></button>").join("") + "</div>" : "";
+    const actions = "<div class='actions'><button class='btn' type='button' data-s='" + id + "' aria-pressed='" + saved.has(id) + "'>" + STAR + "<span>" + (saved.has(id) ? "Saved" : "Save") + "</span></button></div>";
+    const rowsHtml = fil.slice(0, filShown).map((f) => "<tr style='cursor:default'><td>" + fmtDate(f[0]) + "</td><td class='num'>" + num(f[1]) + "</td><td>" + esc(f[2]) + "</td><td>" + (f[3] === "closure" ? "Closure" : "Layoff") + "</td></tr>").join("");
+    const left = fil.length - filShown;
+    box.innerHTML = "<div class='co'><div><h3 class='big'>" + esc(c.n) + "</h3>" + (row ? "<span class='chip " + levelClass(li + 1) + "'>" + level(li + 1) + " risk</span><span class='window'>of a layoff notice in the next six months</span>" : "<span class='chip'>Not ranked</span>") +
+      (row && row[7] ? "<p style='margin-top:14px;max-width:46ch'>" + esc(row[7].replace(/WARN /g, "").replace("No layoff notices on record in California since mid-2023", "No layoff notices on record since mid-2023")) + ".</p>" : "") +
+      "<dl class='facts'>" + facts.map((f) => "<div><dt>" + f[0] + "</dt><dd>" + esc(f[1]) + "</dd></div>").join("") + "</dl>" +
+      actions + "<p class='caution'>A ranking from public filings, not a statement about this employer's plans.</p>" + others + "</div>" +
+      "<div><p class='subhead'>Layoff notices</p>" +
+      (fil.length ? "<div class='fig' style='margin-top:10px;padding:16px 18px 10px'><svg id='filchart'></svg></div><div class='tablebox filings'><div class='scroll'><table><thead><tr><th>Received</th><th class='num'>Workers</th><th>County</th><th>Type</th></tr></thead><tbody>" + rowsHtml + "</tbody></table></div></div>" + (left > 0 ? "<div class='morebox'><button class='more' id='filmore' type='button'><span>Show " + Math.min(8, left) + " more</span><svg width='14' height='9' viewBox='0 0 14 9' aria-hidden='true'><path d='M1 1l6 6 6-6' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round'/></svg></button></div>" : "") : "<p class='note' style='margin-top:8px'>No layoff notices on record since April 2023.</p>") +
+      "</div></div>" +
+      nextSteps(row ? li + 1 : null);
+    if (fil.length) filingChart(fil);
+    const fm = $("#filmore"); if (fm) fm.onclick = () => { filShown += 8; renderCompany(); };
+    box.querySelectorAll("[data-e]").forEach((b) => (b.onclick = () => go("employer", +b.dataset.e)));
+  }
+  function filingChart(fil) {
+    const svg = $("#filchart"), W = Math.max(280, svg.parentNode.clientWidth - 36), H = 120, base = H - 24;
+    svg.setAttribute("viewBox", "0 0 " + W + " " + H);
+    const t0 = Date.UTC(2023, 3, 1), t1 = Date.parse(M.data_through) + 20 * 864e5;
+    const x = (s) => 6 + ((Date.parse(s) - t0) / (t1 - t0)) * (W - 12);
+    const max = Math.max.apply(null, fil.map((f) => f[1]));
+    svg.appendChild(el("line", { x1: 0, x2: W, y1: base, y2: base, stroke: RULE }));
+    [2024, 2025, 2026].forEach((y) => { const xx = x(y + "-01-01"); svg.appendChild(el("line", { x1: xx, x2: xx, y1: base, y2: base + 5, stroke: INK2 })); svg.appendChild(el("text", { x: xx, y: H - 4, "text-anchor": "middle", class: "lab" }, y)); });
+    fil.slice().reverse().forEach((f, i) => {
+      const h = 10 + (base - 22) * Math.sqrt(f[1] / max), xx = x(f[0]);
+      const g = el("g", {});
+      g.appendChild(el("line", { class: "growy", x1: xx, x2: xx, y1: base, y2: base - h, stroke: INK, "stroke-width": 2, style: "transition-delay:" + Math.min(i * 25, 500) + "ms" }));
+      g.appendChild(el("circle", { class: "fade", cx: xx, cy: base - h, r: 4.5, fill: LAMP, stroke: css("--sheet"), "stroke-width": 2 }));
+      const hit = el("rect", { x: xx - 7, y: 0, width: 14, height: base, fill: "transparent" });
+      hit.addEventListener("mousemove", (e) => showTip("<strong>" + fmtDate(f[0]) + "</strong>" + num(f[1]) + " workers, " + esc(f[2]) + " County", e, svg.parentNode));
+      hit.addEventListener("mouseleave", hideTip);
+      g.appendChild(hit); svg.appendChild(g);
+    });
+    svg.appendChild(el("text", { x: 0, y: 11, class: "lab" }, "Taller means more workers"));
+    const fig = svg.parentNode; fig.classList.remove("seen"); requestAnimationFrame(() => requestAnimationFrame(() => fig.classList.add("seen")));
+  }
+
+  function countyChart(animate) {
+    const svg = $("#chart-county"); svg.innerHTML = "";
+    const items = DATA.counties, W = Math.max(300, svg.parentNode.clientWidth - 44), rowH = 34, labW = Math.min(140, W * 0.4), H = items.length * rowH + 6;
+    svg.setAttribute("viewBox", "0 0 " + W + " " + H);
+    const x0 = labW + 8, span = W - x0 - 66, max = items[0][1];
+    items.forEach((c, i) => {
+      const y = i * rowH + rowH / 2, w = Math.max(1.5, (c[1] / max) * span), on = state.county === c[0];
+      svg.appendChild(el("text", { x: labW, y: y + 4.5, "text-anchor": "end", class: on ? "" : "lab", style: on ? "font-weight:600" : "" }, c[0]));
+      svg.appendChild(el("rect", { class: "grow", x: x0, y: y - 9, width: w, height: 18, rx: 3, fill: on ? LAMP : INK, style: "transition-delay:" + (animate ? i * 60 : 0) + "ms" }));
+      svg.appendChild(el("text", { x: x0 + w + 8, y: y + 4.5, class: "fade" }, num(c[1])));
+      const hit = el("rect", { class: "hit", x: 0, y: i * rowH, width: W, height: rowH, fill: "transparent" });
+      hit.addEventListener("click", () => { state.county = c[0]; countyChart(false); });
+      svg.appendChild(hit);
+    });
+    $("#countytext").textContent = num(M.workers_12m) + " workers in " + num(M.notices_12m) + " notices statewide. Select a county.";
+    const fig = $("#fig-county");
+    if (animate) { fig.classList.remove("seen"); requestAnimationFrame(() => requestAnimationFrame(() => fig.classList.add("seen"))); } else fig.classList.add("seen");
+    const by = {};
+    Object.keys(DATA.filings).forEach((id) => DATA.filings[id].forEach((f) => { if (f[2] === state.county && Date.parse(f[0]) > cutoff) { by[id] = by[id] || [+id, 0, 0]; by[id][1] += f[1]; by[id][2] += 1; } }));
+    const list = Object.keys(by).map((k) => by[k]).sort((a, b) => b[1] - a[1]), tot = items.find((c) => c[0] === state.county);
+    $("#countypanel").innerHTML = "<h3>" + esc(state.county) + " County</h3><p class='note'>" + num(tot[1]) + " workers in " + num(tot[2]) + " notices</p>" +
+      (list.length ? list.slice(0, 8).map((x, j) => { const rk = liveRank.get(x[0]); return "<button class='rowitem' type='button' data-e='" + x[0] + "' style='animation-delay:" + j * 40 + "ms'><span class='k'>" + (rk === undefined ? "" : rk + 1) + "</span><span class='n'>" + esc(C[x[0]].n) + "<small>" + x[2] + (x[2] === 1 ? " notice" : " notices") + "</small></span><span class='v'>" + num(x[1]) + " workers</span></button>"; }).join("") : "<p class='note'>No tracked employers filed here in the past year.</p>");
+    $("#countypanel").querySelectorAll("[data-e]").forEach((b) => (b.onclick = () => go("employer", +b.dataset.e)));
+  }
+
+  function homeExtras() {
+    const topc = DATA.counties[0], n50 = Math.min(50, live.rows.length);
+    $("#tiles").innerHTML = "<button class='tile' type='button' data-t='watchlist'><b data-n='" + n50 + "'>0</b><span>employers at high or elevated risk</span></button><button class='tile' type='button' data-t='counties' style='animation-delay:80ms'><b data-n='" + M.workers_12m + "'>0</b><span>workers in layoff notices, past 12 months</span></button><button class='tile' type='button' data-t='counties' style='animation-delay:160ms'><b>" + esc(topc[0]) + "</b><span>county with the most, " + num(topc[1]) + " workers</span></button>";
+    $("#tiles").querySelectorAll("[data-n]").forEach((b) => countTo(b, +b.dataset.n));
+    $("#tiles").querySelectorAll(".tile").forEach((b) => (b.onclick = () => { if (b.dataset.t === "watchlist") { state.level = ""; state.ind = ""; state.q = ""; } go(b.dataset.t); }));
+    $("#toplist").innerHTML = live.rows.slice(0, 5).map((r, i) => "<button class='rowitem' type='button' data-e='" + r[0] + "' style='animation-delay:" + i * 50 + "ms'><span class='k'>" + (i + 1) + "</span><span class='n'>" + esc(C[r[0]].n) + "<small>" + esc(indShow(C[r[0]])) + "</small></span><span class='v'>Last notice " + ago(r[3]).toLowerCase() + "</span></button>").join("");
+    $("#feed").innerHTML = feedAll.slice(0, 5).map((f, i) => "<button class='rowitem' type='button' data-e='" + f[2] + "' style='animation-delay:" + i * 50 + "ms;grid-template-columns:minmax(0,1fr) auto'><span class='n'>" + esc(C[f[2]].n) + "<small>" + fmtDate(f[0]) + (f[4] > 1 ? ", " + f[4] + " sites" : ", " + esc(f[3]) + " County") + "</small></span><span class='v'>" + num(f[1]) + " workers</span></button>").join("");
+    document.querySelectorAll("#toplist [data-e], #feed [data-e]").forEach((b) => (b.onclick = () => go("employer", +b.dataset.e)));
+  }
+
+  const STOPW = { inc: 1, incorporated: 1, corp: 1, corporation: 1, company: 1, co: 1, llc: 1, ltd: 1, the: 1, group: 1, holdings: 1, usa: 1, us: 1 };
+  const normName = (t) => String(t).toLowerCase().replace(/&/g, " and ").replace(/[^a-z0-9 ]/g, " ").split(/\s+/).filter((w) => w && !STOPW[w]).join(" ");
+  const normIdx = C.map((c, i) => [normName(c.n), i]);
+  const rankOf = (i) => (liveRank.has(i) ? liveRank.get(i) : 9999);
+  function findEmployer(raw) {
+    const n = normName(raw); if (n.length < 2) return undefined;
+    let c = normIdx.filter((x) => x[0] === n);
+    if (!c.length && n.length >= 3) c = normIdx.filter((x) => (" " + x[0] + " ").indexOf(" " + n + " ") >= 0);
+    if (!c.length) return undefined;
+    return c.sort((a, b) => rankOf(a[1]) - rankOf(b[1]) || a[0].length - b[0].length)[0][1];
+  }
+  function matchNames(text) {
+    const cell = (line) => { const m = line.match(/^\s*"((?:[^"]|"")*)"/); return (m ? m[1].replace(/""/g, '"') : line.split(",")[0]).trim(); };
+    const ids = [], missing = [], seen = new Set();
+    text.split(/\r?\n/).filter((l) => l.trim()).forEach((l, i) => { const nm = cell(l), low = nm.toLowerCase(); if (!nm || (i === 0 && (low === "employer" || low === "company" || low === "name" || low === "employers" || low === "companies"))) return; const id = findEmployer(nm); if (id === undefined) missing.push(nm); else if (!seen.has(id)) { seen.add(id); ids.push(id); } });
+    return { ids: ids, missing: missing };
+  }
+  const csvOf = (ids) => { const q2 = (t) => '"' + String(t).replace(/"/g, '""') + '"'; return ["employer,rank,level,industry,days_since_last_notice,notices_past_year"].concat(ids.map((id) => { const li = liveRank.get(id), r = li === undefined ? null : live.rows[li]; return [q2(C[id].n), r ? li + 1 : "", r ? level(li + 1) : "Not ranked", q2(indShow(C[id])), r && r[3] !== null ? r[3] : "", r ? r[4] : ""].join(","); })).join("\n"); };
+  const flashBtn = (b, t, back) => { b.textContent = t; setTimeout(() => (b.textContent = back), 1700); };
+  const copyText = (text, b, back) => { const fb = () => { const ta = document.createElement("textarea"); ta.value = text; document.body.appendChild(ta); ta.select(); let ok = false; try { ok = document.execCommand("copy"); } catch (e) {} ta.remove(); flashBtn(b, ok ? "Copied" : "Copy failed", back); }; if (navigator.clipboard && navigator.clipboard.writeText) navigator.clipboard.writeText(text).then(() => flashBtn(b, "Copied", back), fb); else fb(); };
+  const saveFile = (text, b, back) => { try { const a = document.createElement("a"); a.href = URL.createObjectURL(new Blob([text], { type: "text/csv" })); a.download = "lookout_employers.csv"; document.body.appendChild(a); a.click(); a.remove(); flashBtn(b, "Downloaded", back); } catch (e) { flashBtn(b, "Use Copy instead", back); } };
+  let mylist = null;
+  $("#listfile").onchange = (e) => { const file = e.target.files[0]; if (!file) return; const rd = new FileReader(); rd.onload = () => { mylist = matchNames(String(rd.result)); mylist.ids.sort((a, b) => rankOf(a) - rankOf(b)); mylist.file = file.name; e.target.value = ""; if (state.page === "list") renderMyList(); else go("list"); }; rd.readAsText(file); };
+  $("#golist").onclick = () => $("#listfile").click();
+  function renderMyList() {
+    const box = $("#listbox");
+    if (!mylist) { box.innerHTML = "<div class='emptybox'><p>Upload a CSV with employer names in the first column to see the risk level for each one.</p><button class='cta' type='button' id='lpick'>Choose a CSV</button></div>"; $("#lpick").onclick = () => $("#listfile").click(); return; }
+    const ids = mylist.ids, total = ids.length + mylist.missing.length, hi = ids.filter((id) => rankOf(id) < 10).length, el2 = ids.filter((id) => rankOf(id) >= 10 && rankOf(id) < 50).length;
+    box.innerHTML = "<div class='actions' style='margin:0 0 16px'><button class='btn' type='button' id='lpick'>Choose another CSV</button>" + (ids.length ? "<button class='btn' type='button' id='ldown'>Download CSV</button><button class='btn' type='button' id='lcopy'>Copy as CSV</button><button class='btn' type='button' id='lsave'>Save all</button>" : "") + "</div>" +
+      "<div class='tiles' style='margin:0 0 20px'><div class='tile' style='cursor:default'><b>" + ids.length + " of " + total + "</b><span>employers matched</span></div><div class='tile' style='cursor:default;animation-delay:80ms'><b>" + hi + "</b><span>at high risk</span></div><div class='tile' style='cursor:default;animation-delay:160ms'><b>" + el2 + "</b><span>at elevated risk</span></div></div>" +
+      (ids.length ? "<div class='tablebox'><div class='scroll'><table><thead><tr><th>Rank</th><th>Employer</th><th>Industry</th><th>Level</th><th>Last notice</th><th class='num'>Notices</th><th></th></tr></thead><tbody>" + ids.map((id, j) => { const li = liveRank.get(id), r = li === undefined ? null : live.rows[li]; return "<tr class='enter' style='animation-delay:" + Math.min(j, 24) * 28 + "ms' data-c='" + id + "' tabindex='0'><td class='rank'>" + (r ? li + 1 : "") + "</td><td class='emp'>" + esc(C[id].n) + "</td><td class='ind'>" + esc(indShow(C[id])) + "</td><td>" + (r ? "<span class='chip " + levelClass(li + 1) + "'>" + level(li + 1) + "</span>" : "<span class='chip'>Not ranked</span>") + "</td><td>" + (r ? ago(r[3]) : "") + "</td><td class='num'>" + (r ? r[4] : "") + "</td><td class='starc'><button class='star' type='button' data-s='" + id + "' aria-pressed='" + saved.has(id) + "' aria-label='Save " + esc(C[id].n) + "'>" + STAR + "</button></td></tr>"; }).join("") + "</tbody></table></div></div>" : "") +
+      (mylist.missing.length ? "<p class='missing'><b>Not found:</b> " + esc(mylist.missing.slice(0, 30).join(", ")) + (mylist.missing.length > 30 ? " and " + (mylist.missing.length - 30) + " more" : "") + "</p>" : "");
+    $("#lpick").onclick = () => $("#listfile").click();
+    const tb = box.querySelector("tbody"); if (tb) tb.onclick = (e) => { if (e.target.closest(".star")) return; const tr = e.target.closest("tr"); if (tr) go("employer", +tr.dataset.c); };
+    if (ids.length) {
+      $("#ldown").onclick = () => saveFile(csvOf(ids), $("#ldown"), "Download CSV");
+      $("#lcopy").onclick = () => copyText(csvOf(ids), $("#lcopy"), "Copy as CSV");
+      $("#lsave").onclick = () => { if (!user) { state.msg = "Sign in to save employers."; go("account"); return; } ids.forEach((id) => saved.add(id)); try { localStorage.setItem(savedKey(), JSON.stringify([...saved])); } catch (e) {} renderMyList(); flashBtn($("#lsave"), "Saved " + ids.length, "Save all"); };
+    }
+  }
+
+  function renderSaved() {
+    const box = $("#savedbox");
+    if (!user) { box.innerHTML = "<div class='emptybox'><p>Sign in to save employers and keep a list.</p><button class='cta' type='button' id='sgo'>Sign in</button></div>"; $("#sgo").onclick = () => go("account"); return; }
+    const ids = [...saved].filter((id) => C[id]).sort((a, b) => (liveRank.has(a) ? liveRank.get(a) : 9999) - (liveRank.has(b) ? liveRank.get(b) : 9999));
+    const tools = "<div class='actions' style='margin:0 0 16px'><button class='btn' type='button' id='simport'>Add from CSV</button>" + (ids.length ? "<button class='btn' type='button' id='sdown'>Download CSV</button><button class='btn' type='button' id='scopy'>Copy as CSV</button>" : "") + "<input type='file' id='sfile' accept='.csv,text/csv,text/plain' hidden></div><p class='count' id='smsg'>" + esc(state.smsg || "") + "</p>";
+    box.innerHTML = tools + (ids.length ? "<p class='count'>" + ids.length + (ids.length === 1 ? " employer" : " employers") + " saved by " + esc(user.name) + "</p><div class='tablebox'><div class='scroll'><table><thead><tr><th>Rank</th><th>Employer</th><th>Industry</th><th>Level</th><th>Last notice</th><th></th></tr></thead><tbody>" + ids.map((id, j) => { const li = liveRank.get(id), r = li === undefined ? null : live.rows[li]; return "<tr class='enter' style='animation-delay:" + j * 28 + "ms' data-c='" + id + "' tabindex='0'><td class='rank'>" + (r ? li + 1 : "") + "</td><td class='emp'>" + esc(C[id].n) + "</td><td class='ind'>" + esc(indShow(C[id])) + "</td><td>" + (r ? "<span class='chip " + levelClass(li + 1) + "'>" + level(li + 1) + "</span>" : "<span class='chip'>Not ranked</span>") + "</td><td>" + (r ? ago(r[3]) : "") + "</td><td class='starc'><button class='star' type='button' data-s='" + id + "' aria-pressed='true' aria-label='Remove " + esc(C[id].n) + "'>" + STAR + "</button></td></tr>"; }).join("") + "</tbody></table></div></div>" : "<div class='emptybox'><p>Nothing saved yet. Star an employer on the watchlist, or add a CSV of employer names.</p><button class='cta' type='button' id='sgo'>Open the watchlist</button></div>");
+    state.smsg = "";
+    const tb = box.querySelector("tbody"); if (tb) tb.onclick = (e) => { if (e.target.closest(".star")) return; const tr = e.target.closest("tr"); if (tr) go("employer", +tr.dataset.c); };
+    const sg = $("#sgo"); if (sg) sg.onclick = () => go("watchlist");
+    const csv = () => { const q2 = (t) => '"' + String(t).replace(/"/g, '""') + '"'; return ["employer,rank,level,industry,days_since_last_notice,notices_past_year"].concat(ids.map((id) => { const li = liveRank.get(id), r = li === undefined ? null : live.rows[li]; return [q2(C[id].n), r ? li + 1 : "", r ? level(li + 1) : "Not ranked", q2(ind(C[id])), r && r[3] !== null ? r[3] : "", r ? r[4] : ""].join(","); })).join("\n"); };
+    const flash = (b, t, back) => { b.textContent = t; setTimeout(() => (b.textContent = back), 1700); };
+    if (ids.length) {
+      $("#scopy").onclick = () => { const b = $("#scopy"), text = csv(); const fb = () => { const ta = document.createElement("textarea"); ta.value = text; document.body.appendChild(ta); ta.select(); let ok = false; try { ok = document.execCommand("copy"); } catch (e) {} ta.remove(); flash(b, ok ? "Copied" : "Copy failed", "Copy as CSV"); }; if (navigator.clipboard && navigator.clipboard.writeText) navigator.clipboard.writeText(text).then(() => flash(b, "Copied", "Copy as CSV"), fb); else fb(); };
+      $("#sdown").onclick = () => { try { const a = document.createElement("a"); a.href = URL.createObjectURL(new Blob([csv()], { type: "text/csv" })); a.download = "lookout_saved_employers.csv"; document.body.appendChild(a); a.click(); a.remove(); flash($("#sdown"), "Downloaded", "Download CSV"); } catch (e) { flash($("#sdown"), "Use Copy instead", "Download CSV"); } };
+    }
+    $("#simport").onclick = () => $("#sfile").click();
+    $("#sfile").onchange = (e) => {
+      const file = e.target.files[0]; if (!file) return;
+      const rd = new FileReader();
+      rd.onload = () => {
+        const res = matchNames(String(rd.result));
+        let added = 0;
+        res.ids.forEach((id) => { if (!saved.has(id)) { saved.add(id); added++; } });
+        try { localStorage.setItem(savedKey(), JSON.stringify([...saved])); } catch (e2) {}
+        state.smsg = "Added " + added + (added === 1 ? " employer" : " employers") + (res.missing.length ? ". Not found: " + res.missing.slice(0, 8).join(", ") + (res.missing.length > 8 ? " and " + (res.missing.length - 8) + " more" : "") : "") + ".";
+        renderSaved();
+      };
+      rd.readAsText(file);
+    };
+  }
+
+  let mode = "in", kind = "org";
+  function renderAccount() {
+    const box = $("#auth");
+    $("#acct").textContent = user ? user.name : "Sign in";
+    if (user) {
+      box.innerHTML = "<div class='who'><div class='avatar'>" + esc(user.name.charAt(0).toUpperCase()) + "</div><h2 style='margin:0'>" + esc(user.name) + "</h2><p class='note'>" + (user.kind === "org" ? "Organization" : "Individual") + " account, " + esc(user.email) + "</p><button class='cta' id='towl' type='button'>View the watchlist</button><button class='btn' id='tosaved' type='button'>Saved employers (" + saved.size + ")</button><button class='btn' id='out' type='button'>Sign out</button></div>";
+      $("#towl").onclick = () => go("watchlist");
+      $("#tosaved").onclick = () => go("saved");
+      $("#out").onclick = () => { user = null; saved = new Set(); try { localStorage.removeItem("lookout_user"); } catch (e) {} renderAccount(); };
+      return;
+    }
+    box.innerHTML = (state.msg ? "<p class='msg'>" + esc(state.msg) + "</p>" : "") + "<h2>" + (mode === "in" ? "Sign in" : "Create account") + "</h2><form id='af' novalidate>" +
+      "<div class='seg' role='group' aria-label='Account type'><button type='button' data-k='org' aria-pressed='" + (kind === "org") + "'>Organization</button><button type='button' data-k='ind' aria-pressed='" + (kind === "ind") + "'>Individual</button></div>" +
+      (mode === "up" ? "<label class='field'>" + (kind === "org" ? "Organization name" : "Full name") + "<input class='input' id='an' autocomplete='" + (kind === "org" ? "organization" : "name") + "'></label>" : "") +
+      "<label class='field'>Email<input class='input' id='ae' type='email' autocomplete='email'></label>" +
+      "<label class='field'>Password<input class='input' id='ap' type='password' autocomplete='" + (mode === "in" ? "current-password" : "new-password") + "'></label>" +
+      "<p class='err' id='aerr' role='alert'></p>" +
+      "<button class='cta' type='submit'>" + (mode === "in" ? "Sign in" : "Create account") + "</button>" +
+      "<button class='back' type='button' id='swap' style='margin:0;justify-content:center'>" + (mode === "in" ? "New here? Create an account" : "Have an account? Sign in") + "</button></form>";
+    box.querySelectorAll("[data-k]").forEach((b) => (b.onclick = () => { kind = b.dataset.k; renderAccount(); }));
+    $("#swap").onclick = () => { mode = mode === "in" ? "up" : "in"; renderAccount(); };
+    $("#af").onsubmit = (e) => {
+      e.preventDefault();
+      const email = $("#ae").value.trim(), pass = $("#ap").value, nameEl = $("#an"), name = nameEl ? nameEl.value.trim() : email.split("@")[0];
+      const err = nameEl && !name ? "Enter a name." : !/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(email) ? "Enter a valid email." : pass.length < 6 ? "Password needs at least 6 characters." : "";
+      if (err) { $("#aerr").textContent = err; return; }
+      user = { name: name, email: email, kind: kind };
+      try { localStorage.setItem("lookout_user", JSON.stringify(user)); } catch (e2) {}
+      loadSaved(); state.msg = "";
+      renderAccount();
+    };
+  }
+
+  const PAGES = ["home", "watchlist", "employer", "counties", "list", "saved", "account"];
+  let skyDone = false;
+  function show(page, param) {
+    if (PAGES.indexOf(page) < 0) page = "home";
+    if (page === "employer") { state.company = param === undefined || isNaN(param) ? state.company : +param; filShown = 8; }
+    state.page = page; hideTip();
+    PAGES.forEach((p) => { const n = $("#p-" + p); n.classList.remove("on"); if (p === page) { void n.offsetWidth; n.classList.add("on"); } });
+    document.querySelectorAll(".bar nav a").forEach((a) => a.classList.toggle("cur", a.dataset.go === page || (page === "employer" && a.dataset.go === "watchlist")));
+    window.scrollTo(0, 0);
+    if (page !== "account") state.msg = "";
+    if (page === "home") { skyline(!skyDone); skyDone = true; homeExtras(); }
+    if (page === "saved") renderSaved();
+    if (page === "list") renderMyList();
+    if (page === "watchlist") renderList(true);
+    if (page === "employer") renderCompany();
+    if (page === "counties") countyChart(true);
+    if (page === "account") renderAccount();
+  }
+  function go(page, param) {
+    const hash = "#/" + (page === "home" ? "" : page) + (param !== undefined ? "/" + param : "");
+    try { history.pushState(null, "", hash); } catch (e) {}
+    show(page, param);
+  }
+  function fromHash() { const parts = (location.hash || "").replace(/^#\/?/, "").split("/"); show(parts[0] || "home", parts[1] === undefined ? undefined : +parts[1]); }
+  window.addEventListener("popstate", fromHash);
+  document.querySelectorAll("[data-go]").forEach((a) => a.addEventListener("click", (e) => { e.preventDefault(); go(a.dataset.go); }));
+
+  const h1 = document.querySelector(".hero h1");
+  h1.innerHTML = h1.textContent.split(" ").map((w, i) => "<span class='w' style='animation-delay:" + (i * 70) + "ms'>" + w + "</span>").join(" ");
+  const SUN = "<svg width='17' height='17' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' aria-hidden='true'><circle cx='12' cy='12' r='4'/><path d='M12 2v2M12 20v2M2 12h2M20 12h2M5 5l1.5 1.5M17.5 17.5L19 19M5 19l1.5-1.5M17.5 6.5L19 5'/></svg>";
+  const MOON = "<svg width='17' height='17' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linejoin='round' aria-hidden='true'><path d='M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5z'/></svg>";
+  const paintTheme = () => { $("#theme").innerHTML = theme === "dark" ? SUN : MOON; };
+  $("#theme").onclick = () => {
+    theme = theme === "dark" ? "light" : "dark";
+    document.documentElement.dataset.theme = theme;
+    try { localStorage.setItem("lookout_theme", theme); } catch (e) {}
+    readColors(); paintTheme();
+    if (state.page === "home") skyline(false);
+    if (state.page === "watchlist") indChart();
+    if (state.page === "counties") countyChart(false);
+    if (state.page === "employer") renderCompany();
+  };
+  paintTheme();
+  renderAccount();
+  fromHash();
+  let rt; window.addEventListener("resize", () => { clearTimeout(rt); rt = setTimeout(() => { if (state.page === "home") skyline(false); if (state.page === "counties") countyChart(false); if (state.page === "watchlist") indChart(); if (state.page === "employer") renderCompany(); }, 180); });
+})();
+</script>
+</body>
+</html>
