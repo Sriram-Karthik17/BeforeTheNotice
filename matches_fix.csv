@@ -87,7 +87,6 @@ byte,byte,100.0,exact,1,Straight Smile LLC dba Byte,2,2,Byte,,1,0,0,,2024-11-07,
 c3 ai,c3 ai,100.0,exact,1,"C3.ai, Inc.",103,100,C3 AI,,1,1,71,2026-02-23,2026-02-23,False,4,4,0.04
 cabi,cabi,100.0,exact,1,"Cabi, LLC",1,1,CAbi,,1,0,0,,2024-10-29,True,0,0,0.0
 california academy of sciences,california academy of sciences,100.0,exact,1,California Academy of Sciences,2,2,California Academy of Sciences,,1,1,53,2026-04-28,2026-04-28,False,1,1,0.5
-california college of asu,california college of arts,94.11764705882352,fuzzy,1,California College of ASU,1,1,California College of the Arts,,1,1,75,2025-10-16,2025-10-16,False,0,0,0.0
 california resources,california resources,100.0,exact,11,California Resources Corporation,7,7,California Resources,,11,2,55,2026-02-17,2023-08-28,True,0,0,0.0
 camelbak products,camelbak products,100.0,exact,1,"CamelBak Products, LLC",1,1,CamelBak Products,,1,0,0,,2024-02-01,True,0,0,0.0
 canoo,canoo,100.0,exact,1,Canoo,20,20,Canoo,,1,0,0,,2024-08-14,True,0,0,0.0
@@ -451,7 +450,6 @@ stanford health care,stanford health care,100.0,exact,2,Stanford Health Care - 1
 stanford university,stanford university,100.0,exact,1,Stanford University,186,184,Stanford University,,1,1,363,2025-07-31,2025-07-31,False,7,7,0.04
 steelcase,steelcase,100.0,exact,1,Steelcase Inc.,14,0,Steelcase,,1,0,0,,2023-12-11,True,2,0,0.14
 stem,stem,100.0,exact,2,"Stem, Inc.",12,12,Stem,,2,0,0,,2025-04-07,False,1,1,0.08
-stepping stone,stepping stones,96.55172413793103,fuzzy,1,Stepping Stone,8,8,The Stepping Stones Group,,1,1,8,2026-05-01,2026-05-01,False,0,0,0.0
 sumo logic,sumo logic,100.0,exact,1,"Sumo Logic, Inc.",6,5,Sumo Logic,,1,0,0,,2023-06-07,True,0,0,0.0
 sunpower,sunpower,100.0,exact,13,SunPower Corp.,24,20,SunPower,,13,0,0,,2024-04-24,True,2,1,0.08
 sunrun,sunrun,100.0,exact,13,Sunrun Inc.,121,106,Sunrun,,13,0,0,,2023-08-02,True,19,18,0.16
@@ -530,21 +528,83 @@ zebra technologies,zebra technologies,100.0,exact,1,Zebra Technologies Corporati
 zendesk,zendesk,100.0,exact,1,"Zendesk, Inc.",60,55,Zendesk,,1,0,0,,2025-02-19,False,0,0,0.0
 zones,zones,100.0,exact,1,"Zones, LLC",2,0,Zones,,1,0,0,,2024-06-12,True,0,0,0.0
 zymergen,zymergen,100.0,exact,2,Zymergen Inc.,10,9,Zymergen,,2,0,0,,2023-09-06,True,2,1,0.2
-vons,vons,100.0,manual,7,The Vons Companies Inc.,85,85,Vons,ADDED: frontline-heavy company missed by name matching,7,5,322,2025-08-15,2023-08-15,True,68,68,0.8
-marshalls,marshalls,100.0,manual,2,"Marshalls of CA, LLC",74,51,Marshalls,ADDED: frontline-heavy company missed by name matching,2,2,126,2025-10-17,2025-10-17,False,56,42,0.76
-uber technologies,uber,100.0,manual,11,"Uber Technologies, Inc.",385,254,Uber,ADDED: frontline-heavy company missed by name matching,11,11,463,2026-06-03,2026-06-03,False,103,67,0.27
-walt disney parks and resorts,walt disney,100.0,manual,1,"Walt Disney Parks & Resorts US, Inc.",421,411,Walt Disney Company,ADDED: frontline-heavy company missed by name matching,1,1,159,2026-10-27,2026-10-27,False,55,53,0.13
-hilton,hilton,100.0,manual,2,Hilton Oakland Airport Hotel,126,68,Hilton,ADDED: frontline-heavy company missed by name matching,2,1,394,2025-10-12,2024-06-21,True,56,30,0.44
-staples fulfillment center,staples,100.0,manual,1,Staples Fulfillment Center,81,57,Staples,ADDED: frontline-heavy company missed by name matching,1,1,109,2026-08-05,2026-08-05,False,42,32,0.52
-six flags entertainment,six flags,100.0,manual,4,Six Flags Entertainment Corporation,68,67,Six Flags,ADDED: frontline-heavy company missed by name matching,4,1,184,2025-09-03,2025-05-22,False,45,45,0.66
-shake shack enterprises,shake shack,100.0,manual,7,"Shake Shack Enterprises, LLC",37,28,Shake Shack,ADDED: frontline-heavy company missed by name matching,7,1,26,2025-11-25,2024-08-26,True,27,19,0.73
-aramark campus,aramark,100.0,manual,2,"Aramark Campus, LLC",66,30,Aramark,ADDED: frontline-heavy company missed by name matching,2,2,143,2026-04-10,2026-04-10,False,23,11,0.35
-marriott san mateo hotel,marriott international,100.0,manual,1,Marriott San Mateo Hotel,212,122,Marriott International,ADDED: frontline-heavy company missed by name matching,1,0,0,,2024-02-21,True,72,50,0.34
-smart and final stores,smart and final,100.0,manual,2,"Smart & Final Logistics, LLC",35,34,Smart & Final,ADDED: frontline-heavy company missed by name matching,2,0,0,,2025-02-18,False,19,19,0.54
-99 cents only stores,99 cents only,100.0,manual,15,99 Cents Only Stores LLC,21,19,99 Cents Only,ADDED: frontline-heavy company missed by name matching,15,0,0,,2024-04-04,True,15,14,0.71
-michaels stores,michaels,100.0,manual,1,"Michaels Stores Procurement, Inc.",59,44,Michaels,ADDED: frontline-heavy company missed by name matching,1,0,0,,2025-06-04,False,42,32,0.71
-petco animal supplies stores,petco,100.0,manual,2,Petco Animal Supplies Stores,131,111,Petco,ADDED: frontline-heavy company missed by name matching,2,0,0,,2023-07-24,True,34,27,0.26
-fedex supply chain,fedex,100.0,manual,1,"FedEx Supply Chain, Inc.",302,187,FedEx,ADDED: frontline-heavy company missed by name matching,1,0,0,,2024-01-19,True,204,142,0.68
-universal protection service,allied universal,100.0,manual,8,"Universal Protection Service, LP dba Allied Universal Security Services",128,109,Allied Universal,ADDED: frontline-heavy company missed by name matching,8,0,0,,2023-07-27,True,95,80,0.74
-meta platforms,meta,100.0,manual,21,"Meta Platforms, Inc. (1 Hacker Way)",2427,2325,Meta,ADDED: frontline-heavy company missed by name matching,21,21,4150,2025-10-22,2025-10-22,False,25,24,0.01
-oracle america,oracle,100.0,manual,16,"Oracle America, Inc. at Adventist Health",735,526,Oracle,ADDED: frontline-heavy company missed by name matching,16,15,1691,2025-08-13,2023-11-13,True,4,1,0.01
+vons,vons,100.0,manual,7,The Vons Companies Inc.,85,85,Vons,ADDED: company missed by name matching,7,5,322,2025-08-15,2023-08-15,True,68,68,0.8
+marshalls,marshalls,100.0,manual,2,"Marshalls of CA, LLC",74,51,Marshalls,ADDED: company missed by name matching,2,2,126,2025-10-17,2025-10-17,False,56,42,0.76
+uber technologies,uber,100.0,manual,11,"Uber Technologies, Inc.",385,254,Uber,ADDED: company missed by name matching,11,11,463,2026-06-03,2026-06-03,False,103,67,0.27
+walt disney parks and resorts,walt disney,100.0,manual,1,"Walt Disney Parks & Resorts US, Inc.",421,411,Walt Disney Company,ADDED: company missed by name matching,1,1,159,2026-10-27,2026-10-27,False,55,53,0.13
+hilton,hilton,100.0,manual,2,Hilton Oakland Airport Hotel,126,68,Hilton,ADDED: company missed by name matching,2,1,394,2025-10-12,2024-06-21,True,56,30,0.44
+staples fulfillment center,staples,100.0,manual,1,Staples Fulfillment Center,81,57,Staples,ADDED: company missed by name matching,1,1,109,2026-08-05,2026-08-05,False,42,32,0.52
+six flags entertainment,six flags,100.0,manual,4,Six Flags Entertainment Corporation,68,67,Six Flags,ADDED: company missed by name matching,4,1,184,2025-09-03,2025-05-22,False,45,45,0.66
+shake shack enterprises,shake shack,100.0,manual,7,"Shake Shack Enterprises, LLC",37,28,Shake Shack,ADDED: company missed by name matching,7,1,26,2025-11-25,2024-08-26,True,27,19,0.73
+aramark campus,aramark,100.0,manual,2,"Aramark Campus, LLC",66,30,Aramark,ADDED: company missed by name matching,2,2,143,2026-04-10,2026-04-10,False,23,11,0.35
+marriott san mateo hotel,marriott international,100.0,manual,1,Marriott San Mateo Hotel,212,122,Marriott International,ADDED: company missed by name matching,1,0,0,,2024-02-21,True,72,50,0.34
+smart and final stores,smart and final,100.0,manual,2,"Smart & Final Logistics, LLC",35,34,Smart & Final,ADDED: company missed by name matching,2,0,0,,2025-02-18,False,19,19,0.54
+99 cents only stores,99 cents only,100.0,manual,15,99 Cents Only Stores LLC,21,19,99 Cents Only,ADDED: company missed by name matching,15,0,0,,2024-04-04,True,15,14,0.71
+michaels stores,michaels,100.0,manual,1,"Michaels Stores Procurement, Inc.",59,44,Michaels,ADDED: company missed by name matching,1,0,0,,2025-06-04,False,42,32,0.71
+petco animal supplies stores,petco,100.0,manual,2,Petco Animal Supplies Stores,131,111,Petco,ADDED: company missed by name matching,2,0,0,,2023-07-24,True,34,27,0.26
+fedex supply chain,fedex,100.0,manual,1,"FedEx Supply Chain, Inc.",302,187,FedEx,ADDED: company missed by name matching,1,0,0,,2024-01-19,True,204,142,0.68
+universal protection service,allied universal,100.0,manual,8,"Universal Protection Service, LP dba Allied Universal Security Services",128,109,Allied Universal,ADDED: company missed by name matching,8,0,0,,2023-07-27,True,95,80,0.74
+meta platforms,meta,100.0,manual,21,"Meta Platforms, Inc. (1 Hacker Way)",2427,2325,Meta,ADDED: company missed by name matching,21,21,4150,2025-10-22,2025-10-22,False,25,24,0.01
+oracle america,oracle,100.0,manual,16,"Oracle America, Inc. at Adventist Health",735,526,Oracle,ADDED: company missed by name matching,16,15,1691,2025-08-13,2023-11-13,True,4,1,0.01
+paramount global,paramount,100.0,manual,28,Paramount Global,73,64,Paramount,ADDED: company missed by name matching,28,11,435,2025-07-03,2024-02-15,True,2,2,0.03
+herbalife international,herbalife,100.0,manual,21,"Herbalife International of America, Inc.",25,24,Herbalife,ADDED: company missed by name matching,21,0,0,,2023-07-28,True,2,2,0.08
+planned parenthood,planned parenthood,100.0,manual,30,"Planned Parenthood Mar Monte, Inc.",28,20,Planned Parenthood,ADDED: company missed by name matching,30,29,194,2025-07-09,2025-06-16,False,8,7,0.29
+rivian automotive,rivian,100.0,manual,20,"Rivian Automotive, LLC",202,197,Rivian,ADDED: company missed by name matching,20,0,0,,2024-02-22,True,4,4,0.02
+becton dickinson and,becton dickinson,100.0,manual,13,"Becton, Dickinson and Company",12,10,Becton Dickinson,ADDED: company missed by name matching,13,3,151,2025-10-31,2023-10-04,True,1,0,0.08
+farmers group,farmers insurance,100.0,manual,13,Farmers Insurance Exchange,108,93,Farmers Insurance Group,ADDED: company missed by name matching,13,2,63,2025-08-19,2023-08-28,True,14,11,0.13
+infineon technologies americas,infineon technologies,100.0,manual,16,Infineon Technologies Americas Corp,23,15,Infineon Technologies,ADDED: company missed by name matching,16,5,72,2025-10-31,2024-09-27,True,0,0,0.0
+gxo logistics supply chain,gxo logistics,100.0,manual,11,"GXO Logistics Supply Chain, Inc.",32,16,GXO Logistics,ADDED: company missed by name matching,11,4,162,2025-08-26,2023-07-03,True,11,5,0.34
+maxar space,maxar technologies,100.0,manual,7,Maxar Space LLC - Fabian,19,19,Maxar Technologies,ADDED: company missed by name matching,7,0,0,,2024-02-01,True,1,1,0.05
+blue shield of ca,blue shield of california,100.0,manual,7,Blue Shield of CA - Oakland,44,42,Blue Shield Of California,ADDED: company missed by name matching,7,7,51,2026-11-06,2026-11-06,False,9,9,0.2
+renesas electronics,renesas,100.0,manual,7,Renesas Electronics Corporation,37,28,Renesas,ADDED: company missed by name matching,7,0,0,,2023-11-15,True,0,0,0.0
+chick fil a,chick fil a restaurants,100.0,manual,6,Chick-fil-A,101,77,Chick-fil-A Restaurants,ADDED: company missed by name matching,6,5,349,2026-06-18,2024-04-09,True,73,56,0.72
+robinhood markets,robinhood,100.0,manual,4,"Robinhood Markets, Inc.",78,69,Robinhood,ADDED: company missed by name matching,4,1,63,2026-06-16,2023-06-29,True,0,0,0.0
+sharp metropolitan medical,sharp healthcare,100.0,manual,5,Sharp Metropolitan Medical Campus - Sharp Memorial Hospital,18,18,Sharp HealthCare,ADDED: company missed by name matching,5,5,168,2026-08-11,2026-08-11,False,9,9,0.5
+jones lang lasalle americas,jones lang lasalle,100.0,manual,4,"Jones Lang LaSalle Americas, Inc.",179,64,Jones Lang LaSalle,ADDED: company missed by name matching,4,0,0,,2025-04-14,False,12,8,0.07
+marvell semiconductor,marvell technology,100.0,manual,4,"Marvell Semiconductor, Inc.",126,126,Marvell Technology,ADDED: company missed by name matching,4,0,0,,2023-11-15,True,0,0,0.0
+international business machines,ibm,100.0,manual,3,International Business Machines Corporation (IBM),758,194,IBM,ADDED: company missed by name matching,3,1,75,2025-11-04,2024-09-17,True,17,0,0.02
+pacific biosciences of california,pacific biosciences,100.0,manual,3,"Pacific Biosciences of California, Inc.",14,14,Pacific Biosciences,ADDED: company missed by name matching,3,0,0,,2024-04-29,True,0,0,0.0
+laz parking california,laz parking,100.0,manual,3,LAZ Parking California (9610 Sky Way),11,11,LAZ Parking,ADDED: company missed by name matching,3,3,247,2026-08-06,2026-08-06,False,6,6,0.55
+raleys,raleys bel air nob hill,100.0,manual,4,Raley's,9,9,Raley's / Bel Air / Nob Hill,ADDED: company missed by name matching,4,4,137,2026-02-20,2026-02-20,False,8,8,0.89
+lucid usa,lucid motors,100.0,manual,1,"Lucid USA, Inc.",225,177,Lucid Motors,ADDED: company missed by name matching,1,0,0,,2024-05-24,True,7,2,0.03
+sap america,sap,100.0,manual,3,"SAP America, Inc.",145,99,SAP,ADDED: company missed by name matching,3,1,82,2025-10-06,2024-04-12,True,5,1,0.03
+vca,vca,100.0,manual,4,VCA Bay Area Veterinary Specialists & Emergency Hospital,21,20,VCA,ADDED: company missed by name matching,4,4,245,2026-02-24,2026-02-24,False,7,6,0.33
+novartis pharmaceuticals,novartis,100.0,manual,3,Novartis Pharmaceuticals Corporation,84,24,Novartis,ADDED: company missed by name matching,3,0,0,,2024-07-05,True,2,1,0.02
+providence health,providence,100.0,manual,3,Providence Holy Cross Medical Center,45,44,Providence,ADDED: company missed by name matching,3,0,0,,2024-04-04,True,30,29,0.67
+bill operations,bill,100.0,manual,3,"BILL Operations, LLC",103,102,BILL,ADDED: company missed by name matching,3,2,213,2025-10-15,2023-12-05,True,6,5,0.06
+goodwill,goodwill,100.0,manual,2,Goodwill of the San Francisco Bay,30,22,Goodwill,ADDED: company missed by name matching,2,0,0,,2025-04-07,False,16,13,0.53
+kbr services,kbr,100.0,manual,2,KBR Services LLC,20,15,KBR,ADDED: company missed by name matching,2,2,1408,2026-03-06,2026-03-06,False,3,3,0.15
+joann stores,joann stores,100.0,manual,2,"Joann Stores Support Center, Inc.",37,32,JOANN Stores,ADDED: company missed by name matching,2,0,0,,2025-01-24,False,24,21,0.65
+red lobster restaurants,red lobster,100.0,manual,2,"Red Lobster Restaurants, LLC",12,8,Red Lobster,ADDED: company missed by name matching,2,1,37,2026-07-14,2024-10-10,True,12,8,1.0
+red bull north america,red bull,100.0,manual,2,"Red Bull North America, Inc.",23,11,Red Bull,ADDED: company missed by name matching,2,0,0,,2024-11-14,True,1,1,0.04
+ttm technologies,ttm technologies,100.0,manual,2,"TTM Technologies, Inc., subsidiary of TTM Technologies North America, LLC",8,8,TTM Technologies,ADDED: company missed by name matching,2,0,0,,2023-06-28,True,1,1,0.12
+levi strauss and,levi strauss,100.0,manual,2,Levi Strauss & Co.,85,73,Levi Strauss,ADDED: company missed by name matching,2,1,44,2025-07-14,2024-02-28,True,20,15,0.24
+l3harris technologies,l3harris,100.0,manual,3,"L3Harris Technologies, Sonoma EO",86,60,L3Harris,ADDED: company missed by name matching,3,2,181,2025-07-18,2024-10-07,True,2,2,0.02
+blackline systems,blackline,100.0,manual,2,"BlackLine Systems, Inc.",55,55,BlackLine,ADDED: company missed by name matching,2,0,0,,2023-08-23,True,0,0,0.0
+unity technologies,unity,100.0,manual,2,Unity Technologies SF,51,35,Unity,ADDED: company missed by name matching,2,0,0,,2024-01-09,True,0,0,0.0
+panera,panera bread,100.0,manual,2,"Panera, LLC",116,81,Panera Bread,ADDED: company missed by name matching,2,0,0,,2025-02-13,False,75,53,0.65
+centene management,centene,100.0,manual,2,Centene Management Company,65,43,Centene,ADDED: company missed by name matching,2,1,5,2025-10-20,2025-04-24,False,5,3,0.08
+catalent,catalent pharma,100.0,manual,2,"Catalent, Inc.",22,16,Catalent Pharma,ADDED: company missed by name matching,2,0,0,,2024-03-05,True,2,2,0.09
+quantumscape battery,quantumscape,100.0,manual,1,Quantumscape Battery Inc.,14,14,Quantumscape,ADDED: company missed by name matching,1,0,0,,2025-01-28,False,1,1,0.07
+proterra operating,proterra,100.0,manual,1,"Proterra Operating Company, Inc.",9,9,Proterra,ADDED: company missed by name matching,1,0,0,,2023-06-27,True,0,0,0.0
+twitch interactive,twitch,100.0,manual,1,"Twitch Interactive, Inc. SFO19 Facility",46,41,Twitch,ADDED: company missed by name matching,1,0,0,,2024-01-10,True,0,0,0.0
+universal city studios,universal studios,100.0,manual,1,Universal City Studios Productions LLLP,55,55,Universal Studios,ADDED: company missed by name matching,1,1,14,2026-08-13,2026-08-13,False,32,32,0.58
+valero refining,valero,100.0,manual,1,Valero Refining Company,10,10,Valero,ADDED: company missed by name matching,1,1,237,2026-01-13,2026-01-13,False,3,3,0.3
+vans headquarters,vans,100.0,manual,2,Vans HQ,71,62,Vans,ADDED: company missed by name matching,2,0,0,,2023-11-29,True,30,27,0.42
+tencent america,tencent,100.0,manual,1,Tencent America LLC,26,25,Tencent,ADDED: company missed by name matching,1,1,68,2026-07-29,2026-07-29,False,0,0,0.0
+adidas america,adidas,100.0,manual,1,"Adidas America, Inc.",56,27,adidas,ADDED: company missed by name matching,1,0,0,,2024-01-02,True,14,10,0.25
+williams sonoma direct,williams sonoma,100.0,manual,1,"Williams-Sonoma Direct, Inc.",70,69,"Williams-Sonoma, Inc.",ADDED: company missed by name matching,1,0,0,,2024-04-03,True,21,21,0.3
+verily health,verily,100.0,manual,1,Verily Health Inc.,36,36,Verily,ADDED: company missed by name matching,1,1,58,2026-06-08,2026-06-08,False,0,0,0.0
+abbott laboratories,abbott,100.0,manual,1,Abbott Laboratories,245,159,Abbott,ADDED: company missed by name matching,1,0,0,,2024-03-19,True,11,6,0.04
+rtx building,rtx,100.0,manual,2,RTX _2000 Building E01,67,65,RTX,ADDED: company missed by name matching,2,0,0,,2025-04-10,False,2,2,0.03
+sambanova systems,sambanova,100.0,manual,1,SambaNova Systems,16,16,SambaNova,ADDED: company missed by name matching,1,0,0,,2025-04-22,False,1,1,0.06
+roche molecular systems,roche,100.0,manual,1,"Roche Molecular Systems, Inc.",125,106,Roche,ADDED: company missed by name matching,1,0,0,,2025-03-27,False,1,1,0.01
+charles schwab and,charles schwab,100.0,manual,1,"Charles Schwab & Co., Inc.",53,32,Charles Schwab,ADDED: company missed by name matching,1,0,0,,2023-11-06,True,2,2,0.04
+chime financial,chime,100.0,manual,1,"Chime Financial, Inc.",66,61,Chime,ADDED: company missed by name matching,1,1,135,2026-07-31,2026-07-31,False,1,1,0.02
+buzzfeed media enterprises,buzzfeed,100.0,manual,1,"BuzzFeed Media Enterprises, Inc.",14,14,BuzzFeed,ADDED: company missed by name matching,1,0,0,,2024-02-28,True,0,0,0.0
+capital one financial,capital one,100.0,manual,1,Capital One Financial,204,47,Capital One,ADDED: company missed by name matching,1,0,0,,2023-10-30,True,7,1,0.03
+bloomingdales,bloomingdales,100.0,manual,1,Bloomingdale's San Francisco Centre,50,40,Bloomingdale's,ADDED: company missed by name matching,1,0,0,,2025-01-31,False,36,27,0.72
+anheuser busch,anheuser busch inbev,100.0,manual,1,"Anheuser-Busch Commercial Strategy, LLC",91,15,Anheuser-Busch InBev,ADDED: company missed by name matching,1,1,238,2025-12-11,2025-12-11,False,5,5,0.05
+intuitive surgical,intuitive,100.0,manual,1,"Intuitive Surgical, Inc.",169,158,Intuitive,ADDED: company missed by name matching,1,1,331,2025-08-21,2025-08-21,False,14,9,0.08
+mettler toledo rainin,mettler toledo,100.0,manual,1,"Mettler-Toledo Rainin, LLC",15,11,Mettler-Toledo,ADDED: company missed by name matching,1,1,89,2025-11-16,2025-11-16,False,1,0,0.07
+balfour beatty civils,balfour beatty,100.0,manual,1,Balfour Beatty US Civils,24,10,Balfour Beatty,ADDED: company missed by name matching,1,0,0,,2024-02-26,True,0,0,0.0
