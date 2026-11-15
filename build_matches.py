@@ -96,10 +96,9 @@ MANUAL_FIXES = {
         "FIXED: was 'KAISER' (2 reviews); WARN 'Kaiser' sites are Kaiser Permanente",
         r"\bkaiser\b",
     ),
+    "cisco systems": ("cisco", "FIXED: was 'Cisco Systems' (1 review); main Glassdoor page is 'Cisco'", None),
 }
 
-# Frontline-heavy employers that name matching missed:
-# (warn_norm label, regex on raw WARN company name, glassdoor company_norm)
 MANUAL_ADDS = [
     ("vons", r"^the vons companies", "vons"),
     ("marshalls", r"^marshalls", "marshalls"),
@@ -117,7 +116,10 @@ MANUAL_ADDS = [
     ("petco animal supplies stores", r"^petco animal", "petco"),
     ("fedex supply chain", r"^fedex supply chain", "fedex"),
     ("universal protection service", r"^universal protection service", "allied universal"),
+    ("meta platforms", r"^meta platforms", "meta"),
+    ("oracle america", r"^oracle", "oracle"),
 ]
+
 ADD_NOTE = "ADDED: frontline-heavy company missed by name matching"
 
 # warn_norm values to drop entirely (bad matches you don't want to keep)
