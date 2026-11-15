@@ -1,8 +1,4 @@
-# lookout
-
-[readme (1).md](https://github.com/user-attachments/files/34867895/readme.1.md)
-
-# Lookout — BeforeTheNotice
+# Lookout
 
 **An early-warning research pipeline for California mass-layoff notices.**
 
@@ -128,5 +124,8 @@ To upload your latest Google Drive Colab notebook: in Colab, select **File → D
 - The project records subgroup evaluations across frontline share, filing history, stock-data coverage, and sector.
 - Historical WARN records are incomplete proxies for all layoffs; employee reviews are nonrandom; company-name matching can be ambiguous.
 - Scores should not be used alone for employment, financial, lending, or hiring decisions.
+- The model mostly catches repeat filers: every employer in a past top-10 list had filed before, and none of the 82 first-time layoff filings were caught in the top 50.
+- It is weaker for frontline-heavy employers (AUC 0.69 vs 0.86 for office-heavy), so hourly and frontline workers get less warning than office workers.
+- WARN only covers employers with 75 or more workers, so small-business layoffs never appear, and a low rank does not mean an employer is safe.
 
 
